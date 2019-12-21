@@ -1,0 +1,134 @@
+/*!
+* Based on Bootstrap v4.1.3 (https://getbootstrap.com) 
+*/
+ 
+// Options
+// 
+// Quickly modify global styling by enabling or disabling optional features.
+ 
+@import url('https://fonts.googleapis.com/css?family=Anton'); 
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento'); 
+
+$enable-rounded:            true !default;
+$enable-shadows:            true;
+$enable-transitions:        true;
+$enable-hover-media-query:  false;
+$enable-grid-classes:       true;
+$enable-print-styles:       true;
+
+// Variables
+//
+// Colors
+
+$theme-colors: (
+  primary: #12bbad,
+  secondary: #ee5100,
+  light: #f3f3f3,
+  dark: #151515,
+  info: #009fdc,
+  success: #28a745,
+  warning: #ffc107,
+  danger: #dc3545
+);
+
+$body-bg: white;
+$body-color: #333;
+
+$body-color-inverse: invert($body-color) !default;
+$link-color: #aaa;
+
+// Fonts
+$font-family-base: Quattrocento;
+$headings-font-family: Raleway;
+$display-font-family: Anton;
+$lead-font-size:   1.30rem;
+$headings-line-height: 1.5;
+$font-size-base: 1rem;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+
+//Cards
+
+$card-border-color: 	none;
+$card-bg:							$body-bg;
+
+$spacer: 1.5rem;
+
+$border-radius: 0px;
+$border-radius-lg: $border-radius * 1.2;
+$border-radius-sm: $border-radius * .8;
+
+//Forms
+$input-bg: rgba(map-get($theme-colors, 'light'), 0.1);
+$input-border-color: transparent;
+
+$modal-transition:                  transform .3s ease-out !default;
+
+
+@import 'bootstrap-4.1.3';
+
+html,body {
+   height:100%;
+}
+
+.navbar {
+  opacity: 1;
+  transition: opacity .5s ease-out;
+}
+
+.navbar-ontop {
+  opacity: 0 !important;
+}
+
+
+.big-title {
+  font-weight:600;
+  line-height:1;
+    @include media-breakpoint-up(sm) {
+    font-size:10rem;
+    }
+}
+
+// Color yiq
+@each $name, $value in $theme-colors {
+  .bg-#{$name} {
+    color: color-yiq($value);
+   	input::placeholder {
+      color: transparentize(color-yiq($value), .2);
+    }
+    .input-group-text {
+      color: color-yiq($value);
+    }
+  }
+}
+
+.cover {
+	min-height:100%;
+  display:flex;
+  align-items:center;
+}
+
+.bg-fixed {
+background-attachment: fixed;
+}
+
+.filter-dark {
+  overflow: hidden;
+  position: relative;
+  color: color-yiq(map-get($theme-colors, 'dark'));
+	&:before {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 100%;
+    content: ' ';
+    background: rgba(map-get($theme-colors, 'dark'), 0.75);
+  }
+}
+
+
