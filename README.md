@@ -1,4 +1,4 @@
-<img src="./asset/hust.jpg" alt="32711957262a04abd97f3566a6cea08f" width="" height="250"/>
+<img src="./asset/hust.jpg" alt="32711957262a04abd97f3566a6cea08f" width="" height="70"/>
 
 # BackGround✍️
 
