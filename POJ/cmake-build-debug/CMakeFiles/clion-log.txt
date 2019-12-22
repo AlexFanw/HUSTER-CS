@@ -1,0 +1,4 @@
+"/Users/alexfan/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/193.5233.10/CLion 2019.3 EAP.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/alexfan/Desktop/LeetCode/other/poj
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/alexfan/Desktop/LeetCode/other/poj/cmake-build-debug

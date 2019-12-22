@@ -1,7 +1,7 @@
-<img src="./asset/hust.jpg" width="" height="70"/>
+<img src="./asset/hust.jpg" width="" height="100"/>
 
 # BackGround
-华中科技大学 学习资料💾 以及 工作笔记📒
+华中科技大学 学习资料💾  以及 工作笔记📒
 
 # Contents (Learn)
 
@@ -16,13 +16,14 @@
 
 # Contents (work)
 
-| Folder   | Description |
-| -------- | ----------- |
-| 未完待续 | 未完待续    |
+| Folder                  | Description                           |
+| ----------------------- | ------------------------------------- |
+| [🤵LeetCode](./LeetCode) | ✍️LeetCode的刷题笔记                   |
+| [🤵POJ](./POJ)           | 🐛体验一般的刷题平台,仅课程需要才刷刷. |
 
 
 
-# Install
+# Download
 
 * ✅点击下方GitZip下载单个子文件夹
 
