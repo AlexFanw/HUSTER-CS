@@ -1,7 +1,6 @@
-<div align=center><img src="./asset/hust.jpg" width="" height="150"/></div>
+<img src="./asset/hust.jpg" width="" height="70"/>
 
 # BackGround
-
 华中科技大学 学习资料💾 以及 工作笔记📒
 
 # Contents (Learn)
