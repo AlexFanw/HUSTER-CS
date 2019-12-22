@@ -1,6 +1,7 @@
 <img src="./asset/hust.jpg" alt="32711957262a04abd97f3566a6cea08f" width="" height="70"/>
 
-# BackGround✍️
+# BackGround
+
 华中科技大学 学习资料💾 以及 工作笔记📒
 
 # Contents (Learn)
@@ -36,4 +37,4 @@ git clone https://github.com/AlexFanw/HUSTER-CS.git
 
 
 
-### [⬆️scrollTop](# BackGround✍️)
+### [⬆️scrollTop](# BackGround)
