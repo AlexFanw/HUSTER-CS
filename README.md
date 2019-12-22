@@ -1,10 +1,7 @@
 <img src="./asset/hust.jpg" alt="32711957262a04abd97f3566a6cea08f" width="" height="70"/>
 
 # BackGround✍️
-
 华中科技大学 学习资料💾 以及 工作笔记📒
-
-
 
 # Contents (Learn)
 
@@ -29,14 +26,14 @@
 
 * ✅点击下方GitZip下载单个子文件夹
 
-	[📁GitZip](http://kinolien.github.io/gitzip/)
+[📁GitZip](http://kinolien.github.io/gitzip/)
 
 * ✅使用下方命令下载整个文件夹
 
 ```markdown
-	git clone https://github.com/AlexFanw/HUSTER-CS.git
+git clone https://github.com/AlexFanw/HUSTER-CS.git
 ```
 
 
 
-### [⬆️scrollTop](#BackGround)
+### [⬆️scrollTop](# BackGround✍️)
