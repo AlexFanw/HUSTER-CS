@@ -17,7 +17,7 @@
 
 # 考试流程
 
-🚗 Before **8:30 am **Arrive
+🚗 Before **8:30 am**Arrive
 
 🆔ID card ,food and drink🍹 
 
@@ -94,7 +94,5 @@
 上交草稿纸,离开考场.
 
 7天后会递送成绩.
-
-[Content](#Content)
 
 [回到顶部](#readme)
