@@ -3,7 +3,7 @@
 # BackGround
 华中科技大学CS 学习笔记💯  以及 实验资料💾
 
-# Contents
+# Content
 
 | Folder      | Description            |
 | ----------- | ---------------------- |
@@ -25,8 +25,6 @@
 ```markdown
   git clone https://github.com/AlexFanw/HUSTER-CS.git
 ```
-
-
 
 
 
