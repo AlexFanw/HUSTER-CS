@@ -1,0 +1,1141 @@
+C:\Users\AlexFan\Desktop\CI\2\TCP\bin\TCP.exe
+******模拟网络环境******：模拟网络环境初始化...
+******模拟网络环境******：模拟网络环境启动...
+发送方发送报文: seqnum = 1, acknum = -1, checksum = 29555, AAAAAAAAAAAAAAAAAAAA
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 1, acknum = -1, checksum = 29555, BAAAAAAAAAAAAAAAAAAA
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 0, checksum = 12851, ....................
+receive_ACK number：0
+base number： 1
+发送方定时器超时，重新发送报文段: seqnum = 1, acknum = -1, checksum = 29555, AAAAAAAAAAAAAAAAAAAA
+接收方正确收到报文: seqnum = 1, acknum = -1, checksum = 29555, AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+接收方向发送方发送确认报文: seqnum = -1, acknum = 2, checksum = 12849, ....................
+receive_ACK number：2
+base number： 1
+发送方定时器超时，重新发送报文段: seqnum = 1, acknum = -1, checksum = 29555, AAAAAAAAAAAAAAAAAAAA
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 1, acknum = -1, checksum = 29555, AAAAAAAAAAAAAAAAAAAA
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 2, checksum = 12849, ....................
+receive_ACK number：2
+base number： 1
+接收到ACK报文: seqnum = -1, acknum = 2, checksum = 12849, ....................
+发送方发送报文: seqnum = 2, acknum = -1, checksum = 26984, BBBBBBBBBBBBBBBBBBBB
+发送方发送报文: seqnum = 3, acknum = -1, checksum = 24413, CCCCCCCCCCCCCCCCCCCC
+发送方发送报文: seqnum = 4, acknum = -1, checksum = 21842, DDDDDDDDDDDDDDDDDDDD
+发送方发送报文: seqnum = 5, acknum = -1, checksum = 19271, EEEEEEEEEEEEEEEEEEEE
+发送方发送报文: seqnum = 6, acknum = -1, checksum = 16700, FFFFFFFFFFFFFFFFFFFF
+接收方正确收到报文: seqnum = 2, acknum = -1, checksum = 26984, BBBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+接收方向发送方发送确认报文: seqnum = -1, acknum = 3, checksum = 12848, ....................
+接收方正确收到报文: seqnum = 3, acknum = -1, checksum = 24413, CCCCCCCCCCCCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+接收方向发送方发送确认报文: seqnum = -1, acknum = 4, checksum = 12847, ....................
+发送方定时器超时，重新发送报文段: seqnum = 2, acknum = -1, checksum = 26984, BBBBBBBBBBBBBBBBBBBB
+receive_ACK number：4
+base number： 2
+接收到ACK报文: seqnum = -1, acknum = 4, checksum = 12847, ....................
+The current windows's 0 number is 4
+The current windows's 1 number is 5
+The current windows's 2 number is 6
+接收方正确收到报文: seqnum = 4, acknum = -1, checksum = 21842, DDDDDDDDDDDDDDDDDDDD
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+接收方向发送方发送确认报文: seqnum = -1, acknum = 5, checksum = 12846, ....................
+接收方正确收到报文: seqnum = 5, acknum = -1, checksum = 19271, EEEEEEEEEEEEEEEEEEEE
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+接收方向发送方发送确认报文: seqnum = -1, acknum = 6, checksum = 12845, ....................
+receive_ACK number：6
+base number： 4
+接收到ACK报文: seqnum = -1, acknum = 6, checksum = 12845, ....................
+The current windows's 0 number is 6
+接收方正确收到报文: seqnum = 6, acknum = -1, checksum = 16700, FFFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+接收方向发送方发送确认报文: seqnum = -1, acknum = 7, checksum = 12844, ....................
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 2, acknum = -1, checksum = 26984, BBBBBBBBBBBBBBBBBBBB
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 7, checksum = 12844, ....................
+receive_ACK number：7
+base number： 6
+接收到ACK报文: seqnum = -1, acknum = 7, checksum = 12844, ....................
+发送方发送报文: seqnum = 7, acknum = -1, checksum = 14129, GGGGGGGGGGGGGGGGGGGG
+发送方发送报文: seqnum = 8, acknum = -1, checksum = 11558, HHHHHHHHHHHHHHHHHHHH
+发送方发送报文: seqnum = 9, acknum = -1, checksum = 8987, IIIIIIIIIIIIIIIIIIII
+发送方发送报文: seqnum = 10, acknum = -1, checksum = 6416, JJJJJJJJJJJJJJJJJJJJ
+发送方发送报文: seqnum = 11, acknum = -1, checksum = 3845, KKKKKKKKKKKKKKKKKKKK
+接收方正确收到报文: seqnum = 7, acknum = -1, checksum = 14129, GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+接收方向发送方发送确认报文: seqnum = -1, acknum = 8, checksum = 12843, ....................
+接收方正确收到报文: seqnum = 8, acknum = -1, checksum = 11558, HHHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+接收方向发送方发送确认报文: seqnum = -1, acknum = 9, checksum = 12842, ....................
+接收方正确收到报文: seqnum = 9, acknum = -1, checksum = 8987, IIIIIIIIIIIIIIIIIIII
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+接收方向发送方发送确认报文: seqnum = -1, acknum = 10, checksum = 12841, ....................
+receive_ACK number：8
+base number： 7
+接收到ACK报文: seqnum = -1, acknum = 8, checksum = 12843, ....................
+The current windows's 0 number is 8
+The current windows's 1 number is 9
+The current windows's 2 number is 10
+The current windows's 3 number is 11
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 11, acknum = -1, checksum = 3845, KKKKKKKKKKKKKKKKKKKK
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 10, checksum = 12841, ....................
+receive_ACK number：9
+base number： 8
+接收到ACK报文: seqnum = -1, acknum = 9, checksum = 12842, ....................
+The current windows's 0 number is 9
+The current windows's 1 number is 10
+The current windows's 2 number is 11
+receive_ACK number：10
+base number： 9
+接收到ACK报文: seqnum = -1, acknum = 10, checksum = 12841, ....................
+The current windows's 0 number is 10
+The current windows's 1 number is 11
+receive_ACK number：10
+base number： 10
+发送方定时器超时，重新发送报文段: seqnum = 10, acknum = -1, checksum = 6416, JJJJJJJJJJJJJJJJJJJJ
+接收方正确收到报文: seqnum = 10, acknum = -1, checksum = 6416, JJJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+接收方向发送方发送确认报文: seqnum = -1, acknum = 11, checksum = 12840, ....................
+receive_ACK number：11
+base number： 10
+接收到ACK报文: seqnum = -1, acknum = 11, checksum = 12840, ....................
+The current windows's 0 number is 11
+发送方定时器超时，重新发送报文段: seqnum = 11, acknum = -1, checksum = 3845, KKKKKKKKKKKKKKKKKKKK
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 11, acknum = -1, checksum = 3845, LKKKKKKKKKKKKKKKKKKK
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 11, checksum = 12840, ....................
+receive_ACK number：11
+base number： 11
+发送方定时器超时，重新发送报文段: seqnum = 11, acknum = -1, checksum = 3845, KKKKKKKKKKKKKKKKKKKK
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 11, acknum = -1, checksum = 3845, LKKKKKKKKKKKKKKKKKKK
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 11, checksum = 12840, ....................
+receive_ACK number：11
+base number： 11
+发送方定时器超时，重新发送报文段: seqnum = 11, acknum = -1, checksum = 3845, KKKKKKKKKKKKKKKKKKKK
+接收方正确收到报文: seqnum = 11, acknum = -1, checksum = 3845, KKKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+接收方向发送方发送确认报文: seqnum = -1, acknum = 12, checksum = 12839, ....................
+receive_ACK number：12
+base number： 11
+接收到ACK报文: seqnum = -1, acknum = 12, checksum = 12839, ....................
+发送方发送报文: seqnum = 12, acknum = -1, checksum = 1274, LLLLLLLLLLLLLLLLLLLL
+发送方发送报文: seqnum = 13, acknum = -1, checksum = 64238, MMMMMMMMMMMMMMMMMMMM
+发送方发送报文: seqnum = 14, acknum = -1, checksum = 61667, NNNNNNNNNNNNNNNNNNNN
+发送方发送报文: seqnum = 15, acknum = -1, checksum = 59096, OOOOOOOOOOOOOOOOOOOO
+发送方发送报文: seqnum = 16, acknum = -1, checksum = 56525, PPPPPPPPPPPPPPPPPPPP
+接收方正确收到报文: seqnum = 12, acknum = -1, checksum = 1274, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+接收方向发送方发送确认报文: seqnum = -1, acknum = 13, checksum = 12838, ....................
+接收方正确收到报文: seqnum = 13, acknum = -1, checksum = 64238, MMMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+接收方向发送方发送确认报文: seqnum = -1, acknum = 14, checksum = 12837, ....................
+receive_ACK number：13
+base number： 12
+接收到ACK报文: seqnum = -1, acknum = 13, checksum = 12838, ....................
+The current windows's 0 number is 13
+The current windows's 1 number is 14
+The current windows's 2 number is 15
+The current windows's 3 number is 16
+receive_ACK number：14
+base number： 13
+接收到ACK报文: seqnum = -1, acknum = 14, checksum = 12837, ....................
+The current windows's 0 number is 14
+The current windows's 1 number is 15
+The current windows's 2 number is 16
+接收方正确收到报文: seqnum = 14, acknum = -1, checksum = 61667, NNNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+接收方向发送方发送确认报文: seqnum = -1, acknum = 15, checksum = 12836, ....................
+接收方正确收到报文: seqnum = 15, acknum = -1, checksum = 59096, OOOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+接收方向发送方发送确认报文: seqnum = -1, acknum = 16, checksum = 12835, ....................
+receive_ACK number：15
+base number： 14
+接收到ACK报文: seqnum = -1, acknum = 15, checksum = 12836, ....................
+The current windows's 0 number is 15
+The current windows's 1 number is 16
+receive_ACK number：16
+base number： 15
+接收到ACK报文: seqnum = -1, acknum = 16, checksum = 12835, ....................
+The current windows's 0 number is 16
+发送方定时器超时，重新发送报文段: seqnum = 16, acknum = -1, checksum = 56525, PPPPPPPPPPPPPPPPPPPP
+接收方正确收到报文: seqnum = 16, acknum = -1, checksum = 56525, PPPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+接收方向发送方发送确认报文: seqnum = -1, acknum = 17, checksum = 12834, ....................
+receive_ACK number：17
+base number： 16
+接收到ACK报文: seqnum = -1, acknum = 17, checksum = 12834, ....................
+发送方发送报文: seqnum = 17, acknum = -1, checksum = 53954, QQQQQQQQQQQQQQQQQQQQ
+发送方发送报文: seqnum = 18, acknum = -1, checksum = 51383, RRRRRRRRRRRRRRRRRRRR
+发送方发送报文: seqnum = 19, acknum = -1, checksum = 48812, SSSSSSSSSSSSSSSSSSSS
+发送方发送报文: seqnum = 20, acknum = -1, checksum = 46241, TTTTTTTTTTTTTTTTTTTT
+发送方发送报文: seqnum = 21, acknum = -1, checksum = 43670, UUUUUUUUUUUUUUUUUUUU
+接收方正确收到报文: seqnum = 17, acknum = -1, checksum = 53954, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+接收方向发送方发送确认报文: seqnum = -1, acknum = 18, checksum = 12833, ....................
+receive_ACK number：18
+base number： 17
+接收到ACK报文: seqnum = -1, acknum = 18, checksum = 12833, ....................
+The current windows's 0 number is 18
+The current windows's 1 number is 19
+The current windows's 2 number is 20
+The current windows's 3 number is 21
+接收方正确收到报文: seqnum = 18, acknum = -1, checksum = 51383, RRRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+接收方向发送方发送确认报文: seqnum = -1, acknum = 19, checksum = 12832, ....................
+receive_ACK number：19
+base number： 18
+接收到ACK报文: seqnum = -1, acknum = 19, checksum = 12832, ....................
+The current windows's 0 number is 19
+The current windows's 1 number is 20
+The current windows's 2 number is 21
+接收方正确收到报文: seqnum = 19, acknum = -1, checksum = 48812, SSSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+接收方向发送方发送确认报文: seqnum = -1, acknum = 20, checksum = 12831, ....................
+receive_ACK number：20
+base number： 19
+接收到ACK报文: seqnum = -1, acknum = 20, checksum = 12831, ....................
+The current windows's 0 number is 20
+The current windows's 1 number is 21
+接收方正确收到报文: seqnum = 20, acknum = -1, checksum = 46241, TTTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+接收方向发送方发送确认报文: seqnum = -1, acknum = 21, checksum = 12830, ....................
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = -999999, acknum = -1, checksum = 43670, UUUUUUUUUUUUUUUUUUUU
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 21, checksum = 12830, ....................
+receive_ACK number：21
+base number： 20
+接收到ACK报文: seqnum = -1, acknum = 21, checksum = 12830, ....................
+The current windows's 0 number is 21
+receive_ACK number：21
+base number： 21
+发送方定时器超时，重新发送报文段: seqnum = 21, acknum = -1, checksum = 43670, UUUUUUUUUUUUUUUUUUUU
+发送方定时器超时，重新发送报文段: seqnum = 21, acknum = -1, checksum = 43670, UUUUUUUUUUUUUUUUUUUU
+接收方正确收到报文: seqnum = 21, acknum = -1, checksum = 43670, UUUUUUUUUUUUUUUUUUUU
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+接收方向发送方发送确认报文: seqnum = -1, acknum = 22, checksum = 12829, ....................
+receive_ACK number：22
+base number： 21
+接收到ACK报文: seqnum = -1, acknum = 22, checksum = 12829, ....................
+发送方发送报文: seqnum = 22, acknum = -1, checksum = 41099, VVVVVVVVVVVVVVVVVVVV
+发送方发送报文: seqnum = 23, acknum = -1, checksum = 38528, WWWWWWWWWWWWWWWWWWWW
+发送方发送报文: seqnum = 24, acknum = -1, checksum = 35957, XXXXXXXXXXXXXXXXXXXX
+接收方正确收到报文: seqnum = 22, acknum = -1, checksum = 41099, VVVVVVVVVVVVVVVVVVVV
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+接收方向发送方发送确认报文: seqnum = -1, acknum = 23, checksum = 12828, ....................
+发送方发送报文: seqnum = 25, acknum = -1, checksum = 33386, YYYYYYYYYYYYYYYYYYYY
+发送方发送报文: seqnum = 26, acknum = -1, checksum = 30815, ZZZZZZZZZZZZZZZZZZZZ
+receive_ACK number：23
+base number： 22
+接收到ACK报文: seqnum = -1, acknum = 23, checksum = 12828, ....................
+The current windows's 0 number is 23
+The current windows's 1 number is 24
+The current windows's 2 number is 25
+The current windows's 3 number is 26
+接收方正确收到报文: seqnum = 23, acknum = -1, checksum = 38528, WWWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+接收方向发送方发送确认报文: seqnum = -1, acknum = 24, checksum = 12827, ....................
+receive_ACK number：24
+base number： 23
+接收到ACK报文: seqnum = -1, acknum = 24, checksum = 12827, ....................
+The current windows's 0 number is 24
+The current windows's 1 number is 25
+The current windows's 2 number is 26
+接收方正确收到报文: seqnum = 24, acknum = -1, checksum = 35957, XXXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+接收方向发送方发送确认报文: seqnum = -1, acknum = 25, checksum = 12826, ....................
+receive_ACK number：25
+base number： 24
+接收到ACK报文: seqnum = -1, acknum = 25, checksum = 12826, ....................
+The current windows's 0 number is 25
+The current windows's 1 number is 26
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = -999999, acknum = -1, checksum = 33386, YYYYYYYYYYYYYYYYYYYY
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 25, checksum = 12826, ....................
+receive_ACK number：25
+base number： 25
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 26, acknum = -1, checksum = 30815, ZZZZZZZZZZZZZZZZZZZZ
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 25, checksum = 12826, ....................
+receive_ACK number：25
+base number： 25
+发送方定时器超时，重新发送报文段: seqnum = 25, acknum = -1, checksum = 33386, YYYYYYYYYYYYYYYYYYYY
+接收方正确收到报文: seqnum = 25, acknum = -1, checksum = 33386, YYYYYYYYYYYYYYYYYYYY
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+接收方向发送方发送确认报文: seqnum = -1, acknum = 26, checksum = 12825, ....................
+receive_ACK number：26
+base number： 25
+接收到ACK报文: seqnum = -1, acknum = 26, checksum = 12825, ....................
+The current windows's 0 number is 26
+发送方定时器超时，重新发送报文段: seqnum = 26, acknum = -1, checksum = 30815, ZZZZZZZZZZZZZZZZZZZZ
+接收方正确收到报文: seqnum = 26, acknum = -1, checksum = 30815, ZZZZZZZZZZZZZZZZZZZZ
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+接收方向发送方发送确认报文: seqnum = -1, acknum = 27, checksum = 12824, ....................
+receive_ACK number：27
+base number： 26
+接收到ACK报文: seqnum = -1, acknum = 27, checksum = 12824, ....................
+发送方发送报文: seqnum = 27, acknum = -1, checksum = 29529, AAAAAAAAAAAAAAAAAAAA
+接收方正确收到报文: seqnum = 27, acknum = -1, checksum = 29529, AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+接收方向发送方发送确认报文: seqnum = -1, acknum = 28, checksum = 12823, ....................
+发送方发送报文: seqnum = 28, acknum = -1, checksum = 26958, BBBBBBBBBBBBBBBBBBBB
+发送方发送报文: seqnum = 29, acknum = -1, checksum = 24387, CCCCCCCCCCCCCCCCCCCC
+发送方发送报文: seqnum = 30, acknum = -1, checksum = 21816, DDDDDDDDDDDDDDDDDDDD
+发送方发送报文: seqnum = 31, acknum = -1, checksum = 19245, EEEEEEEEEEEEEEEEEEEE
+接收方正确收到报文: seqnum = 28, acknum = -1, checksum = 26958, BBBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+接收方向发送方发送确认报文: seqnum = -1, acknum = 29, checksum = 12822, ....................
+接收方正确收到报文: seqnum = 29, acknum = -1, checksum = 24387, CCCCCCCCCCCCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+接收方向发送方发送确认报文: seqnum = -1, acknum = 30, checksum = 12821, ....................
+receive_ACK number：28
+base number： 27
+接收到ACK报文: seqnum = -1, acknum = 28, checksum = 12823, ....................
+The current windows's 0 number is 28
+The current windows's 1 number is 29
+The current windows's 2 number is 30
+The current windows's 3 number is 31
+receive_ACK number：29
+base number： 28
+接收到ACK报文: seqnum = -1, acknum = 29, checksum = 12822, ....................
+The current windows's 0 number is 29
+The current windows's 1 number is 30
+The current windows's 2 number is 31
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 31, acknum = -1, checksum = 19245, EEEEEEEEEEEEEEEEEEEE
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 30, checksum = 12821, ....................
+receive_ACK number：30
+base number： 29
+接收到ACK报文: seqnum = -1, acknum = 30, checksum = 12821, ....................
+The current windows's 0 number is 30
+The current windows's 1 number is 31
+receive_ACK number：30
+base number： 30
+发送方定时器超时，重新发送报文段: seqnum = 30, acknum = -1, checksum = 21816, DDDDDDDDDDDDDDDDDDDD
+接收方正确收到报文: seqnum = 30, acknum = -1, checksum = 21816, DDDDDDDDDDDDDDDDDDDD
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+接收方向发送方发送确认报文: seqnum = -1, acknum = 31, checksum = 12820, ....................
+发送方定时器超时，重新发送报文段: seqnum = 30, acknum = -1, checksum = 21816, DDDDDDDDDDDDDDDDDDDD
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 30, acknum = -1, checksum = 21816, DDDDDDDDDDDDDDDDDDDD
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 31, checksum = 12820, ....................
+receive_ACK number：31
+base number： 30
+接收到ACK报文: seqnum = -1, acknum = 31, checksum = 12820, ....................
+The current windows's 0 number is 31
+发送方定时器超时，重新发送报文段: seqnum = 31, acknum = -1, checksum = 19245, EEEEEEEEEEEEEEEEEEEE
+接收方正确收到报文: seqnum = 31, acknum = -1, checksum = 19245, EEEEEEEEEEEEEEEEEEEE
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+接收方向发送方发送确认报文: seqnum = -1, acknum = 32, checksum = 12819, ....................
+receive_ACK number：32
+base number： 31
+接收到ACK报文: seqnum = -1, acknum = 32, checksum = 12819, ....................
+发送方发送报文: seqnum = 32, acknum = -1, checksum = 16674, FFFFFFFFFFFFFFFFFFFF
+发送方发送报文: seqnum = 33, acknum = -1, checksum = 14103, GGGGGGGGGGGGGGGGGGGG
+发送方发送报文: seqnum = 34, acknum = -1, checksum = 11532, HHHHHHHHHHHHHHHHHHHH
+发送方发送报文: seqnum = 35, acknum = -1, checksum = 8961, IIIIIIIIIIIIIIIIIIII
+发送方发送报文: seqnum = 36, acknum = -1, checksum = 6390, JJJJJJJJJJJJJJJJJJJJ
+接收方正确收到报文: seqnum = 32, acknum = -1, checksum = 16674, FFFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+接收方向发送方发送确认报文: seqnum = -1, acknum = 33, checksum = 12818, ....................
+接收方正确收到报文: seqnum = 33, acknum = -1, checksum = 14103, GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+接收方向发送方发送确认报文: seqnum = -1, acknum = 34, checksum = 12817, ....................
+receive_ACK number：33
+base number： 32
+接收到ACK报文: seqnum = -1, acknum = 33, checksum = 12818, ....................
+The current windows's 0 number is 33
+The current windows's 1 number is 34
+The current windows's 2 number is 35
+The current windows's 3 number is 36
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = -999999, acknum = -1, checksum = 11532, HHHHHHHHHHHHHHHHHHHH
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 34, checksum = 12817, ....................
+receive_ACK number：34
+base number： 33
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 35, acknum = -1, checksum = 8961, IIIIIIIIIIIIIIIIIIII
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 34, checksum = 12817, ....................
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 36, acknum = -1, checksum = 6390, JJJJJJJJJJJJJJJJJJJJ
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 34, checksum = 12817, ....................
+receive_ACK number：34
+base number： 33
+receive_ACK number：34
+base number： 33
+接收到ACK报文: seqnum = -1, acknum = 34, checksum = 12817, ....................
+The current windows's 0 number is 34
+The current windows's 1 number is 35
+The current windows's 2 number is 36
+receive_ACK number：34
+base number： 34
+发送方定时器超时，重新发送报文段: seqnum = 34, acknum = -1, checksum = 11532, HHHHHHHHHHHHHHHHHHHH
+接收方正确收到报文: seqnum = 34, acknum = -1, checksum = 11532, HHHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+接收方向发送方发送确认报文: seqnum = -1, acknum = 35, checksum = 12816, ....................
+receive_ACK number：35
+base number： 34
+接收到ACK报文: seqnum = -1, acknum = 35, checksum = 12816, ....................
+The current windows's 0 number is 35
+The current windows's 1 number is 36
+发送方定时器超时，重新发送报文段: seqnum = 35, acknum = -1, checksum = 8961, IIIIIIIIIIIIIIIIIIII
+发送方定时器超时，重新发送报文段: seqnum = 35, acknum = -1, checksum = 8961, IIIIIIIIIIIIIIIIIIII
+发送方定时器超时，重新发送报文段: seqnum = 35, acknum = -1, checksum = 8961, IIIIIIIIIIIIIIIIIIII
+接收方正确收到报文: seqnum = 35, acknum = -1, checksum = 8961, IIIIIIIIIIIIIIIIIIII
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+接收方向发送方发送确认报文: seqnum = -1, acknum = 36, checksum = 12815, ....................
+receive_ACK number：36
+base number： 35
+接收到ACK报文: seqnum = -1, acknum = 36, checksum = 12815, ....................
+The current windows's 0 number is 36
+发送方定时器超时，重新发送报文段: seqnum = 36, acknum = -1, checksum = 6390, JJJJJJJJJJJJJJJJJJJJ
+接收方正确收到报文: seqnum = 36, acknum = -1, checksum = 6390, JJJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+接收方向发送方发送确认报文: seqnum = -1, acknum = 37, checksum = 12814, ....................
+receive_ACK number：37
+base number： 36
+接收到ACK报文: seqnum = -1, acknum = 37, checksum = 12814, ....................
+发送方发送报文: seqnum = 37, acknum = -1, checksum = 3819, KKKKKKKKKKKKKKKKKKKK
+发送方发送报文: seqnum = 38, acknum = -1, checksum = 1248, LLLLLLLLLLLLLLLLLLLL
+发送方发送报文: seqnum = 39, acknum = -1, checksum = 64212, MMMMMMMMMMMMMMMMMMMM
+发送方发送报文: seqnum = 40, acknum = -1, checksum = 61641, NNNNNNNNNNNNNNNNNNNN
+发送方发送报文: seqnum = 41, acknum = -1, checksum = 59070, OOOOOOOOOOOOOOOOOOOO
+接收方正确收到报文: seqnum = 37, acknum = -1, checksum = 3819, KKKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+接收方向发送方发送确认报文: seqnum = -1, acknum = 38, checksum = 12813, ....................
+接收方正确收到报文: seqnum = 38, acknum = -1, checksum = 1248, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+接收方向发送方发送确认报文: seqnum = -1, acknum = 39, checksum = 12812, ....................
+接收方正确收到报文: seqnum = 39, acknum = -1, checksum = 64212, MMMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+接收方向发送方发送确认报文: seqnum = -1, acknum = 40, checksum = 12811, ....................
+接收方正确收到报文: seqnum = 40, acknum = -1, checksum = 61641, NNNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+接收方向发送方发送确认报文: seqnum = -1, acknum = 41, checksum = 12810, ....................
+发送方定时器超时，重新发送报文段: seqnum = 37, acknum = -1, checksum = 3819, KKKKKKKKKKKKKKKKKKKK
+receive_ACK number：38
+base number： 37
+接收到ACK报文: seqnum = -1, acknum = 38, checksum = 12813, ....................
+The current windows's 0 number is 38
+The current windows's 1 number is 39
+The current windows's 2 number is 40
+The current windows's 3 number is 41
+接收方正确收到报文: seqnum = 41, acknum = -1, checksum = 59070, OOOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+接收方向发送方发送确认报文: seqnum = -1, acknum = 42, checksum = 12809, ....................
+receive_ACK number：39
+base number： 38
+接收到ACK报文: seqnum = -1, acknum = 39, checksum = 12812, ....................
+The current windows's 0 number is 39
+The current windows's 1 number is 40
+The current windows's 2 number is 41
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 37, acknum = -1, checksum = 3819, KKKKKKKKKKKKKKKKKKKK
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 42, checksum = 12809, ....................
+receive_ACK number：40
+base number： 39
+接收到ACK报文: seqnum = -1, acknum = 40, checksum = 12811, ....................
+The current windows's 0 number is 40
+The current windows's 1 number is 41
+receive_ACK number：41
+base number： 40
+接收到ACK报文: seqnum = -1, acknum = 41, checksum = 12810, ....................
+The current windows's 0 number is 41
+receive_ACK number：42
+base number： 41
+接收到ACK报文: seqnum = -1, acknum = 42, checksum = 12809, ....................
+发送方发送报文: seqnum = 42, acknum = -1, checksum = 56499, PPPPPPPPPPPPPPPPPPPP
+发送方发送报文: seqnum = 43, acknum = -1, checksum = 53928, QQQQQQQQQQQQQQQQQQQQ
+发送方发送报文: seqnum = 44, acknum = -1, checksum = 51357, RRRRRRRRRRRRRRRRRRRR
+发送方发送报文: seqnum = 45, acknum = -1, checksum = 48786, SSSSSSSSSSSSSSSSSSSS
+发送方发送报文: seqnum = 46, acknum = -1, checksum = 46215, TTTTTTTTTTTTTTTTTTTT
+接收方正确收到报文: seqnum = 42, acknum = -1, checksum = 56499, PPPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+接收方向发送方发送确认报文: seqnum = -1, acknum = 43, checksum = 12808, ....................
+receive_ACK number：43
+base number： 42
+接收到ACK报文: seqnum = -1, acknum = 43, checksum = 12808, ....................
+The current windows's 0 number is 43
+The current windows's 1 number is 44
+The current windows's 2 number is 45
+The current windows's 3 number is 46
+接收方正确收到报文: seqnum = 43, acknum = -1, checksum = 53928, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+接收方向发送方发送确认报文: seqnum = -1, acknum = 44, checksum = 12807, ....................
+接收方正确收到报文: seqnum = 44, acknum = -1, checksum = 51357, RRRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+接收方向发送方发送确认报文: seqnum = -1, acknum = 45, checksum = 12806, ....................
+receive_ACK number：44
+base number： 43
+接收方正确收到报文: seqnum = 45, acknum = -1, checksum = 48786, SSSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+接收方向发送方发送确认报文: seqnum = -1, acknum = 46, checksum = 12805, ....................
+receive_ACK number：45
+base number： 43
+接收到ACK报文: seqnum = -1, acknum = 45, checksum = 12806, ....................
+The current windows's 0 number is 45
+The current windows's 1 number is 46
+接收方正确收到报文: seqnum = 46, acknum = -1, checksum = 46215, TTTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+接收方向发送方发送确认报文: seqnum = -1, acknum = 47, checksum = 12804, ....................
+receive_ACK number：47
+base number： 45
+接收到ACK报文: seqnum = -1, acknum = 47, checksum = 12804, ....................
+发送方发送报文: seqnum = 47, acknum = -1, checksum = 43644, UUUUUUUUUUUUUUUUUUUU
+发送方发送报文: seqnum = 48, acknum = -1, checksum = 41073, VVVVVVVVVVVVVVVVVVVV
+发送方发送报文: seqnum = 49, acknum = -1, checksum = 38502, WWWWWWWWWWWWWWWWWWWW
+发送方发送报文: seqnum = 50, acknum = -1, checksum = 35931, XXXXXXXXXXXXXXXXXXXX
+发送方发送报文: seqnum = 51, acknum = -1, checksum = 33360, YYYYYYYYYYYYYYYYYYYY
+接收方正确收到报文: seqnum = 47, acknum = -1, checksum = 43644, UUUUUUUUUUUUUUUUUUUU
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+接收方向发送方发送确认报文: seqnum = -1, acknum = 48, checksum = 12803, ....................
+接收方正确收到报文: seqnum = 48, acknum = -1, checksum = 41073, VVVVVVVVVVVVVVVVVVVV
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+接收方向发送方发送确认报文: seqnum = -1, acknum = 49, checksum = 12802, ....................
+receive_ACK number：48
+base number： 47
+接收到ACK报文: seqnum = -1, acknum = 48, checksum = 12803, ....................
+The current windows's 0 number is 48
+The current windows's 1 number is 49
+The current windows's 2 number is 50
+The current windows's 3 number is 51
+receive_ACK number：49
+base number： 48
+接收到ACK报文: seqnum = -1, acknum = 49, checksum = 12802, ....................
+The current windows's 0 number is 49
+The current windows's 1 number is 50
+The current windows's 2 number is 51
+接收方正确收到报文: seqnum = 49, acknum = -1, checksum = 38502, WWWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+接收方向发送方发送确认报文: seqnum = -1, acknum = 50, checksum = 12801, ....................
+receive_ACK number：50
+base number： 49
+接收到ACK报文: seqnum = -1, acknum = 50, checksum = 12801, ....................
+The current windows's 0 number is 50
+The current windows's 1 number is 51
+接收方正确收到报文: seqnum = 50, acknum = -1, checksum = 35931, XXXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+接收方向发送方发送确认报文: seqnum = -1, acknum = 51, checksum = 12800, ....................
+receive_ACK number：51
+base number： 50
+接收到ACK报文: seqnum = -1, acknum = 51, checksum = 12800, ....................
+The current windows's 0 number is 51
+接收方正确收到报文: seqnum = 51, acknum = -1, checksum = 33360, YYYYYYYYYYYYYYYYYYYY
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+接收方向发送方发送确认报文: seqnum = -1, acknum = 52, checksum = 12799, ....................
+receive_ACK number：52
+base number： 51
+接收到ACK报文: seqnum = -1, acknum = 52, checksum = 12799, ....................
+发送方发送报文: seqnum = 52, acknum = -1, checksum = 30789, ZZZZZZZZZZZZZZZZZZZZ
+发送方发送报文: seqnum = 53, acknum = -1, checksum = 29503, AAAAAAAAAAAAAAAAAAAA
+发送方发送报文: seqnum = 54, acknum = -1, checksum = 26932, BBBBBBBBBBBBBBBBBBBB
+发送方发送报文: seqnum = 55, acknum = -1, checksum = 24361, CCCCCCCCCCCCCCCCCCCC
+发送方发送报文: seqnum = 56, acknum = -1, checksum = 21790, DDDDDDDDDDDDDDDDDDDD
+接收方正确收到报文: seqnum = 52, acknum = -1, checksum = 30789, ZZZZZZZZZZZZZZZZZZZZ
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+接收方向发送方发送确认报文: seqnum = -1, acknum = 53, checksum = 12798, ....................
+接收方正确收到报文: seqnum = 53, acknum = -1, checksum = 29503, AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+接收方向发送方发送确认报文: seqnum = -1, acknum = 54, checksum = 12797, ....................
+接收方正确收到报文: seqnum = 54, acknum = -1, checksum = 26932, BBBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+接收方向发送方发送确认报文: seqnum = -1, acknum = 55, checksum = 12796, ....................
+receive_ACK number：53
+base number： 52
+接收到ACK报文: seqnum = -1, acknum = 53, checksum = 12798, ....................
+The current windows's 0 number is 53
+The current windows's 1 number is 54
+The current windows's 2 number is 55
+The current windows's 3 number is 56
+接收方正确收到报文: seqnum = 55, acknum = -1, checksum = 24361, CCCCCCCCCCCCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+接收方向发送方发送确认报文: seqnum = -1, acknum = 56, checksum = 12795, ....................
+receive_ACK number：54
+base number： 53
+接收到ACK报文: seqnum = -1, acknum = 54, checksum = 12797, ....................
+The current windows's 0 number is 54
+The current windows's 1 number is 55
+The current windows's 2 number is 56
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 56, acknum = -1, checksum = 21790, EDDDDDDDDDDDDDDDDDDD
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 56, checksum = 12795, ....................
+receive_ACK number：55
+base number： 54
+接收到ACK报文: seqnum = -1, acknum = 55, checksum = 12796, ....................
+The current windows's 0 number is 55
+The current windows's 1 number is 56
+receive_ACK number：56
+base number： 55
+接收到ACK报文: seqnum = -1, acknum = 56, checksum = 12795, ....................
+The current windows's 0 number is 56
+receive_ACK number：56
+base number： 56
+发送方定时器超时，重新发送报文段: seqnum = 56, acknum = -1, checksum = 21790, DDDDDDDDDDDDDDDDDDDD
+接收方正确收到报文: seqnum = 56, acknum = -1, checksum = 21790, DDDDDDDDDDDDDDDDDDDD
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+接收方向发送方发送确认报文: seqnum = -1, acknum = 57, checksum = 12794, ....................
+receive_ACK number：57
+base number： 56
+接收到ACK报文: seqnum = -1, acknum = 57, checksum = 12794, ....................
+发送方发送报文: seqnum = 57, acknum = -1, checksum = 19219, EEEEEEEEEEEEEEEEEEEE
+发送方发送报文: seqnum = 58, acknum = -1, checksum = 16648, FFFFFFFFFFFFFFFFFFFF
+发送方发送报文: seqnum = 59, acknum = -1, checksum = 14077, GGGGGGGGGGGGGGGGGGGG
+发送方发送报文: seqnum = 60, acknum = -1, checksum = 11506, HHHHHHHHHHHHHHHHHHHH
+发送方发送报文: seqnum = 61, acknum = -1, checksum = 8935, IIIIIIIIIIIIIIIIIIII
+接收方正确收到报文: seqnum = 57, acknum = -1, checksum = 19219, EEEEEEEEEEEEEEEEEEEE
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+接收方向发送方发送确认报文: seqnum = -1, acknum = 58, checksum = 12793, ....................
+receive_ACK number：58
+base number： 57
+接收到ACK报文: seqnum = -1, acknum = 58, checksum = 12793, ....................
+The current windows's 0 number is 58
+The current windows's 1 number is 59
+The current windows's 2 number is 60
+The current windows's 3 number is 61
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 59, acknum = -1, checksum = 14077, GGGGGGGGGGGGGGGGGGGG
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 58, checksum = 12793, ....................
+receive_ACK number：58
+base number： 58
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 60, acknum = -1, checksum = 11506, HHHHHHHHHHHHHHHHHHHH
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 58, checksum = 12793, ....................
+receive_ACK number：58
+base number： 58
+发送方定时器超时，重新发送报文段: seqnum = 58, acknum = -1, checksum = 16648, FFFFFFFFFFFFFFFFFFFF
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 58, acknum = -1, checksum = 16648, GFFFFFFFFFFFFFFFFFFF
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 58, checksum = 12793, ....................
+receive_ACK number：58
+base number： 58
+
+冗余ACK*4，快速重传当前窗口第一个报文: seqnum = 58, acknum = -1, checksum = 16648, FFFFFFFFFFFFFFFFFFFF
+
+冗余ACK58 *4
+接收方正确收到报文: seqnum = 58, acknum = -1, checksum = 16648, FFFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+接收方向发送方发送确认报文: seqnum = -1, acknum = 59, checksum = 12792, ....................
+receive_ACK number：59
+base number： 58
+接收到ACK报文: seqnum = -1, acknum = 59, checksum = 12792, ....................
+The current windows's 0 number is 59
+The current windows's 1 number is 60
+The current windows's 2 number is 61
+发送方定时器超时，重新发送报文段: seqnum = 59, acknum = -1, checksum = 14077, GGGGGGGGGGGGGGGGGGGG
+接收方正确收到报文: seqnum = 59, acknum = -1, checksum = 14077, GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+接收方向发送方发送确认报文: seqnum = -1, acknum = 60, checksum = 12791, ....................
+receive_ACK number：60
+base number： 59
+接收到ACK报文: seqnum = -1, acknum = 60, checksum = 12791, ....................
+The current windows's 0 number is 60
+The current windows's 1 number is 61
+发送方定时器超时，重新发送报文段: seqnum = 60, acknum = -1, checksum = 11506, HHHHHHHHHHHHHHHHHHHH
+接收方正确收到报文: seqnum = 60, acknum = -1, checksum = 11506, HHHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+接收方向发送方发送确认报文: seqnum = -1, acknum = 61, checksum = 12790, ....................
+receive_ACK number：61
+base number： 60
+接收到ACK报文: seqnum = -1, acknum = 61, checksum = 12790, ....................
+The current windows's 0 number is 61
+发送方定时器超时，重新发送报文段: seqnum = 61, acknum = -1, checksum = 8935, IIIIIIIIIIIIIIIIIIII
+接收方正确收到报文: seqnum = 61, acknum = -1, checksum = 8935, IIIIIIIIIIIIIIIIIIII
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+接收方向发送方发送确认报文: seqnum = -1, acknum = 62, checksum = 12789, ....................
+receive_ACK number：62
+base number： 61
+接收到ACK报文: seqnum = -1, acknum = 62, checksum = 12789, ....................
+发送方发送报文: seqnum = 62, acknum = -1, checksum = 6364, JJJJJJJJJJJJJJJJJJJJ
+发送方发送报文: seqnum = 63, acknum = -1, checksum = 3793, KKKKKKKKKKKKKKKKKKKK
+发送方发送报文: seqnum = 64, acknum = -1, checksum = 1222, LLLLLLLLLLLLLLLLLLLL
+发送方发送报文: seqnum = 65, acknum = -1, checksum = 64186, MMMMMMMMMMMMMMMMMMMM
+发送方发送报文: seqnum = 66, acknum = -1, checksum = 61615, NNNNNNNNNNNNNNNNNNNN
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = -999999, acknum = -1, checksum = 3793, KKKKKKKKKKKKKKKKKKKK
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 62, checksum = 12789, ....................
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 64, acknum = -1, checksum = 1222, LLLLLLLLLLLLLLLLLLLL
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 62, checksum = 12789, ....................
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 65, acknum = -1, checksum = 64186, MMMMMMMMMMMMMMMMMMMM
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 62, checksum = 12789, ....................
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 66, acknum = -1, checksum = 61615, NNNNNNNNNNNNNNNNNNNN
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 62, checksum = 12789, ....................
+发送方定时器超时，重新发送报文段: seqnum = 62, acknum = -1, checksum = 6364, JJJJJJJJJJJJJJJJJJJJ
+receive_ACK number：62
+base number： 62
+接收方正确收到报文: seqnum = 62, acknum = -1, checksum = 6364, JJJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+接收方向发送方发送确认报文: seqnum = -1, acknum = 63, checksum = 12788, ....................
+receive_ACK number：62
+base number： 62
+receive_ACK number：62
+base number： 62
+
+冗余ACK*4，快速重传当前窗口第一个报文: seqnum = 62, acknum = -1, checksum = 6364, JJJJJJJJJJJJJJJJJJJJ
+
+冗余ACK62 *4
+receive_ACK number：63
+base number： 62
+接收到ACK报文: seqnum = -1, acknum = 63, checksum = 12788, ....................
+The current windows's 0 number is 63
+The current windows's 1 number is 64
+The current windows's 2 number is 65
+The current windows's 3 number is 66
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 62, acknum = -1, checksum = 6364, JJJJJJJJJJJJJJJJJJJJ
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 63, checksum = 12788, ....................
+receive_ACK number：63
+base number： 63
+发送方定时器超时，重新发送报文段: seqnum = 63, acknum = -1, checksum = 3793, KKKKKKKKKKKKKKKKKKKK
+接收方正确收到报文: seqnum = 63, acknum = -1, checksum = 3793, KKKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+接收方向发送方发送确认报文: seqnum = -1, acknum = 64, checksum = 12787, ....................
+receive_ACK number：64
+base number： 63
+发送方定时器超时，重新发送报文段: seqnum = 63, acknum = -1, checksum = 3793, KKKKKKKKKKKKKKKKKKKK
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 63, acknum = -1, checksum = 3793, KKKKKKKKKKKKKKKKKKKK
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 64, checksum = 12787, ....................
+发送方定时器超时，重新发送报文段: seqnum = 63, acknum = -1, checksum = 3793, KKKKKKKKKKKKKKKKKKKK
+发送方定时器超时，重新发送报文段: seqnum = 63, acknum = -1, checksum = 3793, KKKKKKKKKKKKKKKKKKKK
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 63, acknum = -1, checksum = 3793, KKKKKKKKKKKKKKKKKKKK
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 64, checksum = 12787, ....................
+receive_ACK number：64
+base number： 63
+接收到ACK报文: seqnum = -1, acknum = 64, checksum = 12787, ....................
+The current windows's 0 number is 64
+The current windows's 1 number is 65
+The current windows's 2 number is 66
+发送方定时器超时，重新发送报文段: seqnum = 64, acknum = -1, checksum = 1222, LLLLLLLLLLLLLLLLLLLL
+接收方正确收到报文: seqnum = 64, acknum = -1, checksum = 1222, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+接收方向发送方发送确认报文: seqnum = -1, acknum = 65, checksum = 12786, ....................
+receive_ACK number：65
+base number： 64
+接收到ACK报文: seqnum = -1, acknum = 65, checksum = 12786, ....................
+The current windows's 0 number is 65
+The current windows's 1 number is 66
+发送方定时器超时，重新发送报文段: seqnum = 65, acknum = -1, checksum = 64186, MMMMMMMMMMMMMMMMMMMM
+接收方正确收到报文: seqnum = 65, acknum = -1, checksum = 64186, MMMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+接收方向发送方发送确认报文: seqnum = -1, acknum = 66, checksum = 12785, ....................
+receive_ACK number：66
+base number： 65
+接收到ACK报文: seqnum = -1, acknum = 66, checksum = 12785, ....................
+The current windows's 0 number is 66
+发送方定时器超时，重新发送报文段: seqnum = 66, acknum = -1, checksum = 61615, NNNNNNNNNNNNNNNNNNNN
+发送方定时器超时，重新发送报文段: seqnum = 66, acknum = -1, checksum = 61615, NNNNNNNNNNNNNNNNNNNN
+接收方正确收到报文: seqnum = 66, acknum = -1, checksum = 61615, NNNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+接收方向发送方发送确认报文: seqnum = -1, acknum = 67, checksum = 12784, ....................
+receive_ACK number：67
+base number： 66
+接收到ACK报文: seqnum = -1, acknum = 67, checksum = 12784, ....................
+发送方发送报文: seqnum = 67, acknum = -1, checksum = 59044, OOOOOOOOOOOOOOOOOOOO
+发送方发送报文: seqnum = 68, acknum = -1, checksum = 56473, PPPPPPPPPPPPPPPPPPPP
+发送方发送报文: seqnum = 69, acknum = -1, checksum = 53902, QQQQQQQQQQQQQQQQQQQQ
+发送方发送报文: seqnum = 70, acknum = -1, checksum = 51331, RRRRRRRRRRRRRRRRRRRR
+发送方发送报文: seqnum = 71, acknum = -1, checksum = 48760, SSSSSSSSSSSSSSSSSSSS
+接收方正确收到报文: seqnum = 67, acknum = -1, checksum = 59044, OOOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+接收方向发送方发送确认报文: seqnum = -1, acknum = 68, checksum = 12783, ....................
+接收方正确收到报文: seqnum = 68, acknum = -1, checksum = 56473, PPPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+接收方向发送方发送确认报文: seqnum = -1, acknum = 69, checksum = 12782, ....................
+发送方定时器超时，重新发送报文段: seqnum = 67, acknum = -1, checksum = 59044, OOOOOOOOOOOOOOOOOOOO
+接收方正确收到报文: seqnum = 69, acknum = -1, checksum = 53902, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+接收方向发送方发送确认报文: seqnum = -1, acknum = 70, checksum = 12781, ....................
+receive_ACK number：69
+base number： 67
+接收到ACK报文: seqnum = -1, acknum = 69, checksum = 12782, ....................
+The current windows's 0 number is 69
+The current windows's 1 number is 70
+The current windows's 2 number is 71
+接收方正确收到报文: seqnum = 70, acknum = -1, checksum = 51331, RRRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+接收方向发送方发送确认报文: seqnum = -1, acknum = 71, checksum = 12780, ....................
+接收方正确收到报文: seqnum = 71, acknum = -1, checksum = 48760, SSSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+接收方向发送方发送确认报文: seqnum = -1, acknum = 72, checksum = 12779, ....................
+receive_ACK number：70
+base number： 69
+接收到ACK报文: seqnum = -1, acknum = 70, checksum = 12781, ....................
+The current windows's 0 number is 70
+The current windows's 1 number is 71
+receive_ACK number：71
+base number： 70
+接收到ACK报文: seqnum = -1, acknum = 71, checksum = 12780, ....................
+The current windows's 0 number is 71
+receive_ACK number：72
+base number： 71
+接收到ACK报文: seqnum = -1, acknum = 72, checksum = 12779, ....................
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 67, acknum = -1, checksum = 59044, OOOOOOOOOOOOOOOOOOOO
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 72, checksum = 12779, ....................
+发送方发送报文: seqnum = 72, acknum = -1, checksum = 46189, TTTTTTTTTTTTTTTTTTTT
+发送方发送报文: seqnum = 73, acknum = -1, checksum = 43618, UUUUUUUUUUUUUUUUUUUU
+发送方发送报文: seqnum = 74, acknum = -1, checksum = 41047, VVVVVVVVVVVVVVVVVVVV
+发送方发送报文: seqnum = 75, acknum = -1, checksum = 38476, WWWWWWWWWWWWWWWWWWWW
+发送方发送报文: seqnum = 76, acknum = -1, checksum = 35905, XXXXXXXXXXXXXXXXXXXX
+接收方正确收到报文: seqnum = 72, acknum = -1, checksum = 46189, TTTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+接收方向发送方发送确认报文: seqnum = -1, acknum = 73, checksum = 12778, ....................
+接收方正确收到报文: seqnum = 73, acknum = -1, checksum = 43618, UUUUUUUUUUUUUUUUUUUU
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+接收方向发送方发送确认报文: seqnum = -1, acknum = 74, checksum = 12777, ....................
+receive_ACK number：74
+base number： 72
+接收到ACK报文: seqnum = -1, acknum = 74, checksum = 12777, ....................
+The current windows's 0 number is 74
+The current windows's 1 number is 75
+The current windows's 2 number is 76
+接收方正确收到报文: seqnum = 74, acknum = -1, checksum = 41047, VVVVVVVVVVVVVVVVVVVV
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+接收方向发送方发送确认报文: seqnum = -1, acknum = 75, checksum = 12776, ....................
+接收方正确收到报文: seqnum = 75, acknum = -1, checksum = 38476, WWWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+接收方向发送方发送确认报文: seqnum = -1, acknum = 76, checksum = 12775, ....................
+receive_ACK number：75
+base number： 74
+接收到ACK报文: seqnum = -1, acknum = 75, checksum = 12776, ....................
+The current windows's 0 number is 75
+The current windows's 1 number is 76
+receive_ACK number：76
+base number： 75
+接收方正确收到报文: seqnum = 76, acknum = -1, checksum = 35905, XXXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+接收方向发送方发送确认报文: seqnum = -1, acknum = 77, checksum = 12774, ....................
+发送方定时器超时，重新发送报文段: seqnum = 75, acknum = -1, checksum = 38476, WWWWWWWWWWWWWWWWWWWW
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 75, acknum = -1, checksum = 38476, WWWWWWWWWWWWWWWWWWWW
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 77, checksum = 12774, ....................
+发送方定时器超时，重新发送报文段: seqnum = 75, acknum = -1, checksum = 38476, WWWWWWWWWWWWWWWWWWWW
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 75, acknum = -1, checksum = 38476, WWWWWWWWWWWWWWWWWWWW
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 77, checksum = 12774, ....................
+receive_ACK number：77
+base number： 75
+接收到ACK报文: seqnum = -1, acknum = 77, checksum = 12774, ....................
+发送方发送报文: seqnum = 77, acknum = -1, checksum = 33334, YYYYYYYYYYYYYYYYYYYY
+发送方发送报文: seqnum = 78, acknum = -1, checksum = 30763, ZZZZZZZZZZZZZZZZZZZZ
+发送方发送报文: seqnum = 79, acknum = -1, checksum = 29477, AAAAAAAAAAAAAAAAAAAA
+发送方发送报文: seqnum = 80, acknum = -1, checksum = 26906, BBBBBBBBBBBBBBBBBBBB
+发送方发送报文: seqnum = 81, acknum = -1, checksum = 24335, CCCCCCCCCCCCCCCCCCCC
+接收方正确收到报文: seqnum = 77, acknum = -1, checksum = 33334, YYYYYYYYYYYYYYYYYYYY
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+接收方向发送方发送确认报文: seqnum = -1, acknum = 78, checksum = 12773, ....................
+接收方正确收到报文: seqnum = 78, acknum = -1, checksum = 30763, ZZZZZZZZZZZZZZZZZZZZ
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+接收方向发送方发送确认报文: seqnum = -1, acknum = 79, checksum = 12772, ....................
+接收方正确收到报文: seqnum = 79, acknum = -1, checksum = 29477, AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+接收方向发送方发送确认报文: seqnum = -1, acknum = 80, checksum = 12771, ....................
+receive_ACK number：78
+base number： 77
+接收到ACK报文: seqnum = -1, acknum = 78, checksum = 12773, ....................
+The current windows's 0 number is 78
+The current windows's 1 number is 79
+The current windows's 2 number is 80
+The current windows's 3 number is 81
+接收方正确收到报文: seqnum = 80, acknum = -1, checksum = 26906, BBBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+接收方向发送方发送确认报文: seqnum = -1, acknum = 81, checksum = 12770, ....................
+接收方正确收到报文: seqnum = 81, acknum = -1, checksum = 24335, CCCCCCCCCCCCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+接收方向发送方发送确认报文: seqnum = -1, acknum = 82, checksum = 12769, ....................
+receive_ACK number：79
+base number： 78
+receive_ACK number：80
+base number： 78
+发送方定时器超时，重新发送报文段: seqnum = 78, acknum = -1, checksum = 30763, ZZZZZZZZZZZZZZZZZZZZ
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 78, acknum = -1, checksum = 30763, ZZZZZZZZZZZZZZZZZZZZ
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 82, checksum = 12769, ....................
+receive_ACK number：81
+base number： 78
+接收到ACK报文: seqnum = -1, acknum = 81, checksum = 12770, ....................
+The current windows's 0 number is 81
+receive_ACK number：82
+base number： 81
+接收到ACK报文: seqnum = -1, acknum = 82, checksum = 12769, ....................
+发送方发送报文: seqnum = 82, acknum = -1, checksum = 21764, DDDDDDDDDDDDDDDDDDDD
+发送方发送报文: seqnum = 83, acknum = -1, checksum = 19193, EEEEEEEEEEEEEEEEEEEE
+发送方发送报文: seqnum = 84, acknum = -1, checksum = 16622, FFFFFFFFFFFFFFFFFFFF
+发送方发送报文: seqnum = 85, acknum = -1, checksum = 14051, GGGGGGGGGGGGGGGGGGGG
+发送方发送报文: seqnum = 86, acknum = -1, checksum = 11480, HHHHHHHHHHHHHHHHHHHH
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 83, acknum = -1, checksum = 19193, EEEEEEEEEEEEEEEEEEEE
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 82, checksum = 12769, ....................
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 85, acknum = -999999, checksum = 14051, GGGGGGGGGGGGGGGGGGGG
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 82, checksum = 12769, ....................
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 86, acknum = -1, checksum = 11480, HHHHHHHHHHHHHHHHHHHH
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 82, checksum = 12769, ....................
+receive_ACK number：82
+base number： 82
+receive_ACK number：82
+base number： 82
+发送方定时器超时，重新发送报文段: seqnum = 82, acknum = -1, checksum = 21764, DDDDDDDDDDDDDDDDDDDD
+receive_ACK number：82
+base number： 82
+
+冗余ACK*4，快速重传当前窗口第一个报文: seqnum = 82, acknum = -1, checksum = 21764, DDDDDDDDDDDDDDDDDDDD
+
+冗余ACK82 *4
+接收方正确收到报文: seqnum = 82, acknum = -1, checksum = 21764, DDDDDDDDDDDDDDDDDDDD
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+接收方向发送方发送确认报文: seqnum = -1, acknum = 83, checksum = 12768, ....................
+receive_ACK number：83
+base number： 82
+接收到ACK报文: seqnum = -1, acknum = 83, checksum = 12768, ....................
+The current windows's 0 number is 83
+The current windows's 1 number is 84
+The current windows's 2 number is 85
+The current windows's 3 number is 86
+发送方定时器超时，重新发送报文段: seqnum = 83, acknum = -1, checksum = 19193, EEEEEEEEEEEEEEEEEEEE
+发送方定时器超时，重新发送报文段: seqnum = 83, acknum = -1, checksum = 19193, EEEEEEEEEEEEEEEEEEEE
+接收方正确收到报文: seqnum = 83, acknum = -1, checksum = 19193, EEEEEEEEEEEEEEEEEEEE
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+接收方向发送方发送确认报文: seqnum = -1, acknum = 84, checksum = 12767, ....................
+receive_ACK number：84
+base number： 83
+接收到ACK报文: seqnum = -1, acknum = 84, checksum = 12767, ....................
+The current windows's 0 number is 84
+The current windows's 1 number is 85
+The current windows's 2 number is 86
+发送方定时器超时，重新发送报文段: seqnum = 84, acknum = -1, checksum = 16622, FFFFFFFFFFFFFFFFFFFF
+接收方正确收到报文: seqnum = 84, acknum = -1, checksum = 16622, FFFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+接收方向发送方发送确认报文: seqnum = -1, acknum = 85, checksum = 12766, ....................
+receive_ACK number：85
+base number： 84
+接收到ACK报文: seqnum = -1, acknum = 85, checksum = 12766, ....................
+The current windows's 0 number is 85
+The current windows's 1 number is 86
+发送方定时器超时，重新发送报文段: seqnum = 85, acknum = -1, checksum = 14051, GGGGGGGGGGGGGGGGGGGG
+接收方正确收到报文: seqnum = 85, acknum = -1, checksum = 14051, GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+接收方向发送方发送确认报文: seqnum = -1, acknum = 86, checksum = 12765, ....................
+receive_ACK number：86
+base number： 85
+接收到ACK报文: seqnum = -1, acknum = 86, checksum = 12765, ....................
+The current windows's 0 number is 86
+发送方定时器超时，重新发送报文段: seqnum = 86, acknum = -1, checksum = 11480, HHHHHHHHHHHHHHHHHHHH
+接收方正确收到报文: seqnum = 86, acknum = -1, checksum = 11480, HHHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+接收方向发送方发送确认报文: seqnum = -1, acknum = 87, checksum = 12764, ....................
+receive_ACK number：87
+base number： 86
+接收到ACK报文: seqnum = -1, acknum = 87, checksum = 12764, ....................
+发送方发送报文: seqnum = 87, acknum = -1, checksum = 8909, IIIIIIIIIIIIIIIIIIII
+发送方发送报文: seqnum = 88, acknum = -1, checksum = 6338, JJJJJJJJJJJJJJJJJJJJ
+发送方发送报文: seqnum = 89, acknum = -1, checksum = 3767, KKKKKKKKKKKKKKKKKKKK
+发送方发送报文: seqnum = 90, acknum = -1, checksum = 1196, LLLLLLLLLLLLLLLLLLLL
+发送方发送报文: seqnum = 91, acknum = -1, checksum = 64160, MMMMMMMMMMMMMMMMMMMM
+接收方正确收到报文: seqnum = 87, acknum = -1, checksum = 8909, IIIIIIIIIIIIIIIIIIII
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+接收方向发送方发送确认报文: seqnum = -1, acknum = 88, checksum = 12763, ....................
+接收方正确收到报文: seqnum = 88, acknum = -1, checksum = 6338, JJJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+接收方向发送方发送确认报文: seqnum = -1, acknum = 89, checksum = 12762, ....................
+receive_ACK number：88
+base number： 87
+接收到ACK报文: seqnum = -1, acknum = 88, checksum = 12763, ....................
+The current windows's 0 number is 88
+The current windows's 1 number is 89
+The current windows's 2 number is 90
+The current windows's 3 number is 91
+接收方正确收到报文: seqnum = 89, acknum = -1, checksum = 3767, KKKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+接收方向发送方发送确认报文: seqnum = -1, acknum = 90, checksum = 12761, ....................
+接收方正确收到报文: seqnum = 90, acknum = -1, checksum = 1196, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+接收方向发送方发送确认报文: seqnum = -1, acknum = 91, checksum = 12760, ....................
+receive_ACK number：89
+base number： 88
+接收到ACK报文: seqnum = -1, acknum = 89, checksum = 12762, ....................
+The current windows's 0 number is 89
+The current windows's 1 number is 90
+The current windows's 2 number is 91
+接收方正确收到报文: seqnum = 91, acknum = -1, checksum = 64160, MMMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+接收方向发送方发送确认报文: seqnum = -1, acknum = 92, checksum = 12759, ....................
+receive_ACK number：90
+base number： 89
+接收到ACK报文: seqnum = -1, acknum = 90, checksum = 12761, ....................
+The current windows's 0 number is 90
+The current windows's 1 number is 91
+receive_ACK number：91
+base number： 90
+接收到ACK报文: seqnum = -1, acknum = 91, checksum = 12760, ....................
+The current windows's 0 number is 91
+receive_ACK number：92
+base number： 91
+接收到ACK报文: seqnum = -1, acknum = 92, checksum = 12759, ....................
+发送方发送报文: seqnum = 92, acknum = -1, checksum = 61589, NNNNNNNNNNNNNNNNNNNN
+发送方发送报文: seqnum = 93, acknum = -1, checksum = 59018, OOOOOOOOOOOOOOOOOOOO
+发送方发送报文: seqnum = 94, acknum = -1, checksum = 56447, PPPPPPPPPPPPPPPPPPPP
+发送方发送报文: seqnum = 95, acknum = -1, checksum = 53876, QQQQQQQQQQQQQQQQQQQQ
+发送方发送报文: seqnum = 96, acknum = -1, checksum = 51305, RRRRRRRRRRRRRRRRRRRR
+接收方正确收到报文: seqnum = 92, acknum = -1, checksum = 61589, NNNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+接收方向发送方发送确认报文: seqnum = -1, acknum = 93, checksum = 12758, ....................
+receive_ACK number：93
+base number： 92
+接收到ACK报文: seqnum = -1, acknum = 93, checksum = 12758, ....................
+The current windows's 0 number is 93
+The current windows's 1 number is 94
+The current windows's 2 number is 95
+The current windows's 3 number is 96
+接收方正确收到报文: seqnum = 93, acknum = -1, checksum = 59018, OOOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+接收方向发送方发送确认报文: seqnum = -1, acknum = 94, checksum = 12757, ....................
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 95, acknum = -1, checksum = 53876, QQQQQQQQQQQQQQQQQQQQ
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 94, checksum = 12757, ....................
+receive_ACK number：94
+base number： 93
+接收到ACK报文: seqnum = -1, acknum = 94, checksum = 12757, ....................
+The current windows's 0 number is 94
+The current windows's 1 number is 95
+The current windows's 2 number is 96
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 96, acknum = -1, checksum = 51305, RRRRRRRRRRRRRRRRRRRR
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 94, checksum = 12757, ....................
+receive_ACK number：94
+base number： 94
+发送方定时器超时，重新发送报文段: seqnum = 94, acknum = -1, checksum = 56447, PPPPPPPPPPPPPPPPPPPP
+接收方正确收到报文: seqnum = 94, acknum = -1, checksum = 56447, PPPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+接收方向发送方发送确认报文: seqnum = -1, acknum = 95, checksum = 12756, ....................
+receive_ACK number：95
+base number： 94
+接收到ACK报文: seqnum = -1, acknum = 95, checksum = 12756, ....................
+The current windows's 0 number is 95
+The current windows's 1 number is 96
+发送方定时器超时，重新发送报文段: seqnum = 95, acknum = -1, checksum = 53876, QQQQQQQQQQQQQQQQQQQQ
+接收方正确收到报文: seqnum = 95, acknum = -1, checksum = 53876, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+接收方向发送方发送确认报文: seqnum = -1, acknum = 96, checksum = 12755, ....................
+receive_ACK number：96
+base number： 95
+接收到ACK报文: seqnum = -1, acknum = 96, checksum = 12755, ....................
+The current windows's 0 number is 96
+发送方定时器超时，重新发送报文段: seqnum = 96, acknum = -1, checksum = 51305, RRRRRRRRRRRRRRRRRRRR
+接收方正确收到报文: seqnum = 96, acknum = -1, checksum = 51305, RRRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+接收方向发送方发送确认报文: seqnum = -1, acknum = 97, checksum = 12754, ....................
+receive_ACK number：97
+base number： 96
+发送方定时器超时，重新发送报文段: seqnum = 96, acknum = -1, checksum = 51305, RRRRRRRRRRRRRRRRRRRR
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 96, acknum = -1, checksum = 51305, RRRRRRRRRRRRRRRRRRRR
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 97, checksum = 12754, ....................
+receive_ACK number：97
+base number： 96
+接收到ACK报文: seqnum = -1, acknum = 97, checksum = 12754, ....................
+发送方发送报文: seqnum = 97, acknum = -1, checksum = 48734, SSSSSSSSSSSSSSSSSSSS
+发送方发送报文: seqnum = 98, acknum = -1, checksum = 46163, TTTTTTTTTTTTTTTTTTTT
+发送方发送报文: seqnum = 99, acknum = -1, checksum = 43592, UUUUUUUUUUUUUUUUUUUU
+发送方发送报文: seqnum = 100, acknum = -1, checksum = 41021, VVVVVVVVVVVVVVVVVVVV
+发送方发送报文: seqnum = 101, acknum = -1, checksum = 38450, WWWWWWWWWWWWWWWWWWWW
+接收方正确收到报文: seqnum = 97, acknum = -1, checksum = 48734, SSSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+接收方向发送方发送确认报文: seqnum = -1, acknum = 98, checksum = 12753, ....................
+receive_ACK number：98
+base number： 97
+接收到ACK报文: seqnum = -1, acknum = 98, checksum = 12753, ....................
+The current windows's 0 number is 98
+The current windows's 1 number is 99
+The current windows's 2 number is 100
+The current windows's 3 number is 101
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 98, acknum = -999999, checksum = 46163, TTTTTTTTTTTTTTTTTTTT
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 98, checksum = 12753, ....................
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 99, acknum = -1, checksum = 43592, UUUUUUUUUUUUUUUUUUUU
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 98, checksum = 12753, ....................
+receive_ACK number：98
+base number： 98
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 100, acknum = -1, checksum = 41021, VVVVVVVVVVVVVVVVVVVV
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 98, checksum = 12753, ....................
+发送方定时器超时，重新发送报文段: seqnum = 98, acknum = -1, checksum = 46163, TTTTTTTTTTTTTTTTTTTT
+receive_ACK number：98
+base number： 98
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = -999999, acknum = -1, checksum = 46163, TTTTTTTTTTTTTTTTTTTT
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 98, checksum = 12753, ....................
+receive_ACK number：98
+base number： 98
+发送方定时器超时，重新发送报文段: seqnum = 98, acknum = -1, checksum = 46163, TTTTTTTTTTTTTTTTTTTT
+接收方正确收到报文: seqnum = 98, acknum = -1, checksum = 46163, TTTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+接收方向发送方发送确认报文: seqnum = -1, acknum = 99, checksum = 12752, ....................
+receive_ACK number：99
+base number： 98
+接收到ACK报文: seqnum = -1, acknum = 99, checksum = 12752, ....................
+The current windows's 0 number is 99
+The current windows's 1 number is 100
+The current windows's 2 number is 101
+发送方定时器超时，重新发送报文段: seqnum = 99, acknum = -1, checksum = 43592, UUUUUUUUUUUUUUUUUUUU
+接收方正确收到报文: seqnum = 99, acknum = -1, checksum = 43592, UUUUUUUUUUUUUUUUUUUU
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+接收方向发送方发送确认报文: seqnum = -1, acknum = 100, checksum = 12751, ....................
+receive_ACK number：100
+base number： 99
+接收到ACK报文: seqnum = -1, acknum = 100, checksum = 12751, ....................
+The current windows's 0 number is 100
+The current windows's 1 number is 101
+发送方定时器超时，重新发送报文段: seqnum = 100, acknum = -1, checksum = 41021, VVVVVVVVVVVVVVVVVVVV
+接收方正确收到报文: seqnum = 100, acknum = -1, checksum = 41021, VVVVVVVVVVVVVVVVVVVV
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+接收方向发送方发送确认报文: seqnum = -1, acknum = 101, checksum = 12750, ....................
+receive_ACK number：101
+base number： 100
+接收到ACK报文: seqnum = -1, acknum = 101, checksum = 12750, ....................
+The current windows's 0 number is 101
+发送方定时器超时，重新发送报文段: seqnum = 101, acknum = -1, checksum = 38450, WWWWWWWWWWWWWWWWWWWW
+接收方正确收到报文: seqnum = 101, acknum = -1, checksum = 38450, WWWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+接收方向发送方发送确认报文: seqnum = -1, acknum = 102, checksum = 12749, ....................
+receive_ACK number：102
+base number： 101
+接收到ACK报文: seqnum = -1, acknum = 102, checksum = 12749, ....................
+发送方发送报文: seqnum = 102, acknum = -1, checksum = 35879, XXXXXXXXXXXXXXXXXXXX
+发送方发送报文: seqnum = 103, acknum = -1, checksum = 33308, YYYYYYYYYYYYYYYYYYYY
+发送方发送报文: seqnum = 104, acknum = -1, checksum = 30737, ZZZZZZZZZZZZZZZZZZZZ
+发送方发送报文: seqnum = 105, acknum = -1, checksum = 29768, EOF
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 103, acknum = -1, checksum = 33308, YYYYYYYYYYYYYYYYYYYY
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 102, checksum = 12749, ....................
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 104, acknum = -1, checksum = 30737, ZZZZZZZZZZZZZZZZZZZZ
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 102, checksum = 12749, ....................
+receive_ACK number：102
+base number： 102
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 105, acknum = -1, checksum = 29768, EOF
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 102, checksum = 12749, ....................
+发送方定时器超时，重新发送报文段: seqnum = 102, acknum = -1, checksum = 35879, XXXXXXXXXXXXXXXXXXXX
+receive_ACK number：102
+base number： 102
+接收方正确收到报文: seqnum = 102, acknum = -1, checksum = 35879, XXXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+接收方向发送方发送确认报文: seqnum = -1, acknum = 103, checksum = 12748, ....................
+发送方定时器超时，重新发送报文段: seqnum = 102, acknum = -1, checksum = 35879, XXXXXXXXXXXXXXXXXXXX
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 102, acknum = -1, checksum = 35879, YXXXXXXXXXXXXXXXXXXX
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 103, checksum = 12748, ....................
+receive_ACK number：103
+base number： 102
+接收到ACK报文: seqnum = -1, acknum = 103, checksum = 12748, ....................
+The current windows's 0 number is 103
+The current windows's 1 number is 104
+The current windows's 2 number is 105
+发送方定时器超时，重新发送报文段: seqnum = 103, acknum = -1, checksum = 33308, YYYYYYYYYYYYYYYYYYYY
+接收方正确收到报文: seqnum = 103, acknum = -1, checksum = 33308, YYYYYYYYYYYYYYYYYYYY
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+接收方向发送方发送确认报文: seqnum = -1, acknum = 104, checksum = 12747, ....................
+receive_ACK number：104
+base number： 103
+接收到ACK报文: seqnum = -1, acknum = 104, checksum = 12747, ....................
+The current windows's 0 number is 104
+The current windows's 1 number is 105
+发送方定时器超时，重新发送报文段: seqnum = 104, acknum = -1, checksum = 30737, ZZZZZZZZZZZZZZZZZZZZ
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = -999999, acknum = -1, checksum = 30737, ZZZZZZZZZZZZZZZZZZZZ
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 104, checksum = 12747, ....................
+receive_ACK number：104
+base number： 104
+发送方定时器超时，重新发送报文段: seqnum = 104, acknum = -1, checksum = 30737, ZZZZZZZZZZZZZZZZZZZZ
+接收方正确收到报文: seqnum = 104, acknum = -1, checksum = 30737, ZZZZZZZZZZZZZZZZZZZZ
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+接收方向发送方发送确认报文: seqnum = -1, acknum = 105, checksum = 12746, ....................
+发送方定时器超时，重新发送报文段: seqnum = 104, acknum = -1, checksum = 30737, ZZZZZZZZZZZZZZZZZZZZ
+ERROR：接收方未正确收到报文：报文序列号错误: seqnum = 104, acknum = -1, checksum = 30737, ZZZZZZZZZZZZZZZZZZZZ
+ERROR：接收方发送冗余ACK: seqnum = -1, acknum = 105, checksum = 12746, ....................
+receive_ACK number：105
+base number： 104
+接收到ACK报文: seqnum = -1, acknum = 105, checksum = 12746, ....................
+The current windows's 0 number is 105
+发送方定时器超时，重新发送报文段: seqnum = 105, acknum = -1, checksum = 29768, EOF
+接收方正确收到报文: seqnum = 105, acknum = -1, checksum = 29768, EOF
+******模拟网络环境******：向上递交给应用层数据：EOF
+接收方向发送方发送确认报文: seqnum = -1, acknum = 106, checksum = 12745, ....................
+receive_ACK number：106
+base number： 105
+接收到ACK报文: seqnum = -1, acknum = 106, checksum = 12745, ....................
+******模拟网络环境******：模拟网络环境已发送完应用层数据，关闭模拟网络环境
+已发送应用层Message个数: 105
+发送到网络层数据Packet个数: 169
+网络层丢失的数据Packet个数: 18
+网络层损坏的数据pakcet个数:14
+发送到网络层确认Packet个数:151
+网络层丢失的确认Packet个数: 16
+网络层损坏的确认Packet个数: 13
+
+
+Process finished with exit code 0

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/CMakeLists.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/bin/check_win.bat" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/bin/result.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/exp2_3/Readme.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/exp2_3/check_win.bat" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/exp2_3/result.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/include/DataStructure.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/include/Global.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/include/NetworkService.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/include/RandomEventEnum.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/include/RdtReceiver.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/include/RdtSender.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/include/Tool.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/TCPReceiver.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/TCPSender.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/tcp/Readme.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/tcp/result.txt" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

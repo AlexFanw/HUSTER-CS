@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="TCP" targetName="TCP" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="50ec414c-f5dd-459a-a323-2c2bc19c9dfa" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1Un2wRWi7U1Mi6XL0o4das5gaEi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="TCP" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TCP" TARGET_NAME="TCP" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TCP" RUN_TARGET_NAME="TCP">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\AlexFan\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50ec414c-f5dd-459a-a323-2c2bc19c9dfa" name="Default Changelist" comment="" />
+      <created>1572717085989</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572717085989</updated>
+      <workItem from="1572717088252" duration="2764000" />
+      <workItem from="1572721927928" duration="664000" />
+      <workItem from="1575978278289" duration="6421000" />
+      <workItem from="1576050449549" duration="1399000" />
+      <workItem from="1576051870549" duration="188000" />
+      <workItem from="1576052065872" duration="74000" />
+      <workItem from="1576052255901" duration="60000" />
+      <workItem from="1576052335652" duration="156000" />
+      <workItem from="1576052502172" duration="1706000" />
+      <workItem from="1576060218496" duration="431000" />
+      <workItem from="1576063687931" duration="50000" />
+      <workItem from="1576064141176" duration="7023000" />
+      <workItem from="1576133187806" duration="1000000" />
+      <workItem from="1576326588821" duration="618000" />
+      <workItem from="1576327217994" duration="23000" />
+      <workItem from="1576572657937" duration="3753000" />
+      <workItem from="1576578900263" duration="2683000" />
+      <workItem from="1576637047106" duration="3681000" />
+      <workItem from="1576658604711" duration="2132000" />
+      <workItem from="1576668158259" duration="1429000" />
+      <workItem from="1576669638678" duration="326000" />
+      <workItem from="1576670212432" duration="43000" />
+      <workItem from="1576670324643" duration="53000" />
+      <workItem from="1576670403250" duration="9000" />
+      <workItem from="1576670749147" duration="57000" />
+      <workItem from="1576670835277" duration="42000" />
+      <workItem from="1576670924772" duration="20000" />
+      <workItem from="1576670963398" duration="6000" />
+      <workItem from="1576670983362" duration="21000" />
+      <workItem from="1576671007968" duration="781000" />
+      <workItem from="1576671814380" duration="1362000" />
+      <workItem from="1576673950483" duration="1344000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1025" y="223" key="FileChooserDialogImpl" timestamp="1576327238552">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1025" y="223" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576327238552" />
+    <state width="1019" height="268" key="GridCell.Tab.0.bottom" timestamp="1576138280929">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1019" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576138280929" />
+    <state width="1019" height="268" key="GridCell.Tab.0.center" timestamp="1576138280929">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1019" height="268" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576138280929" />
+    <state width="1019" height="268" key="GridCell.Tab.0.left" timestamp="1576138280929">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1019" height="268" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576138280929" />
+    <state width="1019" height="268" key="GridCell.Tab.0.right" timestamp="1576138280929">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1019" height="268" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576138280929" />
+    <state x="463" y="164" key="SettingsEditor" timestamp="1576052273278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576052273278" />
+    <state x="652" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1576327218348">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="652" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576327218348" />
+    <state x="964" y="0" width="883" height="748" key="dock-window-1" timestamp="1576071807844">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="964" y="0" width="883" height="748" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1576071807844" />
+    <state x="222" y="250" key="run.anything.popup" timestamp="1576070486151">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="222" y="250" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576070486151" />
+    <state x="969" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1576066906601">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="969" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576066906601" />
+  </component>
+</project>

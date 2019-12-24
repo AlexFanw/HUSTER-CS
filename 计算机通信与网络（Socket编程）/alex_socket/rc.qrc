@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/black.css</file>
+        <file>images/close_btn.jpg</file>
+        <file>images/max_btn.jpg</file>
+        <file>images/mini_btn.jpg</file>
+        <file>images/close.png</file>
+        <file>images/max.png</file>
+        <file>images/mini.png</file>
+        <file>images/titleIcon.jpg</file>
+    </qresource>
+</RCC>

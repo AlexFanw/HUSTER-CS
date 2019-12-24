@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/CMakeLists.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/bin/check_win.bat" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/include/DataStructure.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/include/Global.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/include/NetworkService.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/include/RandomEventEnum.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/include/RdtReceiver.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/include/RdtSender.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/include/Tool.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/SRReceiver.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/SRSender.cpp" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
