@@ -8,7 +8,7 @@
 
 ---
 
-* exp1~3可以在macOS系统下进行
+* exp1~3可以在macOS/Linux下进行
 * exp4只能在Linux系统下进行
 
 ---
