@@ -1,5 +1,5 @@
 # Alex Fan's Toefl writing practice
->偷偷在LeetCode里面偷练托福写作应该不会被发现吧☺️  
+ 
 ## 综合写作模板
     In the lecture,the professor raises
     objections to the reading's assertion that
