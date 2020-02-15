@@ -1,4 +1,4 @@
-# Alex Fan's Toefl writing practice
+# Alex Fan's TOEFL writing practice
 
 ## 综合写作模板
     In the lecture,the professor raises
