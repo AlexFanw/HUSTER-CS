@@ -1,0 +1,539 @@
+<html>
+  <head>
+    <title>MIPS Reference Sheet</title>
+    <style type="text/css">
+        html {
+        background:#F5F5F5;
+        text-align:left;
+        font-family:monospace;
+      } body {
+        padding: 3rem;
+        margin:0;
+      } table {
+        border-collapse:collapse;
+      } td, pre {
+        padding:0.8rem;
+      } td, img, pre {
+        border:0.1rem solid #000;
+      } td {
+        vertical-align:top;
+      } td.c, code {
+        white-space:nowrap;
+      } td>pre {
+        background:none !important;
+        border:none !important;
+        padding:0 !important;
+      } td.w5 {
+        width:5rem;
+      } td.w6 {
+        width:6rem;
+      } thead td {
+        border-color:#000 !important;
+        font-weight:bold;
+      } thead td>span.r {
+        float:right;
+      } thead td>span.l {
+        float:left;
+      } ul, li {
+        margin:0;
+        padding:0;
+      } ul {
+        padding-left:1.6rem;
+        list-style-type:square;
+      } pre {
+        padding:0 0.8rem;
+        margin:0;
+        border:0.1rem solid #000;
+        border-top-width:0;
+        border-bottom-width:0;
+      } pre:first-of-type {
+        padding-top:0.8rem;
+        border-top-width:0.1rem;
+      } pre:last-of-type {
+        padding-bottom:0.8rem;
+        border-bottom-width:0.1rem;
+      } h1, h2 {
+        font-variant:small-caps;
+      } h2 {
+        border-bottom:0.25rem solid #000;
+      } h3 {
+        font-size:1rem;
+      } .imm, .reg, .shm, .int, .spc, .adr, .psu {
+        font-family:monospace;
+      } @media screen {
+          body.color .imm {
+          color:#F00;
+        } body.color .reg {
+          color:#A00;
+        } body.color .shm {
+          color:#0A0;
+        } body.color .int {
+          color:#00A;
+        } body.color .spc {
+          color:#0AA;
+        } body.color .adr {
+          color:#A0A;
+        } body.color .psu {
+          color:#07F;
+        } body.color thead td {
+          background:#333;
+          font-weight:normal;
+        } body.color thead td, body.color thead td * {
+          color:#fff !important;
+        } body.color tr, body.color pre {
+          background-color:#EEE;
+        } body.color tr:nth-of-type(odd) {
+          background-color:#E3E3E3;
+        } body.color td, body.color pre {
+          border-color:#ccc;
+        }
+      } @media print {
+        html {font-size:10pt;}
+      }
+    </style>
+  </head> 
+  <body class="color">
+    <div>
+      <h1>MIPS Reference Sheet</h1>
+      <h3>TA: Kevin Liston</h3>
+      <p>There are a few special notations outlined here for reference.</p>  
+      <table>
+        <thead>
+          <tr>
+            <td>Notation</td>    
+            <td>Meaning</td>    
+            <td>Example</td>        
+          </tr>      
+        </thead>      
+        <tbody>
+          <tr>
+            <td>{X, Y}</td>
+            <td>Concatenate the bits of X and Y together.</td>
+            <td>{10, 11, 011} = 1011011</td>
+          </tr>  
+          <tr>
+            <td>X &times; Y</td>
+            <td>Repeat bit X exactly Y times.</td>
+            <td>{1, 0 &times; 3} = 1000</td>
+          </tr> 
+          <tr>
+            <td>(X)[B:A]</td>
+            <td>Slice bits A through B (inclusive) out of X.</td>
+            <td>(1100110101)[4:0] = 10101</td>
+          </tr>  
+          <tr>
+            <td><span class='psu'>SignExt<sub>Nb</sub></span>(X)</td>
+            <td>Sign-extend X from N bits to 32 bits.</td>
+            <td><span class='psu'>SignExt<sub>4b</sub></span>(1001) = {1 &times; 28, 1001}</td>
+          </tr>  
+          <tr>
+            <td><span class='spc'>Mem<sub>NB</sub></span>(X)</td>
+            <td>Refers to the N-byte quantity in memory at byte address X.</td>
+            <td></td>
+          </tr>   
+          <tr>
+            <td><span class='spc'>R</span>[N]</td>
+            <td>Refers to the general-purpose register number N.</td>
+            <td></td>
+          </tr>     
+        </tbody>
+      </table>    
+      <h2>Instruction Formats</h2>   
+      <p>There are 3 main instruction formats in MIPS. The fields in each type are laid out 
+         in such a way that the same fields are always in the same place for each type.</p> 
+      <table>
+        <thead>
+          <tr>
+            <td>Type</td>
+            <td class="w6"><span class='l'>31</span><span class='r'>26</span></td>
+            <td class="w5"><span class='l'>25</span><span class='r'>21</span></td>
+            <td class="w5"><span class='l'>20</span><span class='r'>16</span></td>
+            <td class="w5"><span class='l'>15</span><span class='r'>11</span></td>
+            <td class="w5"><span class='l'>10</span><span class='r'>06</span></td>
+            <td class="w6"><span class='l'>05</span><span class='r'>00</span></td>
+          </tr>      
+        </thead>      
+        <tbody>
+          <tr>
+            <td>R-Type</td>
+            <td>opcode</td>
+            <td><span class='reg'>$rs</span></td>
+            <td><span class='reg'>$rt</span></td>
+            <td><span class='reg'>$rd</span></td>
+            <td><span class='shm'>shamt</span></td>
+            <td>funct</td>
+          </tr>
+          <tr>
+            <td>I-Type</td>
+            <td>opcode</td>
+            <td><span class='reg'>$rs</span></td>
+            <td><span class='reg'>$rt</span></td>
+            <td colspan="3"><span class='imm'>imm</span></td>
+          </tr>
+          <tr>
+            <td>J-Type</td>
+            <td>opcode</td>
+            <td colspan="5"><span class='adr'>address</span></td>
+          </tr>      
+        </tbody>
+      </table>
+      <h2>R-Type Instructions</h2> 
+      <p>These instructions are identified by an opcode of 0, and are differentiated by 
+         their funct values. Except for the first 3 shift instructions, these operations 
+         only use registers. Note that in addition to arithmetic operations, these 
+         instructions also include jumps and the system call instruction.</p> 
+      <table>
+        <thead>
+          <tr>
+            <td></td>
+            <td>Instruction</td>
+            <td>RTL</td>
+            <td>Notes</td>
+          </tr>      
+        </thead>      
+        <tbody> 
+          <tr>
+            <td>00</td>
+            <td class='c'><span class='int'>sll</span> <span class='reg'>$rd</span>, <span class='reg'>$rt</span>, <span class='shm'>shamt</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rt</span>] &lt;&lt; <span class='shm'>shamt</span></td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>02</td>
+            <td class='c'><span class='int'>srl</span> <span class='reg'>$rd</span>, <span class='reg'>$rt</span>, <span class='shm'>shamt</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rt</span>] &gt;&gt; <span class='shm'>shamt</span></td>
+            <td>Unsigned right shift</td>
+          </tr> 
+          <tr>
+            <td>03</td>
+            <td class='c'><span class='int'>sra</span> <span class='reg'>$rd</span>, <span class='reg'>$rt</span>, <span class='shm'>shamt</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rt</span>] &gt;&gt; <span class='shm'>shamt</span></td>
+            <td>Signed right shift</td>
+          </tr> 
+          <tr>
+            <td>04</td>
+            <td class='c'><span class='int'>sllv</span> <span class='reg'>$rd</span>, <span class='reg'>$rt</span>, <span class='reg'>$rs</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rt</span>] &lt;&lt; <span class='spc'>R</span>[<span class='reg'>$rs</span>]</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>06</td>
+            <td class='c'><span class='int'>srlv</span> <span class='reg'>$rd</span>, <span class='reg'>$rt</span>, <span class='reg'>$rs</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rt</span>] &gt;&gt; <span class='spc'>R</span>[<span class='reg'>$rs</span>]</td>
+            <td>Unsigned right shift</td>
+          </tr> 
+          <tr>
+            <td>07</td>
+            <td class='c'><span class='int'>srav</span> <span class='reg'>$rd</span>, <span class='reg'>$rt</span>, <span class='reg'>$rs</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rt</span>] &gt;&gt; <span class='spc'>R</span>[<span class='reg'>$rs</span>]</td>
+            <td>Signed right shift</td>
+          </tr>   
+          <tr>
+            <td>08</td>
+            <td class='c'><span class='int'>jr</span> <span class='reg'>$rs</span></td>
+            <td class='c'><span class='spc'>PC</span> &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>]</td>
+            <td><span class='spc'>R</span>[<span class='reg'>$rs</span>] must be a multiple of 4</td>
+          </tr> 
+          <tr>
+            <td>09</td>
+            <td class='c'><span class='int'>jalr</span> <span class='reg'>$rd</span>, <span class='reg'>$rs</span></td>
+            <td class='c'><span class='spc'>tmp</span> &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] <br/>
+                          <span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>PC</span> + 8 <br/>
+                          <span class='spc'>PC</span> &larr; <span class='spc'>tmp</span></td>
+            <td><span class='spc'>R</span>[<span class='reg'>$rs</span>] must be a multiple of 4; Undefined if <span class='reg'>$rs</span> = <span class='reg'>$rd</span></td>
+          </tr> 
+          <tr>
+            <td>09</td>
+            <td class='c'><span class='int'>jalr</span> <span class='reg'>$rs</span></td>
+            <td colspan='2'>(special form of &ldquo;<span class='int'>jalr</span> <span class='reg'>$rd</span>, <span class='reg'>$rs</span>&rdquo; where <span class='reg'>$rd</span> = 31, implicitly)</td>
+          </tr> 
+          <tr>
+            <td>12</td>
+            <td class='c'><span class='int'>syscall</span></td>
+            <td class='c'>System Call</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>16</td>
+            <td class='c'><span class='int'>mfhi</span> <span class='reg'>$rd</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>HI</span></td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>17</td>
+            <td class='c'><span class='int'>mthi</span> <span class='reg'>$rs</span></td>
+            <td class='c'><span class='spc'>HI</span> &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>]</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>18</td>
+            <td class='c'><span class='int'>mflo</span> <span class='reg'>$rd</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>LO</span></td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>19</td>
+            <td class='c'><span class='int'>mtlo</span> <span class='reg'>$rs</span></td>
+            <td class='c'><span class='spc'>LO</span> &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>]</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>24</td>
+            <td class='c'><span class='int'>mult</span> <span class='reg'>$rs</span>, <span class='reg'>$rt</span></td>
+            <td class='c'>{<span class='spc'>HI</span>, <span class='spc'>LO</span>} &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] * <span class='spc'>R</span>[<span class='reg'>$rt</span>]</td>
+            <td>Signed multiplication</td>
+          </tr> 
+          <tr>
+            <td>25</td>
+            <td class='c'><span class='int'>multu</span> <span class='reg'>$rs</span>, <span class='reg'>$rt</span></td>
+            <td class='c'>{<span class='spc'>HI</span>, <span class='spc'>LO</span>} &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] * <span class='spc'>R</span>[<span class='reg'>$rt</span>]</td>
+            <td>Unsigned multiplication</td>
+          </tr>         
+          <tr>
+            <td>26</td>
+            <td class='c'><span class='int'>div</span> <span class='reg'>$rs</span>, <span class='reg'>$rt</span></td>
+            <td class='c'><span class='spc'>LO</span> &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] / <span class='spc'>R</span>[<span class='reg'>$rt</span>]<br/>
+                          <span class='spc'>HI</span> &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] % <span class='spc'>R</span>[<span class='reg'>$rt</span>]</td>
+            <td>Signed division</td>
+          </tr> 
+          <tr>
+            <td>27</td>
+            <td class='c'><span class='int'>divu</span> <span class='reg'>$rs</span>, <span class='reg'>$rt</span></td>
+            <td class='c'><span class='spc'>LO</span> &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] / <span class='spc'>R</span>[<span class='reg'>$rt</span>]<br/>
+                          <span class='spc'>HI</span> &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] % <span class='spc'>R</span>[<span class='reg'>$rt</span>]</td>
+            <td>Unsigned division</td>
+          </tr> 
+          <tr>
+            <td>32</td>
+            <td class='c'><span class='int'>add</span> <span class='reg'>$rd</span>, <span class='reg'>$rs</span>, <span class='reg'>$rt</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] + <span class='spc'>R</span>[<span class='reg'>$rt</span>]</td>
+            <td>Exception on signed overflow</td>
+          </tr> 
+          <tr>
+            <td>33</td>
+            <td class='c'><span class='int'>addu</span> <span class='reg'>$rd</span>, <span class='reg'>$rs</span>, <span class='reg'>$rt</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] + <span class='spc'>R</span>[<span class='reg'>$rt</span>]</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>34</td>
+            <td class='c'><span class='int'>sub</span> <span class='reg'>$rd</span>, <span class='reg'>$rs</span>, <span class='reg'>$rt</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] - <span class='spc'>R</span>[<span class='reg'>$rt</span>]</td>
+            <td>Exception on signed overflow</td>
+          </tr> 
+          <tr>
+            <td>35</td>
+            <td class='c'><span class='int'>subu</span> <span class='reg'>$rd</span>, <span class='reg'>$rs</span>, <span class='reg'>$rt</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] - <span class='spc'>R</span>[<span class='reg'>$rt</span>]</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>36</td>
+            <td class='c'><span class='int'>and</span> <span class='reg'>$rd</span>, <span class='reg'>$rs</span>, <span class='reg'>$rt</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] &amp; <span class='spc'>R</span>[<span class='reg'>$rt</span>]</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>37</td>
+            <td class='c'><span class='int'>or</span> <span class='reg'>$rd</span>, <span class='reg'>$rs</span>, <span class='reg'>$rt</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] | <span class='spc'>R</span>[<span class='reg'>$rt</span>]</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>38</td>
+            <td class='c'><span class='int'>xor</span> <span class='reg'>$rd</span>, <span class='reg'>$rs</span>, <span class='reg'>$rt</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] ^ <span class='spc'>R</span>[<span class='reg'>$rt</span>]</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>39</td>
+            <td class='c'><span class='int'>nor</span> <span class='reg'>$rd</span>, <span class='reg'>$rs</span>, <span class='reg'>$rt</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; !(<span class='spc'>R</span>[<span class='reg'>$rs</span>] | <span class='spc'>R</span>[<span class='reg'>$rt</span>])</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>42</td>
+            <td class='c'><span class='int'>slt</span> <span class='reg'>$rd</span>, <span class='reg'>$rs</span>, <span class='reg'>$rt</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] &lt; <span class='spc'>R</span>[<span class='reg'>$rt</span>]</td>
+            <td>Signed comparison</td>
+          </tr> 
+          <tr>
+            <td>43</td>
+            <td class='c'><span class='int'>sltu</span> <span class='reg'>$rd</span>, <span class='reg'>$rs</span>, <span class='reg'>$rt</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rd</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] &lt; <span class='spc'>R</span>[<span class='reg'>$rt</span>]</td>
+            <td>Unsigned comparison</td>
+          </tr>
+        </tbody>
+      </table>      
+      <h2>J-Type Instructions</h2> 
+      <p>These instructions are identified and differentiated by their opcode numbers 
+         (2 and 3). Jump instructions use pseudo-absolute addressing, in which the upper 
+         4 bits of the computed address are taken relatively from the program counter.</p> 
+      <table>
+        <thead>
+          <tr>
+            <td></td>
+            <td>Instruction</td>
+            <td>RTL</td>
+          </tr>      
+        </thead>      
+        <tbody>  
+          <tr>
+            <td>02</td>
+            <td class='c'><span class='int'>j</span> <span class='adr'>address</span></td>
+            <td class='c'><span class='spc'>PC</span> &larr; {(<span class='spc'>PC</span> + 4)[31:28], <span class='adr'>address</span>, 00}</td>
+          </tr>  
+          <tr>
+            <td>03</td>
+            <td class='c'><span class='int'>jal</span> <span class='adr'>address</span></td>
+            <td class='c'><span class='spc'>R</span>[31] &larr; <span class='spc'>PC</span> + 8<br/>
+                          <span class='spc'>PC</span> &larr; {(<span class='spc'>PC</span> + 4)[31:28], <span class='adr'>address</span>, 00}</td>
+          </tr> 
+        </tbody>
+      </table>    
+      <h2>I-Type Instructions</h2>  
+      <p>These instructions are identified and differentiated by their opcode numbers (any 
+         number greater than 3). All of these instructions feature a 16-bit immediate, 
+         which is sign-extended to a 32-bit value in every instruction (except for the and,
+         or, and xor instructions which zero-extend and the lui instruction in which it 
+         does not matter). Branch instructions also effectively multiply the 
+         immediate by 4, to get a byte offset.</p> 
+      <table>
+        <thead>
+          <tr>
+            <td></td>
+            <td>Instruction</td>
+            <td>RTL</td>
+            <td>Notes</td>
+          </tr>      
+        </thead>      
+        <tbody>  
+          <tr>
+            <td>04</td>
+            <td class='c'><span class='int'>beq</span> <span class='reg'>$rs</span>, <span class='reg'>$rt</span>, <span class='imm'>imm</span></td>
+            <td class='c'>if(<span class='spc'>R</span>[<span class='reg'>$rs</span>] =  <span class='spc'>R</span>[<span class='reg'>$rt</span>]) <br/>
+                          &nbsp;&nbsp;<span class='spc'>PC</span> &larr; <span class='spc'>PC</span> + 4 + <span class='psu'>SignExt<sub>18b</sub></span>({<span class='imm'>imm</span>, 00})</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>05</td>
+            <td class='c'><span class='int'>bne</span> <span class='reg'>$rs</span>, <span class='reg'>$rt</span>, <span class='imm'>imm</span></td>
+            <td class='c'>if(<span class='spc'>R</span>[<span class='reg'>$rs</span>] !=  <span class='spc'>R</span>[<span class='reg'>$rt</span>]) <br/>
+                          &nbsp;&nbsp;<span class='spc'>PC</span> &larr; <span class='spc'>PC</span> + 4 + <span class='psu'>SignExt<sub>18b</sub></span>({<span class='imm'>imm</span>, 00})</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>06</td>
+            <td class='c'><span class='int'>blez</span> <span class='reg'>$rs</span>, <span class='imm'>imm</span></td>
+            <td class='c'>if(<span class='spc'>R</span>[<span class='reg'>$rs</span>] &lt;= 0) <br/>
+                          &nbsp;&nbsp;<span class='spc'>PC</span> &larr; <span class='spc'>PC</span> + 4 + <span class='psu'>SignExt<sub>18b</sub></span>({<span class='imm'>imm</span>, 00})</td>
+            <td>Signed comparison</td>
+          </tr> 
+          <tr>
+            <td>07</td>
+            <td class='c'><span class='int'>bgtz</span> <span class='reg'>$rs</span>, <span class='imm'>imm</span></td>
+            <td class='c'>if(<span class='spc'>R</span>[<span class='reg'>$rs</span>] &gt; 0) <br/>
+                          &nbsp;&nbsp;<span class='spc'>PC</span> &larr; <span class='spc'>PC</span> + 4 + <span class='psu'>SignExt<sub>18b</sub></span>({<span class='imm'>imm</span>, 00})</td>
+            <td>Signed comparison</td>
+          </tr>  
+          <tr>
+            <td>08</td>
+            <td class='c'><span class='int'>addi</span> <span class='reg'>$rt</span>, <span class='reg'>$rs</span>, <span class='imm'>imm</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rt</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] + <span class='psu'>SignExt<sub>16b</sub></span>(<span class='imm'>imm</span>)</td>
+            <td>Exception on signed overflow</td>
+          </tr>
+          <tr>
+            <td>09</td>
+            <td class='c'><span class='int'>addiu</span> <span class='reg'>$rt</span>, <span class='reg'>$rs</span>, <span class='imm'>imm</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rt</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] + <span class='psu'>SignExt<sub>16b</sub></span>(<span class='imm'>imm</span>)</td>
+            <td></td>
+          </tr>  
+          <tr>
+            <td>10</td>
+            <td class='c'><span class='int'>slti</span> <span class='reg'>$rt</span>, <span class='reg'>$rs</span>, <span class='imm'>imm</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rt</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] &lt; <span class='psu'>SignExt<sub>16b</sub></span>(<span class='imm'>imm</span>)</td>
+            <td>Signed comparison</td>
+          </tr>  
+          <tr>
+            <td>11</td>
+            <td class='c'><span class='int'>sltiu</span> <span class='reg'>$rt</span>, <span class='reg'>$rs</span>, <span class='imm'>imm</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rt</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] &lt; <span class='psu'>SignExt<sub>16b</sub></span>(<span class='imm'>imm</span>)</td>
+            <td>Unsigned comparison</td>
+          </tr> 
+          <tr>
+            <td>12</td>
+            <td class='c'><span class='int'>andi</span> <span class='reg'>$rt</span>, <span class='reg'>$rs</span>, <span class='imm'>imm</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rt</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] &amp; {0 &times; 16, <span class='imm'>imm</span>}</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>13</td>
+            <td class='c'><span class='int'>ori</span> <span class='reg'>$rt</span>, <span class='reg'>$rs</span>, <span class='imm'>imm</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rt</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] | {0 &times; 16, <span class='imm'>imm</span>}</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>14</td>
+            <td class='c'><span class='int'>xori</span> <span class='reg'>$rt</span>, <span class='reg'>$rs</span>, <span class='imm'>imm</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rt</span>] &larr; <span class='spc'>R</span>[<span class='reg'>$rs</span>] ^ {0 &times; 16, <span class='imm'>imm</span>}</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>15</td>
+            <td class='c'><span class='int'>lui</span> <span class='reg'>$rt</span>, <span class='imm'>imm</span></td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rt</span>] &larr; {(<span class='imm'>imm</span>)[15:0], 0 &times; 16}</td>
+            <td></td>
+          </tr>  
+          <tr>
+            <td>32</td>
+            <td class='c'><span class='int'>lb</span> <span class='reg'>$rt</span>, <span class='imm'>imm</span>(<span class='reg'>$rs</span>)</td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rt</span>] &larr; <span class='psu'>SignExt<sub>8b</sub></span>(<span class='spc'>Mem<sub>1B</sub></span>(<span class='spc'>R</span>[<span class='reg'>$rs</span>] + <span class='psu'>SignExt<sub>16b</sub></span>(<span class='imm'>imm</span>)))</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>33</td>
+            <td class='c'><span class='int'>lh</span> <span class='reg'>$rt</span>, <span class='imm'>imm</span>(<span class='reg'>$rs</span>)</td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rt</span>] &larr; <span class='psu'>SignExt<sub>16b</sub></span>(<span class='spc'>Mem<sub>2B</sub></span>(<span class='spc'>R</span>[<span class='reg'>$rs</span>] + <span class='psu'>SignExt<sub>16b</sub></span>(<span class='imm'>imm</span>)))</td>
+            <td>Computed address must be a multiple of 2</td>
+          </tr> 
+          <tr>
+            <td>34</td>
+            <td class='c'><span class='int'>lw</span> <span class='reg'>$rt</span>, <span class='imm'>imm</span>(<span class='reg'>$rs</span>)</td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rt</span>] &larr; <span class='spc'>Mem<sub>4B</sub></span>(<span class='spc'>R</span>[<span class='reg'>$rs</span>] + <span class='psu'>SignExt<sub>16b</sub></span>(<span class='imm'>imm</span>))</td>
+            <td>Computed address must be a multiple of 4</td>
+          </tr> 
+          <tr>
+            <td>36</td>
+            <td class='c'><span class='int'>lbu</span> <span class='reg'>$rt</span>, <span class='imm'>imm</span>(<span class='reg'>$rs</span>)</td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rt</span>] &larr; {0 &times; 24, <span class='spc'>Mem<sub>1B</sub></span>(<span class='spc'>R</span>[<span class='reg'>$rs</span>] + <span class='psu'>SignExt<sub>16b</sub></span>(<span class='imm'>imm</span>))}</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>37</td>
+            <td class='c'><span class='int'>lhu</span> <span class='reg'>$rt</span>, <span class='imm'>imm</span>(<span class='reg'>$rs</span>)</td>
+            <td class='c'><span class='spc'>R</span>[<span class='reg'>$rt</span>] &larr; {0 &times; 16, <span class='spc'>Mem<sub>2B</sub></span>(<span class='spc'>R</span>[<span class='reg'>$rs</span>] + <span class='psu'>SignExt<sub>16b</sub></span>(<span class='imm'>imm</span>))}</td>
+            <td>Computed address must be a multiple of 2</td>
+          </tr> 
+          <tr>
+            <td>40</td>
+            <td class='c'><span class='int'>sb</span> <span class='reg'>$rt</span>, <span class='imm'>imm</span>(<span class='reg'>$rs</span>)</td>
+            <td class='c'><span class='spc'>Mem<sub>1B</sub></span>(<span class='spc'>R</span>[<span class='reg'>$rs</span>] + <span class='psu'>SignExt<sub>16b</sub></span>(<span class='imm'>imm</span>)) &larr; (<span class='spc'>R</span>[<span class='reg'>$rt</span>])[7:0]</td>
+            <td></td>
+          </tr> 
+          <tr>
+            <td>41</td>
+            <td class='c'><span class='int'>sh</span> <span class='reg'>$rt</span>, <span class='imm'>imm</span>(<span class='reg'>$rs</span>)</td>
+            <td class='c'><span class='spc'>Mem<sub>2B</sub></span>(<span class='spc'>R</span>[<span class='reg'>$rs</span>] + <span class='psu'>SignExt<sub>16b</sub></span>(<span class='imm'>imm</span>)) &larr; (<span class='spc'>R</span>[<span class='reg'>$rt</span>])[15:0]</td>
+            <td>Computed address must be a multiple of 2</td>
+          </tr> 
+          <tr>
+            <td>43</td>
+            <td class='c'><span class='int'>sw</span> <span class='reg'>$rt</span>, <span class='imm'>imm</span>(<span class='reg'>$rs</span>)</td>
+            <td class='c'><span class='spc'>Mem<sub>4B</sub></span>(<span class='spc'>R</span>[<span class='reg'>$rs</span>] + <span class='psu'>SignExt<sub>16b</sub></span>(<span class='imm'>imm</span>)) &larr; <span class='spc'>R</span>[<span class='reg'>$rt</span>]</td>
+            <td>Computed address must be a multiple of 4</td>
+          </tr> 
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

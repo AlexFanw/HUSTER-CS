@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(300,330)" to="(360,330)"/>
+    <wire from="(210,280)" to="(270,280)"/>
+    <wire from="(480,280)" to="(480,300)"/>
+    <wire from="(490,130)" to="(590,130)"/>
+    <wire from="(360,300)" to="(360,330)"/>
+    <wire from="(240,300)" to="(270,300)"/>
+    <wire from="(340,280)" to="(370,280)"/>
+    <wire from="(560,260)" to="(590,260)"/>
+    <wire from="(410,310)" to="(420,310)"/>
+    <wire from="(360,300)" to="(370,300)"/>
+    <wire from="(210,250)" to="(220,250)"/>
+    <wire from="(410,310)" to="(410,370)"/>
+    <wire from="(280,360)" to="(340,360)"/>
+    <wire from="(220,250)" to="(220,260)"/>
+    <wire from="(240,70)" to="(240,80)"/>
+    <wire from="(400,70)" to="(400,80)"/>
+    <wire from="(440,70)" to="(440,80)"/>
+    <wire from="(480,70)" to="(480,80)"/>
+    <wire from="(520,70)" to="(520,80)"/>
+    <wire from="(200,350)" to="(250,350)"/>
+    <wire from="(560,260)" to="(560,330)"/>
+    <wire from="(300,330)" to="(300,340)"/>
+    <wire from="(280,70)" to="(280,80)"/>
+    <wire from="(320,70)" to="(320,80)"/>
+    <wire from="(360,70)" to="(360,80)"/>
+    <wire from="(300,310)" to="(300,330)"/>
+    <wire from="(340,280)" to="(340,360)"/>
+    <wire from="(240,80)" to="(280,80)"/>
+    <wire from="(280,80)" to="(320,80)"/>
+    <wire from="(320,80)" to="(360,80)"/>
+    <wire from="(360,80)" to="(400,80)"/>
+    <wire from="(400,80)" to="(440,80)"/>
+    <wire from="(440,80)" to="(480,80)"/>
+    <wire from="(480,80)" to="(520,80)"/>
+    <wire from="(520,80)" to="(560,80)"/>
+    <wire from="(540,260)" to="(560,260)"/>
+    <wire from="(400,290)" to="(430,290)"/>
+    <wire from="(310,280)" to="(340,280)"/>
+    <wire from="(280,340)" to="(300,340)"/>
+    <wire from="(480,280)" to="(500,280)"/>
+    <wire from="(460,300)" to="(480,300)"/>
+    <wire from="(220,260)" to="(500,260)"/>
+    <wire from="(180,120)" to="(200,120)"/>
+    <wire from="(180,160)" to="(200,160)"/>
+    <wire from="(180,140)" to="(200,140)"/>
+    <wire from="(330,120)" to="(340,120)"/>
+    <wire from="(330,140)" to="(340,140)"/>
+    <wire from="(330,160)" to="(340,160)"/>
+    <wire from="(360,330)" to="(560,330)"/>
+    <comp lib="4" loc="(540,260)" name="D Flip-Flop">
+      <a name="label" val="IR1"/>
+    </comp>
+    <comp lib="5" loc="(480,70)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(520,70)" name="Hex Digit Display"/>
+    <comp lib="1" loc="(250,350)" name="OR Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="5" loc="(330,120)" name="LED">
+      <a name="facing" val="east"/>
+      <a name="color" val="#f00a0f"/>
+      <a name="offcolor" val="#edfff5eb"/>
+      <a name="label" val="1"/>
+    </comp>
+    <comp lib="0" loc="(410,370)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="同步清零信号"/>
+    </comp>
+    <comp lib="6" loc="(378,420)" name="Text">
+      <a name="text" val="中断信号采样参考电路"/>
+    </comp>
+    <comp lib="5" loc="(320,70)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(440,70)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(330,160)" name="LED">
+      <a name="facing" val="east"/>
+      <a name="color" val="#f00a0f"/>
+      <a name="offcolor" val="#edfff5eb"/>
+      <a name="label" val="3"/>
+    </comp>
+    <comp lib="6" loc="(390,198)" name="Text">
+      <a name="text" val="中断信号源及指示电路规范（优先级3&gt;2&gt;1&gt;CPU(0）)"/>
+    </comp>
+    <comp lib="0" loc="(200,140)" name="Tunnel">
+      <a name="label" val="2号中断"/>
+    </comp>
+    <comp lib="6" loc="(376,97)" name="Text">
+      <a name="text" val="中断按键和显示区域放一起，方便检查"/>
+    </comp>
+    <comp lib="0" loc="(340,140)" name="Tunnel">
+      <a name="label" val="2号中断等待指示"/>
+    </comp>
+    <comp lib="0" loc="(490,130)" name="Probe">
+      <a name="label" val="当前中断程序级别"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(340,120)" name="Tunnel">
+      <a name="label" val="1号中断等待指示"/>
+    </comp>
+    <comp lib="5" loc="(210,280)" name="Button">
+      <a name="label" val="1号中断"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="5" loc="(330,140)" name="LED">
+      <a name="facing" val="east"/>
+      <a name="color" val="#f00a0f"/>
+      <a name="offcolor" val="#edfff5eb"/>
+      <a name="label" val="2"/>
+    </comp>
+    <comp lib="5" loc="(200,350)" name="LED">
+      <a name="facing" val="east"/>
+      <a name="color" val="#f00a0f"/>
+      <a name="offcolor" val="#edfff5eb"/>
+      <a name="label" val="1号中断等待指示灯"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="5" loc="(180,140)" name="Button">
+      <a name="label" val="2"/>
+      <a name="labelcolor" val="#ff0000"/>
+    </comp>
+    <comp lib="5" loc="(400,70)" name="Hex Digit Display"/>
+    <comp lib="1" loc="(400,290)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(497,314)" name="Text">
+      <a name="text" val="Reset "/>
+    </comp>
+    <comp lib="5" loc="(180,120)" name="Button">
+      <a name="label" val="1"/>
+      <a name="labelcolor" val="#ff0000"/>
+    </comp>
+    <comp lib="1" loc="(460,300)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="0" loc="(240,300)" name="Constant"/>
+    <comp lib="0" loc="(590,130)" name="Tunnel">
+      <a name="label" val="1号中断"/>
+    </comp>
+    <comp lib="0" loc="(340,160)" name="Tunnel">
+      <a name="label" val="3号中断等待指示"/>
+    </comp>
+    <comp lib="0" loc="(200,120)" name="Tunnel">
+      <a name="label" val="1号中断"/>
+    </comp>
+    <comp lib="0" loc="(200,160)" name="Tunnel">
+      <a name="label" val="3号中断"/>
+    </comp>
+    <comp lib="0" loc="(560,80)" name="Constant">
+      <a name="facing" val="west"/>
+      <a name="width" val="4"/>
+      <a name="value" val="0x8"/>
+    </comp>
+    <comp lib="0" loc="(210,250)" name="Clock"/>
+    <comp lib="5" loc="(240,70)" name="Hex Digit Display"/>
+    <comp lib="5" loc="(180,160)" name="Button">
+      <a name="label" val="3"/>
+      <a name="labelcolor" val="#ff0000"/>
+    </comp>
+    <comp lib="5" loc="(360,70)" name="Hex Digit Display"/>
+    <comp lib="4" loc="(310,280)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(590,260)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="与中断屏蔽位与"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="5" loc="(280,70)" name="Hex Digit Display"/>
+  </circuit>
+  <circuit name="中断电路规范">
+    <a name="circuit" val="中断电路规范"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(260,150)" to="(320,150)"/>
+    <wire from="(520,80)" to="(520,150)"/>
+    <wire from="(170,100)" to="(230,100)"/>
+    <wire from="(240,180)" to="(300,180)"/>
+    <wire from="(180,70)" to="(180,80)"/>
+    <wire from="(160,170)" to="(210,170)"/>
+    <wire from="(260,150)" to="(260,160)"/>
+    <wire from="(440,100)" to="(440,120)"/>
+    <wire from="(300,100)" to="(300,180)"/>
+    <wire from="(260,130)" to="(260,150)"/>
+    <wire from="(320,120)" to="(320,150)"/>
+    <wire from="(200,120)" to="(230,120)"/>
+    <wire from="(520,80)" to="(550,80)"/>
+    <wire from="(270,100)" to="(300,100)"/>
+    <wire from="(300,100)" to="(330,100)"/>
+    <wire from="(360,110)" to="(390,110)"/>
+    <wire from="(440,100)" to="(460,100)"/>
+    <wire from="(420,120)" to="(440,120)"/>
+    <wire from="(180,80)" to="(460,80)"/>
+    <wire from="(500,80)" to="(520,80)"/>
+    <wire from="(240,160)" to="(260,160)"/>
+    <wire from="(320,120)" to="(330,120)"/>
+    <wire from="(370,130)" to="(380,130)"/>
+    <wire from="(170,70)" to="(180,70)"/>
+    <wire from="(370,130)" to="(370,190)"/>
+    <wire from="(320,150)" to="(520,150)"/>
+    <comp lib="0" loc="(170,70)" name="Clock"/>
+    <comp lib="1" loc="(420,120)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="6" loc="(338,240)" name="Text">
+      <a name="text" val="中断信号采样参考电路"/>
+    </comp>
+    <comp lib="4" loc="(500,80)" name="D Flip-Flop">
+      <a name="label" val="IR1"/>
+    </comp>
+    <comp lib="1" loc="(210,170)" name="OR Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="5" loc="(160,170)" name="LED">
+      <a name="facing" val="east"/>
+      <a name="color" val="#f00a0f"/>
+      <a name="offcolor" val="#edfff5eb"/>
+      <a name="label" val="1号中断等待指示灯"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(370,190)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="同步清零信号"/>
+    </comp>
+    <comp lib="6" loc="(457,134)" name="Text">
+      <a name="text" val="Reset "/>
+    </comp>
+    <comp lib="0" loc="(200,120)" name="Constant"/>
+    <comp lib="5" loc="(170,100)" name="Button">
+      <a name="label" val="1号中断"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(550,80)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="与中断屏蔽位与"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="4" loc="(270,100)" name="D Flip-Flop"/>
+    <comp lib="1" loc="(360,110)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+  </circuit>
+</project>
