@@ -1,0 +1,4 @@
+#ifndef RES_MEM
+#define RES_MEM
+
+#endif // RES_MEM
