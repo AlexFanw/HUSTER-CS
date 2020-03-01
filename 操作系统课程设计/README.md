@@ -39,4 +39,4 @@
 
 ## 三.实验环境
 
-- Windows10 +虚拟机Ubuntu (60G)
+- Windows10 +虚拟机Ubuntu 19.10(60G)+内核Linux5.4.21
