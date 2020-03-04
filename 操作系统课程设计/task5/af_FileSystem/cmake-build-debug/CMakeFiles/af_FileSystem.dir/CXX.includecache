@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Desktop/OS/task5/af_FileSystem/func_filesystem.cpp
+func_filesystem.h
+D:/Desktop/OS/task5/af_FileSystem/func_filesystem.h
+iostream
+-
+cstring
+-
+
+D:/Desktop/OS/task5/af_FileSystem/func_filesystem.h
+iostream
+-
+cstring
+-
+string
+-
+iomanip
+-
+cstdlib
+-
+cstdio
+-
+

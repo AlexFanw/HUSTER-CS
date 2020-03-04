@@ -1,0 +1,3 @@
+D:/Desktop/OS/task5/af_FileSystem/cmake-build-debug/CMakeFiles/af_FileSystem.dir
+D:/Desktop/OS/task5/af_FileSystem/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Desktop/OS/task5/af_FileSystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
