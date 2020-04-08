@@ -70,7 +70,7 @@
 
 口语部分
 
-> 1 independ speaking task
+> 1 independent speaking task
 >
 > 2 read + listen + speak 
 >
