@@ -2,6 +2,7 @@
 
 **AlexFan**的托福笔记以及资料💾
 阿唯加油!
+KMF联名ETS官方大礼包收到了哈哈
 
 
 # Content
