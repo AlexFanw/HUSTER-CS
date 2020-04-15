@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.15829145728643215" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Label layoutX="237.0" layoutY="16.0" prefHeight="28.0" prefWidth="124.0" text="门 诊 挂 号" textFill="#5c0a41">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Label layoutX="64.0" layoutY="81.0" text="号种类别">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="128.0" layoutY="78.0" />
+            <Label layoutX="321.0" layoutY="81.0" text="号种名称">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="385.0" layoutY="77.0" />
+            <Label layoutX="322.0" layoutY="128.0" text="应缴金额">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="386.0" layoutY="124.0" />
+            <Label layoutX="64.0" layoutY="128.0" text="交款金额">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="129.0" layoutY="124.0" />
+            <TextField layoutX="129.0" layoutY="165.0" />
+            <Label layoutX="64.0" layoutY="169.0" text="找零金额">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="321.0" layoutY="169.0" text="挂号号码">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="386.0" layoutY="165.0" />
+            <Label layoutX="66.0" layoutY="36.0" text="科室名称">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="129.0" layoutY="33.0" />
+            <Label layoutX="322.0" layoutY="36.0" text="医生姓名">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="385.0" layoutY="33.0" />
+            <Button layoutX="176.0" layoutY="249.0" mnemonicParsing="false" text="确定">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="272.0" layoutY="249.0" mnemonicParsing="false" text="清除">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="365.0" layoutY="249.0" mnemonicParsing="false" text="退出">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
