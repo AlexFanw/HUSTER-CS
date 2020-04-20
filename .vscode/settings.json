@@ -1,7 +1,0 @@
-{
-    "latex-workshop.view.pdf.external.viewer.command": "/Applications/Skim.app/Contents/SharedSupport/displayline",
-    "latex-workshop.view.pdf.external.viewer.args": [
-        "0",
-        "%PDF%"
-    ]
-}

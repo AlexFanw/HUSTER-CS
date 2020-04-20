@@ -16,7 +16,7 @@ int func_counter = 0;
  */
 void printSummary(int hits, int misses, int evictions)
 {
-    printf("hits:%d misses:%d evictions:%d\n", hits, misses, evictions);
+    printf("hits: %-10d     misses: %-10d   evictions: %-10d    \n", hits, misses, evictions);
     FILE* output_fp = fopen(".csim_results", "w");
     assert(output_fp);
     fprintf(output_fp, "%d %d %d\n", hits, misses, evictions);
