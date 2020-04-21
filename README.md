@@ -1,4 +1,6 @@
-<img src="./asset/hust.jpg" width="" height="100"/>
+<div align = center>
+<img src="https://alexfanblog.oss-cn-beijing.aliyuncs.com/2020/04/21/hust.jpg" width="" height="200"/>
+</div>
 
 # BackGround
 
@@ -21,7 +23,8 @@
 | [🔥大数据导论](./大数据导论) | ☁️大三上学期 大数据导论 Spark/Hadoop/词云  |
 | [🔥Java实验](./Java实验) | ☕️大三下学期 Java实验一/Java实验二 |
 | [🔥函数式编程原理实验](./函数式编程原理实验) | 🤖️大三下学期 函数式编程原理实验 |
-| [🔥计算机系统结构实验](./计算机系统结构实验) | 🔧大三下学期 计算机系统结构实验 |
+| [🔥计算机系统结构实验](./计算机系统结构实验) | 🔧大三下学期 Cache模拟 |
+| [🔥编译原理实验](./编译原理实验) | 🔧大三下学期 编译原理实验 |
 
 
 
