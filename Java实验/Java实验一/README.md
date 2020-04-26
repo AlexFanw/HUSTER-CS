@@ -19,3 +19,7 @@ private String[] additinalStopWords = {"a", "about", "above", "above", "across",
 
 ```
 
+![image-20200426112306249](/Users/alexfan/Library/Application Support/typora-user-images/image-20200426112306249.png)
+
+![image-20200426113423750](/Users/alexfan/Library/Application Support/typora-user-images/image-20200426113423750.png)
+
