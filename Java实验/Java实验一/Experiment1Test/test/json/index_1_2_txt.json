@@ -1,0 +1,84 @@
+{
+  "docIdToDocPathMapping" : {
+    "0" : "D:\\IdeaWorkspace\\SeachEngine\\text_1_2\\1.txt",
+    "1" : "D:\\IdeaWorkspace\\SeachEngine\\text_1_2\\2.txt"
+  },
+  "termToPostingListMapping" : {
+    "{\"content\":\"activity\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 3,
+        "positions" : [ 0, 1, 6 ]
+      }, {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 0 ]
+      } ]
+    },
+    "{\"content\":\"benefits\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 2,
+        "positions" : [ 2, 7 ]
+      }, {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 10 ]
+      } ]
+    },
+    "{\"content\":\"capital\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 2,
+        "positions" : [ 3, 8 ]
+      }, {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 7 ]
+      } ]
+    },
+    "{\"content\":\"destination\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 2,
+        "positions" : [ 4, 9 ]
+      }, {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 1 ]
+      } ]
+    },
+    "{\"content\":\"emergency\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 1,
+        "positions" : [ 10 ]
+      }, {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 2 ]
+      } ]
+    },
+    "{\"content\":\"fizzy\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 1,
+        "positions" : [ 5 ]
+      } ]
+    },
+    "{\"content\":\"frozen\"}" : {
+      "list" : [ {
+        "docId" : 1,
+        "freq" : 2,
+        "positions" : [ 9, 14 ]
+      } ]
+    },
+    "{\"content\":\"google\"}" : {
+      "list" : [ {
+        "docId" : 1,
+        "freq" : 2,
+        "positions" : [ 11, 15 ]
+      } ]
+    }
+  }
+}

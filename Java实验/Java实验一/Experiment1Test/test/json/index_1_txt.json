@@ -1,0 +1,49 @@
+{
+  "docIdToDocPathMapping" : {
+    "0" : "D:\\IdeaWorkspace\\SeachEngine\\text_1\\1.txt"
+  },
+  "termToPostingListMapping" : {
+    "{\"content\":\"activity\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 3,
+        "positions" : [ 0, 1, 6 ]
+      } ]
+    },
+    "{\"content\":\"benefits\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 2,
+        "positions" : [ 2, 7 ]
+      } ]
+    },
+    "{\"content\":\"capital\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 2,
+        "positions" : [ 3, 8 ]
+      } ]
+    },
+    "{\"content\":\"destination\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 2,
+        "positions" : [ 4, 9 ]
+      } ]
+    },
+    "{\"content\":\"emergency\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 1,
+        "positions" : [ 10 ]
+      } ]
+    },
+    "{\"content\":\"fizzy\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 1,
+        "positions" : [ 5 ]
+      } ]
+    }
+  }
+}

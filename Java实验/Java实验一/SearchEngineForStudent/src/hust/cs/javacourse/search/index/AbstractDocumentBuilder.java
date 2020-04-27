@@ -3,6 +3,7 @@ package hust.cs.javacourse.search.index;
 import hust.cs.javacourse.search.parse.AbstractTermTupleStream;
 
 import java.io.File;
+import java.io.IOException;
 
 /**
  * <pre>
@@ -21,7 +22,7 @@ public abstract class AbstractDocumentBuilder {
      * @return ：Document对象
      * </pre>
      */
-    public  abstract AbstractDocument build(int docId, String docPath, AbstractTermTupleStream termTupleStream);
+    public  abstract AbstractDocument build(int docId, String docPath, AbstractTermTupleStream termTupleStream) throws IOException;
 
 //    /**
 //     * <pre>
@@ -43,5 +44,5 @@ public abstract class AbstractDocumentBuilder {
      * @return          : Document对象
      * </pre>
      */
-    public abstract AbstractDocument build(int docId, String docPath, File file);
+    public abstract AbstractDocument build(int docId, String docPath, File file) throws IOException;
 }

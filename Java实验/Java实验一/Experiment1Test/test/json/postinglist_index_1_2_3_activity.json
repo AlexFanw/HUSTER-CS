@@ -1,0 +1,11 @@
+{
+  "list" : [ {
+    "docId" : 0,
+    "freq" : 3,
+    "positions" : [ 0, 1, 6 ]
+  }, {
+    "docId" : 1,
+    "freq" : 1,
+    "positions" : [ 0 ]
+  } ]
+}

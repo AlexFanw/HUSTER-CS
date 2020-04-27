@@ -20,12 +20,12 @@ public abstract class AbstractIndex implements FileSerializable{
      * 内存中的docId和docPath的映射关系, key为docId，value为对应的docPath.
      *      TreeMap可以对键值排序
      */
-    protected Map<Integer, String> docIdToDocPathMapping = new TreeMap<>();
+    public Map<Integer, String> docIdToDocPathMapping = new TreeMap<>();
 
     /**
      * 内存中的倒排索引结构为HashMap，key为Term对象，value为对应的PostingList对象.
      */
-    protected  Map<AbstractTerm, AbstractPostingList> termToPostingListMapping = new TreeMap<AbstractTerm, AbstractPostingList>();
+    public Map<AbstractTerm, AbstractPostingList> termToPostingListMapping = new TreeMap<AbstractTerm, AbstractPostingList>();
 
     /**
      *  缺省构造函数,构建空的索引

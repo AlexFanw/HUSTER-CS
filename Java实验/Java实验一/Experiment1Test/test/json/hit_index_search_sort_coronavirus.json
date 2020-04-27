@@ -1,0 +1,25 @@
+[ {
+  "docId" : 0,
+  "docPath" : "D:\\IdeaWorkspace\\SeachEngine\\text_search_sort\\1.txt",
+  "content" : "The novel coronavirus death rate According to Government health authority of England Government, most of the coronavirus cases are in England Government",
+  "termPostingMapping" : {
+    "{\"content\":\"coronavirus\"}" : {
+      "docId" : 0,
+      "freq" : 2,
+      "positions" : [ 2, 16 ]
+    }
+  },
+  "score" : -2.0
+}, {
+  "docId" : 1,
+  "docPath" : "D:\\IdeaWorkspace\\SeachEngine\\text_search_sort\\2.txt",
+  "content" : "The release of the new James Bond film coronavirus death continue to spread England Government",
+  "termPostingMapping" : {
+    "{\"content\":\"coronavirus\"}" : {
+      "docId" : 1,
+      "freq" : 1,
+      "positions" : [ 8 ]
+    }
+  },
+  "score" : -1.0
+} ]

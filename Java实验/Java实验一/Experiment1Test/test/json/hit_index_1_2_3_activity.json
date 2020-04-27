@@ -1,0 +1,25 @@
+[ {
+  "docId" : 0,
+  "docPath" : "D:\\IdeaWorkspace\\SeachEngine\\text\\1.txt",
+  "content" : "activity activity benefits capital  destination\n\n\nfizzy activity benefits capital destination emergency\n\n2005 12-31 F16 the from  Pseudopseudohypoparathyroidism",
+  "termPostingMapping" : {
+    "{\"content\":\"activity\"}" : {
+      "docId" : 0,
+      "freq" : 3,
+      "positions" : [ 0, 1, 6 ]
+    }
+  },
+  "score" : -3.0
+}, {
+  "docId" : 1,
+  "docPath" : "D:\\IdeaWorkspace\\SeachEngine\\text\\2.txt",
+  "content" : "activity   destination emergency\n26%  U571 because hence capital i \n\nfrozen benefits google hahahahahahahahahahahahah ha frozen google",
+  "termPostingMapping" : {
+    "{\"content\":\"activity\"}" : {
+      "docId" : 1,
+      "freq" : 1,
+      "positions" : [ 0 ]
+    }
+  },
+  "score" : -1.0
+} ]

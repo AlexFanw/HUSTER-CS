@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/index/TermTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.index.TermTest">
+                <methods>
+                    <include name="testTestEquals"/>
+                    <include name="testTestToString"/>
+                    <include name="testGetContent"/>
+                    <include name="testSetContent"/>
+                    <include name="testCompareTo"/>
+                    <include name="testWriteObject"/>
+                    <include name="testReadObject"/>
+                </methods>
+            </class>
+        </classes>
+    </test> 
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/index/TermTupleTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.index.TermTupleTest">
+                <methods>
+                    <include name="testTestEquals"/>
+                    <include name="testTestToString"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/index/PostingTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.index.PostingTest">
+                <methods>
+                    <include name="testTestEquals"/>
+                    <include name="testTestToString"/>
+                    <include name="testGetDocId"/>
+                    <include name="testSetDocId"/>
+                    <include name="testGetFreq"/>
+                    <include name="testSetFreq"/>
+                    <include name="testGetPositions"/>
+                    <include name="testSetPositions"/>
+                    <include name="testCompareTo"/>
+                    <include name="testSort"/>
+                    <include name="testWriteObject"/>
+                    <include name="testReadObject"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/index/PostingListTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.index.PostingListTest">
+                <methods>
+                    <include name="testAdd"/>
+                    <include name="testTestToString"/>
+                    <include name="testTestAdd"/>
+                    <include name="testGet"/>
+                    <include name="testIndexOf"/>
+                    <include name="testTestIndexOf"/>
+                    <include name="testContains"/>
+                    <include name="testRemove"/>
+                    <include name="testTestRemove"/>
+                    <include name="testSize"/>
+                    <include name="testClear"/>
+                    <include name="testIsEmpty"/>
+                    <include name="testSort"/>
+                    <include name="testWriteObject"/>
+                    <include name="testReadObject"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/index/DocumentTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.index.DocumentTest">
+                <methods>
+                    <include name="testGetDocId"/>
+                    <include name="testSetDocId"/>
+                    <include name="testGetDocPath"/>
+                    <include name="testSetDocPath"/>
+                    <include name="testGetTuples"/>
+                    <include name="testAddTuple"/>
+                    <include name="testContains"/>
+                    <include name="testGetTuple"/>
+                    <include name="testGetTupleSize"/>
+                    <include name="testTestToString"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/parse/TermTupleScannerTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.parse.TermTupleScannerTest">
+                <methods>
+                    <include name="testNext"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/parse/StopWordTermTupleFilterTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.parse.StopWordTermTupleFilterTest">
+                <methods>
+                    <include name="testNext"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/parse/PatternTermTupleFilterTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.parse.PatternTermTupleFilterTest">
+                <methods>
+                    <include name="testNext"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/parse/LengthTermTupleFilterTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.parse.LengthTermTupleFilterTest">
+                <methods>
+                    <include name="testNext"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/parse/ScannerFilterAllInOneTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.parse.ScannerFilterAllInOneTest">
+                <methods>
+                    <include name="testNext"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/index/DocumentBuilderTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.index.DocumentBuilderTest">
+                <methods>
+                    <include name="testBuild"/>
+                    <include name="testTestBuild"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/index/IndexTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.index.IndexTest">
+                <methods>
+                    <include name="testTestToString"/>
+                    <include name="testAddDocument"/>
+                    <include name="testLoad"/>
+                    <include name="testSave"/>
+                    <include name="testSearch"/>
+                    <include name="testGetDictionary"/>
+                    <include name="testWriteObject"/>
+                    <include name="testReadObject"/>
+                    <include name="testOptimize"/>
+                    <include name="testGetDocName"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/index/IndexBuilderTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.index.IndexBuilderTest">
+                <methods>
+                    <include name="testBuildIndex"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/query/HitTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.query.HitTest">
+                <methods>
+                    <include name="testGetDocId"/>
+                    <include name="testGetDocPath"/>
+                    <include name="testGetContent"/>
+                    <include name="testSetContent"/>
+                    <include name="testGetScore"/>
+                    <include name="testSetScore"/>
+                    <include name="testGetTermPostingMapping"/>
+                    <include name="testTestToString"/>
+                    <include name="testCompareTo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaWorkspace/SeachEngine/test/hust/cs/javacourse/search/query/IndexSearcherTest.java">
+        <classes>
+            <class name="hust.cs.javacourse.search.query.IndexSearcherTest">
+                <methods>
+                    <include name="testSearch"/>
+                    <include name="testTestSearch"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

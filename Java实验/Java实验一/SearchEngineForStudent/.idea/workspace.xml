@@ -2,16 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4213cc7e-886d-4d43-8cf7-3b6d0767e64d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Document.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Term.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/TermTupleScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/TermTupleStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javadoc/hust/.idea/hust.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index/index.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index/index.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/DocumentBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/IndexBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Posting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/PostingList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/TermTuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/LengthTermTupleFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/PatternTermTupleFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/StopWordTermTupleFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/impl/Hit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/impl/IndexSearcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/impl/SimpleSorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/text/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/text/2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/text/3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/功能测试数据集/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/功能测试数据集/2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/功能测试数据集/3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/用于检索的测试词.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/11.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/12.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/13.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/14.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/15.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/9.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java程序设计实验一帮助文档.ppt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../~$Java程序设计实验一帮助文档.ppt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/AbstractDocumentBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/AbstractDocumentBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/AbstractIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/AbstractIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/AbstractIndexBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/AbstractIndexBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Index.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Term.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/AbstractTermTupleStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/AbstractTermTupleStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/TermTupleScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/TermTupleScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/TermTupleStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/AbstractIndexSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/AbstractIndexSearcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/run/TestBuildIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/run/TestBuildIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/run/TestSearchIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/run/TestSearchIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/util/StringSplitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/util/StringSplitter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +90,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/text" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -59,6 +100,45 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="hust.cs.javacourse.search.index.impl" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/text" />
+      <recent name="$PROJECT_DIR$/text/功能测试数据集" />
+      <recent name="$PROJECT_DIR$/index" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestBuildIndex">
+    <configuration name="TestBuildIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hust.cs.javacourse.search.run.TestBuildIndex" />
+      <module name="SearchEngineForStudent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hust.cs.javacourse.search.run.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSearchIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hust.cs.javacourse.search.run.TestSearchIndex" />
+      <module name="SearchEngineForStudent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hust.cs.javacourse.search.run.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestBuildIndex" />
+        <item itemvalue="Application.TestSearchIndex" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -72,7 +152,7 @@
       <updated>1582478826204</updated>
       <workItem from="1582478829635" duration="2317000" />
       <workItem from="1582540609178" duration="21794000" />
-      <workItem from="1587871900554" duration="8529000" />
+      <workItem from="1587871900554" duration="41131000" />
     </task>
     <servers />
   </component>
@@ -80,13 +160,54 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="653" y="253" key="#com.intellij.ide.util.MemberChooser" timestamp="1587893946662">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="438" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587978889353">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="653" y="253" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1587893946662" />
+    <state x="438" y="271" key="#com.intellij.fileTypes.FileTypeChooser/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587978889353" />
+    <state x="560" y="219" key="#com.intellij.ide.util.MemberChooser" timestamp="1587972490817">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="653" y="253" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1587917855259" />
+    <state x="560" y="219" key="#com.intellij.ide.util.MemberChooser/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587972490817" />
+    <state width="1398" height="285" key="GridCell.Tab.0.bottom" timestamp="1587999432197">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.0.bottom/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432197" />
+    <state width="1398" height="285" key="GridCell.Tab.0.center" timestamp="1587999432196">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.0.center/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432196" />
+    <state width="1398" height="285" key="GridCell.Tab.0.left" timestamp="1587999432195">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.0.left/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432195" />
+    <state width="1398" height="285" key="GridCell.Tab.0.right" timestamp="1587999432196">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.0.right/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432196" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1587999432198">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432198" />
+    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1587999432197">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.center/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432197" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1587999432197">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.left/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432197" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1587999432198">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.right/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432198" />
     <state x="656" y="118" key="SettingsEditor" timestamp="1587871921135">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="656" y="118" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1587871921135" />
+    <state x="458" y="232" key="extract.method.dialog" timestamp="1587972940815">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="458" y="232" key="extract.method.dialog/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587972940815" />
   </component>
 </project>
