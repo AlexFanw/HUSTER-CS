@@ -1,0 +1,4 @@
+
+Google has announced that its image recognition AI will no longer identify people in images as a man or a woman. The change was revealed in an email to developers who use the company's Cloud Vision API that makes it easy for apps and services to identify objects in images.
+
+In the email, Google said it wasn't possible to detect a person's true gender based simply on the clothes they were wearing. But Google also said that they were dropping gender labels for another reason: they could create or reinforce biases.
