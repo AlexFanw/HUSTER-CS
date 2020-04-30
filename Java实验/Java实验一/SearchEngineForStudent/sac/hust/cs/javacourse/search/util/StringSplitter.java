@@ -35,11 +35,14 @@ public class StringSplitter {
         String part = null;
         int lastEnd = 0;
         while(match.find()){
+            int start = match.start(0);
+            int end = match.end(0);
             part = input.substring(lastEnd, match.start(0));
-            if( (part != null && part.equals("")) || part == null)
-                continue;
-            list.add(part);
             lastEnd = match.end(0);
+            if( (part != null && part.equals("")) || part == null) {
+                continue;
+            }
+            list.add(part);
         }
         //取得最后一部分
         if(lastEnd < input.length()){
@@ -54,6 +57,7 @@ public class StringSplitter {
     public static void main(String[] args){
         StringSplitter splitter = new StringSplitter();
         String regex1TestInput = "key1,， ,Key2;Key3，:Key4;；;Key5；？?Key6，!Key7；Key8   key9\nkey10.。？key11";
+//        String regex1TestInput = "\n\naaa bbb ccc\n\nddd is F17";
         splitter.setSplitRegex(Config.STRING_SPLITTER_REGEX);
         List<String> parts = splitter.splitByRegex(regex1TestInput);
         for(int i = 0; i < parts.size(); i++){
