@@ -23,7 +23,7 @@ void display(struct ASTNode *T,int indent)
   struct ASTNode *T0;
   if (T)
 	{
-	switch (T->kind) {
+    switch (T->kind) {
 	case EXT_DEF_LIST:  
         display(T->ptr[0],indent);    //显示该外部定义（外部变量和函数）列表中的第一个
         display(T->ptr[1],indent);    //显示该外部定义列表中的其它外部定义
@@ -34,7 +34,7 @@ void display(struct ASTNode *T,int indent)
         printf("%*c变量名：\n",indent+OFFSET,' ');
         display(T->ptr[1],indent+OFFSET*2);        //显示变量列表
         break;
-	case TYPE:          
+    case TYPE:         
         printf("%*c类型： %s\n",indent,' ',T->type_id);
         break;
     case EXT_DEC_LIST:  
@@ -124,11 +124,25 @@ void display(struct ASTNode *T,int indent)
                 printf("%*c %s ASSIGNOP\n ",indent+OFFSET*2,' ',T0->ptr[0]->ptr[0]->type_id);
                 display(T0->ptr[0]->ptr[1],indent+strlen(T0->ptr[0]->ptr[0]->type_id)+7);        //显示初始化表达式
             }
+            else if(T0->ptr[0]->kind==ARRAY_LIST){
+                printf("%*c%s\n",indent+OFFSET*2,' ',T0->ptr[0]->type_id);
+            }
             T0=T0->ptr[1];
         }
         break;
-	case ID:	        
+    case ID:	        
         printf("%*cID： %s\n",indent,' ',T->type_id);
+        break;
+    case CONTINUE:
+	printf("%*c CONTINUE语句(%d)\n", indent, ' ', T->pos);
+	break;
+	case BREAK:
+	printf("%*c BREAK(%d)\n", indent, ' ', T->pos);
+	break;
+    //数组的打印
+    case ARRAY_LIST:
+        display(T->ptr[0], indent);
+        display(T->ptr[1], indent);
         break;
 	case INT:	     
         printf("%*cINT：%d\n",indent,' ',T->type_int);
@@ -136,8 +150,11 @@ void display(struct ASTNode *T,int indent)
 	case FLOAT:	        
         printf("%*cFLAOT：%f\n",indent,' ',T->type_float);
         break;
-    case CHAR:
+        case CHAR:
         printf("%*cCHAR: %c\n", indent, ' ', T->type_char);
+        break;
+        case STRING:
+        printf("%*cSTRING: %s\n", indent, ' ', T->type_id);//STRING
         break;
 	case ASSIGNOP:
     case PLUSASSIGNOP:

@@ -8,7 +8,7 @@ int yycolumn=1;
 typedef union {
 	int type_int;
 	char type_char;
-	int type_float;
+	float type_float;
 	char type_id[32];
 	struct node *ptr;
 } YYLVAL;
@@ -27,15 +27,21 @@ STRING ["][^\n]*["]
 {INT} {printf("(%s, INT)\n", yytext);yylval.type_int=atoi(yytext); return INT;}
 {FLOAT}  {printf("(%s, FLOAT)\n", yytext);yylval.type_float=atof(yytext); return FLOAT;}
 {CHAR}   {printf("(%s, CHAR)\n", yytext);yylval.type_char=yytext[0];return CHAR;}
-{STRING} {printf("(%s, STRING)\n",yytext);strcpy(yylval.type_id,yytext);return STRING;}
+{STRING} {printf("(%s, STRING)\n",yytext);strcpy(yylval.type_id,yytext);return STRING;}//string
 "int"    {printf("(%s, TYPEINT)\n", yytext);strcpy(yylval.type_id, yytext);return TYPE;}
 "float"  {printf("(%s, TYPEFLOAT)\n", yytext);strcpy(yylval.type_id, yytext);return TYPE;}
 "char"   {printf("(%s, TYPECHAR)\n", yytext);strcpy(yylval.type_id, yytext);return TYPE;}
+"string" {printf("(%sm TYPESTRING)\n",yytext);strcpy(yylval.type_id,yytext);return TYPE;}//string
 "return" {printf("(%s, RETURN)\n", yytext);return RETURN;}
 "if"     {printf("(%s, IF)\n", yytext);return IF;}
 "else"   {printf("(%s, ELSE)\n", yytext);return ELSE;}
 "while"  {printf("(%s, WHILE)\n", yytext);return WHILE;}
-
+"break"	 {printf("(%s, BREAK)\n", yytext);return BREAK;} // break
+"continue" {printf("(%s, CONTINUE)\n", yytext);return CONTINUE;} //continue
+"for"	 {printf("(%s, FOR)\n", yytext);return FOR;}//for
+"switch" {printf("(%s, SWITCH)\n", yytext);return SWITCH;}//switch
+"case"	 {printf("(%s, CASE)\n", yytext);return CASE;}//case
+"struct" {printf("(%s, STRUCT)\n", yytext);return STRUCT;}//struct
 {ID}     {printf("(%s, IDENTIFIER)\n", yytext);strcpy(yylval.type_id,  yytext); return ID;}
 ";"		 {printf("(%s, SEMI)\n", yytext);return SEMI;}
 ","		 {printf("(%s, COMMA)\n", yytext);return COMMA;}
@@ -45,6 +51,7 @@ STRING ["][^\n]*["]
 "-"		 {printf("(%s, MINUS)\n", yytext);return MINUS;}
 "*"		 {printf("(%s, STAR)\n", yytext);return STAR;}
 "/"		 {printf("(%s, DIV)\n", yytext);return DIV;}
+"."      {printf("(%s, DOT)\n", yytext);return DOT;}
 "%"      {printf("(%s, MOD)\n", yytext);return MOD;}
 "&&"     {printf("(%s, AND)\n", yytext);return AND;}
 "||"     {printf("(%s, OR)\n", yytext);return OR;}
@@ -61,7 +68,7 @@ STRING ["][^\n]*["]
 "{"		 {printf("(%s, LC)\n", yytext);return LC;}
 "}"		 {printf("(%s, RC)\n", yytext);return RC;}
 "["      {printf("(%s, LB)\n", yytext);return LB;}
-"]"      {printf("(%s, LC)\n", yytext);return RB;}
+"]"      {printf("(%s, RB)\n", yytext);return RB;}
 [\n]     {printf("(\\n, EOL)\n");yycolumn=1;}   
 [ \r\t]  {}   
 .		 {printf("Error type A :Mysterious character \"%s\"\n\t at Line %d\n",yytext,yylineno);}
