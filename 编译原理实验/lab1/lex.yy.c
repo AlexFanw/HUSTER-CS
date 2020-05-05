@@ -861,12 +861,12 @@ YY_RULE_SETUP
 case 3:
 YY_RULE_SETUP
 #line 29 "Vector.l"
-{printf("(%s, CHAR)\n", yytext);yylval.type_char=yytext[0];return CHAR;}
+{printf("(%s, CHAR)\n", yytext);yylval.type_char=yytext[1];return CHAR;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
 #line 30 "Vector.l"
-{printf("(%s, STRING)\n",yytext);strcpy(yylval.type_id,yytext);return STRING;}//string
+{printf("(%s, STRING)\n",yytext);strncpy(yylval.type_id,yytext+1,strlen(yytext)-2);return STRING;}//string
 	YY_BREAK
 case 5:
 YY_RULE_SETUP

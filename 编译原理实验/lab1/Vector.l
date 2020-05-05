@@ -26,8 +26,8 @@ STRING ["][^\n]*["]
 %%
 {INT} {printf("(%s, INT)\n", yytext);yylval.type_int=atoi(yytext); return INT;}
 {FLOAT}  {printf("(%s, FLOAT)\n", yytext);yylval.type_float=atof(yytext); return FLOAT;}
-{CHAR}   {printf("(%s, CHAR)\n", yytext);yylval.type_char=yytext[0];return CHAR;}
-{STRING} {printf("(%s, STRING)\n",yytext);strcpy(yylval.type_id,yytext);return STRING;}//string
+{CHAR}   {printf("(%s, CHAR)\n", yytext);yylval.type_char=yytext[1];return CHAR;}
+{STRING} {printf("(%s, STRING)\n",yytext);strncpy(yylval.type_id,yytext+1,strlen(yytext)-2);return STRING;}//string
 "int"    {printf("(%s, TYPEINT)\n", yytext);strcpy(yylval.type_id, yytext);return TYPE;}
 "float"  {printf("(%s, TYPEFLOAT)\n", yytext);strcpy(yylval.type_id, yytext);return TYPE;}
 "char"   {printf("(%s, TYPECHAR)\n", yytext);strcpy(yylval.type_id, yytext);return TYPE;}

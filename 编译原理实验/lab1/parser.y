@@ -72,11 +72,11 @@ ExtDecList:  VarDec      {$$=$1;}       /*每一个EXT_DECLIST的结点，其第
            | VarDec COMMA ExtDecList {$$=mknode(2,EXT_DEC_LIST,yylineno,$1,$3);}
            ;  
 VarDec:  ID          {$$=mknode(0,ID,yylineno);strcpy($$->type_id,$1);} |   //ID结点，标识符符号串存放结点的type_id
-         ID Arraylist {$$=mknode(1,ARRAY_LIST,yylineno,$2);strcpy($$->type_id,$1);} 
+         ID Arraylist  {$$=mknode(1,ARRAY_LIST,yylineno,$2);strcpy($$->type_id,$1);} 
          ;
 
-Arraylist:  LB Exp RB                  {$$=$2;}
-            | LB Exp RB Arraylist       {$$=mknode(2,ARRAY_LIST,yylineno,$2,$4);}
+Arraylist:  LB INT RB           {$$=mknode(0,ARRAY_LIST,yylineno);$$->type_int=$2;}
+            | LB INT RB Arraylist       {$$=mknode(2,ARRAY_LIST,yylineno,$2,$4);$$->type_int=$2}
         ;
 FuncDec: ID LP VarList RP   {$$=mknode(1,FUNC_DEC,yylineno,$3);strcpy($$->type_id,$1);}//函数名存放在$$->type_id
 		|ID LP  RP   {$$=mknode(0,FUNC_DEC,yylineno);strcpy($$->type_id,$1);$$->ptr[0]=NULL;}//函数名存放在$$->type_id

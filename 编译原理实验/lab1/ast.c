@@ -121,12 +121,15 @@ void display(struct ASTNode *T,int indent)
                 printf("%*c %s\n",indent+OFFSET*2,' ',T0->ptr[0]->type_id);
             else if (T0->ptr[0]->kind==ASSIGNOP)
             {
+                if(T0->ptr[0]->ptr[0]->kind == ARRAY_LIST) display(T0->ptr[0]->ptr[0],indent); //var_dec assignop exp的情况
                 printf("%*c %s ASSIGNOP\n ",indent+OFFSET*2,' ',T0->ptr[0]->ptr[0]->type_id);
                 display(T0->ptr[0]->ptr[1],indent+strlen(T0->ptr[0]->ptr[0]->type_id)+7);        //显示初始化表达式
+                
             }
             else if(T0->ptr[0]->kind==ARRAY_LIST){
-                printf("%*c%s\n",indent+OFFSET*2,' ',T0->ptr[0]->type_id);
+                printf("%*c 数组%s\n",indent+OFFSET*2,' ',T0->ptr[0]->type_id);//var $$=$1
             }
+
             T0=T0->ptr[1];
         }
         break;
@@ -141,8 +144,7 @@ void display(struct ASTNode *T,int indent)
 	break;
     //数组的打印
     case ARRAY_LIST:
-        display(T->ptr[0], indent);
-        display(T->ptr[1], indent);
+        printf("%*c 数组\n",indent+OFFSET*2,' ');
         break;
 	case INT:	     
         printf("%*cINT：%d\n",indent,' ',T->type_int);
@@ -157,6 +159,10 @@ void display(struct ASTNode *T,int indent)
         printf("%*cSTRING: %s\n", indent, ' ', T->type_id);//STRING
         break;
 	case ASSIGNOP:
+        T0=T;
+        if(T0->ptr[0]->kind==ARRAY_LIST){
+                printf("%*c数组%s\n",indent+OFFSET*2,' ',T0->ptr[0]->type_id);
+            }
     case PLUSASSIGNOP:
     case MINUSASSIGNOP:
     case STARASSIGNOP:
@@ -190,7 +196,7 @@ void display(struct ASTNode *T,int indent)
         i=1;
         while (T) {  //ARGS表示实际参数表达式序列结点，其第一棵子树为其一个实际参数表达式，第二棵子树为剩下的
             struct ASTNode *T0=T->ptr[0];
-            printf("%*c第%d个实际参数表达式：\n",indent,' ',i++);
+            printf("%*c第%d个：\n",indent,' ',i++);
             display(T0,indent+OFFSET);
             T=T->ptr[1];
         }

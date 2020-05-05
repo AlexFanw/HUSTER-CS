@@ -1,5 +1,6 @@
 int a,b,c;
-float m,n;
+float m,n,l;
+char a;
 int fibo(int a){
     if(a==1||a==2)return 1;
     return fibo(a-1)+fibo(a-2);
@@ -7,10 +8,19 @@ int fibo(int a){
 int main(){
     int m,n,i;
     int f = 5;
-    int al[3][2] = [[2,3,3],[2,1,5]];
+    int al[3];
+    int ex[3]=[1,2,3];
+    int fan[2][3]=[[1,2,3],[4,5,6]];
     string s = "alex fan";
+    char a = 'a';
     m=read();
     i=1;
+    i++;
+    i--;
+    i+=1;
+    i-=1;
+    i*=1;
+    i/=1;
     while(i<=m){
         n=fibo(i);
         write(n);

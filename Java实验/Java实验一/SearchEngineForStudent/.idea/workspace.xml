@@ -2,57 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4213cc7e-886d-4d43-8cf7-3b6d0767e64d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index/index.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/index.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/DocumentBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/IndexBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Posting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/PostingList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/TermTuple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/LengthTermTupleFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/PatternTermTupleFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/StopWordTermTupleFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/impl/Hit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/impl/IndexSearcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/impl/SimpleSorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/text/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/text/2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/text/3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/功能测试数据集/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/功能测试数据集/2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/功能测试数据集/3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/用于检索的测试词.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/11.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/12.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/13.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/14.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/15.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text/真实测试数据集/9.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java程序设计实验一帮助文档.ppt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/AbstractDocumentBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/AbstractDocumentBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/AbstractIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/AbstractIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/AbstractIndexBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/AbstractIndexBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Document.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Index.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/index/impl/Term.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/AbstractTermTupleStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/AbstractTermTupleStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/TermTupleScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/TermTupleScanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/parse/impl/TermTupleStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/AbstractIndexSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/query/AbstractIndexSearcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/run/TestBuildIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/run/TestBuildIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/run/TestSearchIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/run/TestSearchIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/cs/javacourse/search/util/StringSplitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/cs/javacourse/search/util/StringSplitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../编译原理实验/lab1/Vector.l" beforeDir="false" afterPath="$PROJECT_DIR$/../../../编译原理实验/lab1/Vector.l" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../编译原理实验/lab1/ast.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../编译原理实验/lab1/ast.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../编译原理实验/lab1/lex.yy.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../编译原理实验/lab1/lex.yy.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../编译原理实验/lab1/parser" beforeDir="false" afterPath="$PROJECT_DIR$/../../../编译原理实验/lab1/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../编译原理实验/lab1/parser.output" beforeDir="false" afterPath="$PROJECT_DIR$/../../../编译原理实验/lab1/parser.output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../编译原理实验/lab1/parser.tab.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../编译原理实验/lab1/parser.tab.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../编译原理实验/lab1/parser.y" beforeDir="false" afterPath="$PROJECT_DIR$/../../../编译原理实验/lab1/parser.y" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../编译原理实验/lab1/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../编译原理实验/lab1/test.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +111,8 @@
       <workItem from="1582478829635" duration="2317000" />
       <workItem from="1582540609178" duration="21794000" />
       <workItem from="1587871900554" duration="41131000" />
+      <workItem from="1588686599268" duration="15000" />
+      <workItem from="1588702215103" duration="6000" />
     </task>
     <servers />
   </component>
