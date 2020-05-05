@@ -14,6 +14,8 @@ void yyerror(const char* fmt, ...);
 void display(struct ASTNode *,int);
 %} 
 
+
+//辅助定义部分
 %union {
 	int    type_int;
         char   type_char;
@@ -50,8 +52,8 @@ void display(struct ASTNode *,int);
 %nonassoc LOWER_THEN_ELSE
 %nonassoc ELSE
 
+//规则定义部分
 %%
-
 program: ExtDefList    { display($1,0);}     //显示语法树,语义分析
          ; 
 ExtDefList: {$$=NULL;}
