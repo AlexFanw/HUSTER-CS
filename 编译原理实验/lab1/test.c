@@ -13,6 +13,9 @@ int main(){
     int fan[2][3]=[[1,2,3],[4,5,6]];
     string s = "alex fan";
     char a = 'a';
+    s = "alex";
+    a = 'b';
+    ex[2]=1;
     m=read();
     i=1;
     i++;
@@ -21,6 +24,7 @@ int main(){
     i-=1;
     i*=1;
     i/=1;
+    ex[2]=9;
     while(i<=m){
         n=fibo(i);
         write(n);

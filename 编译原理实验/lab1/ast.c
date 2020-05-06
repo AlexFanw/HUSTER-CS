@@ -117,8 +117,9 @@ void display(struct ASTNode *T,int indent)
         printf("%*c变量名：\n",indent,' ');
         T0=T;
         while (T0) {
-            if (T0->ptr[0]->kind==ID)
-                printf("%*c %s\n",indent+OFFSET*2,' ',T0->ptr[0]->type_id);
+            if (T0->ptr[0]->kind==ID){
+                 printf("%*c %s\n",indent+OFFSET*2,' ',T0->ptr[0]->type_id);
+            }
             else if (T0->ptr[0]->kind==ASSIGNOP)
             {
                 if(T0->ptr[0]->ptr[0]->kind == ARRAY_LIST) display(T0->ptr[0]->ptr[0],indent); //var_dec assignop exp的情况
@@ -144,7 +145,7 @@ void display(struct ASTNode *T,int indent)
 	break;
     //数组的打印
     case ARRAY_LIST:
-        printf("%*c 数组\n",indent+OFFSET*2,' ');
+        printf("%*c 数组%s\n",indent+OFFSET*2,' ',T->type_id);
         break;
 	case INT:	     
         printf("%*cINT：%d\n",indent,' ',T->type_int);

@@ -49,7 +49,8 @@
 %left PLUS MINUS
 %left STAR DIV MOD
 %left AUTOPLUS AUTOMINUS
-%left SEMI LC RC LB RB COMMA DOT
+//%left LP LB LC RP RB RC SEMI
+//%left SEMI LC RC LB RB COMMA DOT
 %right UMINUS NOT DPLUS
 
 %nonassoc LOWER_THEN_ELSE
@@ -79,7 +80,7 @@ Arraylist:  LB INT RB           {$$=mknode(0,ARRAY_LIST,yylineno);$$->type_int=$
             | LB INT RB Arraylist       {$$=mknode(2,ARRAY_LIST,yylineno,$2,$4);$$->type_int=$2}
         ;
 FuncDec: ID LP VarList RP   {$$=mknode(1,FUNC_DEC,yylineno,$3);strcpy($$->type_id,$1);}//函数名存放在$$->type_id
-		|ID LP  RP   {$$=mknode(0,FUNC_DEC,yylineno);strcpy($$->type_id,$1);$$->ptr[0]=NULL;}//函数名存放在$$->type_id
+	|ID LP  RP   {$$=mknode(0,FUNC_DEC,yylineno);strcpy($$->type_id,$1);$$->ptr[0]=NULL;}//函数名存放在$$->type_id
         ;  
 VarList: ParamDec  {$$=mknode(1,PARAM_LIST,yylineno,$1);}
         | ParamDec COMMA  VarList  {$$=mknode(2,PARAM_LIST,yylineno,$1,$3);}
@@ -144,11 +145,11 @@ Exp:    Exp ASSIGNOP Exp {$$=mknode(2,ASSIGNOP,yylineno,$1,$3);strcpy($$->type_i
       | STRING        {$$=mknode(0,STRING,yylineno);strcpy($$->type_id,$1);$$->type=STRING;}
       | FLOAT         {$$=mknode(0,FLOAT,yylineno);$$->type_float=$1;$$->type=FLOAT;}
       | LB Args RB    {$$=$2;} //数组
+      | ID Arraylist  {$$=mknode(1,ID,yylineno,$2);strcpy($$->type_id,$1);}      
       ;
 Args:    Exp COMMA Args    {$$=mknode(2,ARGS,yylineno,$1,$3);}
        | Exp               {$$=mknode(1,ARGS,yylineno,$1);}
        ;
-       
 %%
 
 int main(int argc, char *argv[]){
