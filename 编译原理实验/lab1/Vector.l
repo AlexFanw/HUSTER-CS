@@ -16,6 +16,7 @@ typedef union {
 
 %}
 %option yylineno
+%x COMMENT
 
 ID   [A-Za-z][A-Za-z0-9]*  
 INT [1-9][0-9]*|[0]
@@ -33,6 +34,7 @@ STRING ["][^\n]*["]
 "char"   {printf("(%s, TYPECHAR)\n", yytext);strcpy(yylval.type_id, yytext);return TYPE;}
 "string" {printf("(%sm TYPESTRING)\n",yytext);strcpy(yylval.type_id,yytext);return TYPE;}//string
 "return" {printf("(%s, RETURN)\n", yytext);return RETURN;}
+
 "if"     {printf("(%s, IF)\n", yytext);return IF;}
 "else"   {printf("(%s, ELSE)\n", yytext);return ELSE;}
 "while"  {printf("(%s, WHILE)\n", yytext);return WHILE;}
@@ -42,7 +44,9 @@ STRING ["][^\n]*["]
 "switch" {printf("(%s, SWITCH)\n", yytext);return SWITCH;}//switch
 "case"	 {printf("(%s, CASE)\n", yytext);return CASE;}//case
 "struct" {printf("(%s, STRUCT)\n", yytext);return STRUCT;}//struct
+"default" {printf("(%s, DEFAULT)\n", yytext);return DEFAULT;}//DEFAULT
 {ID}     {printf("(%s, IDENTIFIER)\n", yytext);strcpy(yylval.type_id,  yytext); return ID;}
+":"		 {printf("(%s,COLON)\n",yytext);return COLON;}
 ";"		 {printf("(%s, SEMI)\n", yytext);return SEMI;}
 ","		 {printf("(%s, COMMA)\n", yytext);return COMMA;}
 ">"|"<"|">="|"<="|"=="|"!=" {printf("(%s, RELOP)\n", yytext);strcpy(yylval.type_id, yytext);return RELOP;}
@@ -73,7 +77,11 @@ STRING ["][^\n]*["]
 [ \r\t]  {}   
 .		 {printf("Error type A :Mysterious character \"%s\"\n\t at Line %d\n",yytext,yylineno);}
 \/\/[^\n]*  {printf("(%s, LINECOMMENT)\n", yytext);}//匹配注释
-\/\*(\s|.)*?\*\/ {printf("(%s, BLOCKCOMMENT)\n", yytext);}//匹配注释
+ /* 注释 */
+"/*"		{BEGIN(COMMENT);}
+<COMMENT>"*/" {BEGIN(INITIAL);}
+<COMMENT>([^*]|\n)+|.
+<COMMENT><<EOF>>	{printf("%s: %d: Unterminated comment\n", yytext, yylineno);return 0;}
 %%
 //用户函数部分
 /* 和bison联用时，不需要这部分

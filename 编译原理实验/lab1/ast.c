@@ -23,7 +23,8 @@ void display(struct ASTNode *T,int indent)
   struct ASTNode *T0;
   if (T)
 	{
-    switch (T->kind) {
+    switch (T->kind)
+    {
 	case EXT_DEF_LIST:  
         display(T->ptr[0],indent);    //显示该外部定义（外部变量和函数）列表中的第一个
         display(T->ptr[1],indent);    //显示该外部定义列表中的其它外部定义
@@ -49,7 +50,8 @@ void display(struct ASTNode *T,int indent)
         break;
 	case FUNC_DEC:      
         printf("%*c函数名：%s\n",indent,' ',T->type_id);
-        if (T->ptr[0]) {
+        if (T->ptr[0])
+        {
             printf("%*c函数形参：\n",indent,' ');
             display(T->ptr[0],indent+OFFSET);  //显示函数参数列表
         }
@@ -82,7 +84,7 @@ void display(struct ASTNode *T,int indent)
         display(T->ptr[1],indent);        //显示剩下语句
         break;
 	case WHILE:         
-        printf("%*c循环语句：(%d)\n",indent,' ',T->pos);
+        printf("%*cWHILE(语句)：(%d)\n",indent,' ',T->pos);
         printf("%*c循环条件：\n",indent+OFFSET,' ');
         display(T->ptr[0],indent+OFFSET*2);      //显示循环条件
         printf("%*c循环体：(%d)\n",indent+OFFSET,' ',T->pos);
@@ -138,11 +140,11 @@ void display(struct ASTNode *T,int indent)
         printf("%*cID： %s\n",indent,' ',T->type_id);
         break;
     case CONTINUE:
-	printf("%*c CONTINUE语句(%d)\n", indent, ' ', T->pos);
-	break;
+	    printf("%*c CONTINUE语句(%d)\n", indent, ' ', T->pos);
+	    break;
 	case BREAK:
-	printf("%*c BREAK(%d)\n", indent, ' ', T->pos);
-	break;
+	    printf("%*c BREAK语句(%d)\n", indent, ' ', T->pos);
+	    break;
     //数组的打印
     case ARRAY_LIST:
         printf("%*c 数组%s\n",indent+OFFSET*2,' ',T->type_id);
@@ -153,10 +155,10 @@ void display(struct ASTNode *T,int indent)
 	case FLOAT:	        
         printf("%*cFLAOT：%f\n",indent,' ',T->type_float);
         break;
-        case CHAR:
+    case CHAR:
         printf("%*cCHAR: %c\n", indent, ' ', T->type_char);
         break;
-        case STRING:
+    case STRING:
         printf("%*cSTRING: %s\n", indent, ' ', T->type_id);//STRING
         break;
 	case ASSIGNOP:
@@ -204,6 +206,85 @@ void display(struct ASTNode *T,int indent)
 //      printf("%*c第%d个实际参数表达式：\n",indent,' ',i);
   //    display(T,indent+OFFSET);
         printf("\n");
+        break;
+    case SWITCH:
+        printf("%*cSwitch语句:(%d)\n", indent, ' ',T->pos);
+        printf("%*c判断对象:\n", indent+3, ' ');
+        display(T->ptr[0], indent+6);
+        display(T->ptr[1],indent+6);
+        break;
+    case CASE_STMT_LIST:
+        display(T->ptr[0], indent);
+        display(T->ptr[1], indent);
+        break;
+    case CASE_STMT:
+        printf("%*cCase语句:\n", indent, ' ');
+        printf("%*c匹配值:\n", indent+3, ' ');
+        if (T->type == CHAR){
+            printf("%*cCHAR：'%c'\n", indent+6, ' ', T->type_char);
+        } else if (T->type == INT) {
+            printf("%*cINT：%d\n", indent+6, ' ', T->type_int);
+        }
+        printf("%*cCase语句块:\n", indent+3, ' ');
+        display(T->ptr[0], indent+6);
+        break;
+    case DEFAULT_STMT:
+        printf("%*cDefualt语句:\n", indent, ' ');
+        printf("%*cDefault语句块:\n", indent+3, ' ');
+        display(T->ptr[0], indent+6);
+        break;
+    case STRUCT_NEW:
+        printf("%*c定义结构体:\n", indent, ' ');
+        display(T->ptr[0], indent+6);
+        printf("%*c结构体成员:\n", indent, ' ');
+        display(T->ptr[1], indent+6);
+        break;
+    case STRUCT_DEC:
+        printf("%*c新建结构体变量:\n", indent, ' ');
+        printf("%*c   变量名:%s\n", indent, ' ', T->type_id);
+        break;
+    case EXT_STRUCT_DEC:
+        printf("%*c外部结构体:\n", indent, ' ');
+        display(T->ptr[0], indent+3);
+        break;
+    case STRUCT_VISIT:
+        printf("%*c访问对象:\n", indent, ' ');
+        display(T->ptr[0], indent+3);
+        printf("%*c目标元素:\n", indent, ' ');
+        printf("%*cID: %s\n",indent+3, ' ', T->type_id);
+        break;
+    case FOR:
+        printf("%*cFor(循环)：(%d)\n", indent, ' ', T->pos);
+        printf("%*c循环条件：\n", indent + 3, ' ');
+        display(T->ptr[0], indent + 6); //显示循环条件
+        printf("%*c循环体：(%d)\n", indent + 3, ' ', T->pos);
+        display(T->ptr[1], indent + 6); //显示循环体
+        break;
+    case FOR_DEC:
+        display(T->ptr[0], indent + 6);
+        display(T->ptr[1], indent + 6);
+        display(T->ptr[2], indent + 6);
+        break;
+    case FOR_EXP1:
+        printf("%*c循环初始语句(%d)\n", indent, ' ', T->pos);
+        display(T->ptr[0], indent + 3);
+        display(T->ptr[1], indent + 3);
+        break;
+    case FOR_EXP2:
+        printf("%*c循环条件语句(%d)\n", indent, ' ', T->pos);
+        display(T->ptr[0], indent + 3);
+        break;
+    case FOR_EXP3:
+        printf("%*c循环结束条件(%d)\n", indent, ' ', T->pos);
+        while (T)
+        {
+            struct ASTNode *T0 = T->ptr[0];
+            display(T0, indent + 3);
+            T = T->ptr[1];
+        }
+        break;
+    default:
+        printf("未找到该类型\n");
         break;
         }
     }

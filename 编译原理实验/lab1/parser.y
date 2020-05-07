@@ -26,6 +26,8 @@
 
 //  %type 定义非终结符的语义值类型
 %type <ptr> program ExtDefList ExtDef  Specifier ExtDecList FuncDec CompSt VarList VarDec ParamDec Stmt StmList DefList Def DecList Dec Exp Args 
+%type <ptr> CaseStmtList CaseStmt DefaultStmt Struct_dec StructName
+%type <ptr> ForDec ForExp1 ForExp2 ForExp3
 %type <ptr> Arraylist
 /*加入了ArryList*/
 
@@ -34,13 +36,17 @@
 %token <type_int> INT              /*指定INT的语义值是type_int，有词法分析得到的数值*/
 %token <type_id> ID STRING RELOP TYPE    /*指定ID,RELOP,TYPE,STRING 的语义值是type_id，有词法分析得到的标识符字符串*/
 %token <type_float> FLOAT          /*指定FLOAT的语义值是type_float，有词法分析得到的标识符字符串*/
+%token STRUCT RETURN FOR SWITCH CASE COLON DEFAULT
+%token STRUCT_VISIT STRUCT_NEW STRUCT_DEC EXT_STRUCT_DEC/*结构体*/
+%token CASE_STMT CASE_STMT_LIST DEFAULT_STMT
+%token FOR_DEC FOR_EXP1 FOR_EXP2 FOR_EXP3
 
 %token DPLUS LP RP LC RC LB RB SEMI COMMA DOT      /*用bison对该文件编译时，带参数-d，生成的.tab.h中给这些单词进行编码，可在lex.l中包含parser.tab.h使用这些单词种类码*/
-%token PLUS MINUS STAR DIV MOD ASSIGNOP PLUSASSIGNOP MINUSASSIGNOP STARASSIGNOP DIVASSIGNOP MODASSIGNOP AND OR NOT AUTOPLUS AUTOMINUS IF ELSE WHILE BREAK CONTINUE STRUCT RETURN FOR SWITCH CASE COLON DEFAULT
+%token PLUS MINUS STAR DIV MOD ASSIGNOP PLUSASSIGNOP MINUSASSIGNOP STARASSIGNOP DIVASSIGNOP MODASSIGNOP AND OR NOT AUTOPLUS AUTOMINUS IF ELSE WHILE BREAK CONTINUE 
 /*以下为接在上述token后依次编码的枚举常量，作为AST结点类型标记*/
 %token EXT_DEF_LIST EXT_VAR_DEF FUNC_DEF FUNC_DEC EXT_DEC_LIST PARAM_LIST PARAM_DEC VAR_DEF DEC_LIST DEF_LIST COMP_STM STM_LIST EXP_STMT IF_THEN IF_THEN_ELSE
 %token FUNC_CALL ARGS FUNCTION PARAM ARG CALL LABEL GOTO JLT JLE JGT JGE EQ NEQ
-%token ARRAY_LIST ARRAY_ID //加入Array
+%token ARRAY_LIST //加入Array
 //优先级
 %left ASSIGNOP PLUSASSIGNOP MINUSASSIGNOP STARASSIGNOP DIVASSIGNOP MODASSIGNOP
 %left OR
@@ -49,9 +55,8 @@
 %left PLUS MINUS
 %left STAR DIV MOD
 %left AUTOPLUS AUTOMINUS
-//%left LP LB LC RP RB RC SEMI
-//%left SEMI LC RC LB RB COMMA DOT
-%right UMINUS NOT DPLUS
+%right UMINUS NOT DPLUS DMINUS
+%left LB RB LP RP DOT
 
 %nonassoc LOWER_THEN_ELSE
 %nonassoc ELSE
@@ -65,6 +70,7 @@ ExtDefList: {$$=NULL;}
           ;  
 ExtDef:   Specifier ExtDecList SEMI   {$$=mknode(2,EXT_VAR_DEF,yylineno,$1,$2);}   //该结点对应一个外部变量声明
          |Specifier FuncDec CompSt    {$$=mknode(3,FUNC_DEF,yylineno,$1,$2,$3);}         //该结点对应一个函数定义
+         |Struct_dec SEMI{$$=mknode(1, EXT_STRUCT_DEC, yylineno,$1);}
          | error SEMI   {$$=NULL;}
          ;
 Specifier:  TYPE    {$$=mknode(0,TYPE,yylineno);strcpy($$->type_id,$1);$$->type=!strcmp($1,"int")?INT:FLOAT;}   
@@ -101,12 +107,68 @@ Stmt:   Exp SEMI    {$$=mknode(1,EXP_STMT,yylineno,$1);}
       | WHILE LP Exp RP Stmt {$$=mknode(2,WHILE,yylineno,$3,$5);}
       | CONTINUE SEMI	{ $$ = mknode(0, CONTINUE, yylineno); strcpy($$->type_id, "CONTINUE"); }
       | BREAK	SEMI	{ $$ = mknode(0, BREAK, yylineno); strcpy($$->type_id, "BREAK"); }
+      | FOR LP ForDec RP Stmt {$$=mknode(2,FOR,yylineno,$3,$5);} //FOR循环识别 for(FORDEC):Stmt
+      | SWITCH LP Exp RP LC CaseStmtList RC {$$=mknode(2, SWITCH, yylineno, $3, $6);} //SWITCH识别
       ;
+//用于识别Default:*****
+DefaultStmt: DEFAULT COLON StmList {$$=mknode(1, DEFAULT_STMT, yylineno, $3);}
+        ;
+
+//Case(INT): Case(CHAR):的识别
+CaseStmt: CASE INT COLON StmList {$$=mknode(1, CASE_STMT, yylineno, $4);$$->type_int=$2;$$->type=INT;}
+        | CASE CHAR COLON StmList {$$=mknode(1, CASE_STMT, yylineno, $4);$$->type_char=$2;$$->type=CHAR;}
+        ;
+
+//用于识别连续多个case+Default(DEFAULT为终结符)
+CaseStmtList: 
+          {$$=NULL;}
+        | CaseStmt CaseStmtList {$$=mknode(2, CASE_STMT_LIST, yylineno, $1, $2);}
+        | DefaultStmt {$$=mknode(1, CASE_STMT_LIST, yylineno,$1);}
+        ;
+
+//用于识别For循环
+//for(int i ; i < 10 ;i++)
+//for(int i;i<10;)
+//for(int i;;i++)
+//for(int i;;)
+//for(;i<10;i++)
+//for(;i<10;)
+//for(;;i++)
+//for(;;)死循环
+ForDec: ForExp1 SEMI ForExp2 SEMI ForExp3 {$$=mknode(3, FOR_DEC,yylineno,$1,$3,$5);}
+       | ForExp1 SEMI SEMI ForExp3 {$$=mknode(3, FOR_DEC,yylineno,$1,NULL,$4);}
+       | ForExp1 SEMI ForExp2 SEMI {$$=mknode(3, FOR_DEC,yylineno,$1,$3,NULL);}
+       | ForExp1 SEMI SEMI {$$=mknode(3, FOR_DEC,yylineno,$1,NULL,NULL);}
+       | SEMI ForExp2 SEMI ForExp3 {$$=mknode(3, FOR_DEC,yylineno,NULL,$2,$4);}
+       | SEMI ForExp2 SEMI  {$$=mknode(3, FOR_DEC,yylineno,NULL,$2,NULL);}
+       | SEMI SEMI ForExp3 {$$=mknode(3, FOR_DEC,yylineno,NULL,NULL,$3);}     
+       | SEMI SEMI {$$=mknode(3, FOR_DEC, yylineno, NULL, NULL, NULL);}  
+       ;
+
+ForExp1:  DecList {$$=mknode(1, FOR_EXP1, yylineno, $1);}
+        | Specifier DecList {$$=mknode(2, FOR_EXP1, yylineno, $1, $2);}
+        ;
+ForExp2: Exp {$$=mknode(1, FOR_EXP2, yylineno, $1);}
+        ;
+ForExp3:  Exp COMMA ForExp3 {$$=mknode(2, FOR_EXP3, yylineno, $1,$3);}
+        | Exp {$$=mknode(2, FOR_EXP3, yylineno, $1, NULL);}
+        ;
+
+//struct name {DefList}识别
+//struct name ID识别
+Struct_dec: STRUCT StructName LC DefList RC {$$=mknode(2, STRUCT_NEW, yylineno, $2, $4);}
+        | STRUCT  ID {$$=mknode(0,STRUCT_DEC,yylineno);strcpy($$->type_id,$3);}
+        ;
+StructName: {$$=NULL;}
+        | ID {$$=mknode(0,ID,yylineno);strcpy($$->type_id,$1);}
+        ;
+
 DefList: {$$=NULL; }
         | Def DefList {$$=mknode(2,DEF_LIST,yylineno,$1,$2);}
         | error SEMI   {$$=NULL;}
         ;
 Def:    Specifier DecList SEMI {$$=mknode(2,VAR_DEF,yylineno,$1,$2);}
+        |Struct_dec SEMI {$$=$1}
         ;
 DecList: Dec  {$$=mknode(1,DEC_LIST,yylineno,$1);}
        | Dec COMMA DecList  {$$=mknode(2,DEC_LIST,yylineno,$1,$3);}
@@ -145,7 +207,8 @@ Exp:    Exp ASSIGNOP Exp {$$=mknode(2,ASSIGNOP,yylineno,$1,$3);strcpy($$->type_i
       | STRING        {$$=mknode(0,STRING,yylineno);strcpy($$->type_id,$1);$$->type=STRING;}
       | FLOAT         {$$=mknode(0,FLOAT,yylineno);$$->type_float=$1;$$->type=FLOAT;}
       | LB Args RB    {$$=$2;} //数组
-      | ID Arraylist  {$$=mknode(1,ID,yylineno,$2);strcpy($$->type_id,$1);}      
+      | ID Arraylist  {$$=mknode(1,ID,yylineno,$2);strcpy($$->type_id,$1);} 
+      | Exp DOT ID {$$=mknode(1, STRUCT_VISIT, yylineno, $1);strcpy($$->type_id,$3);} //访问结构体元素   
       ;
 Args:    Exp COMMA Args    {$$=mknode(2,ARGS,yylineno,$1,$3);}
        | Exp               {$$=mknode(1,ARGS,yylineno,$1);}
