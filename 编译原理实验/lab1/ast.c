@@ -16,7 +16,9 @@ struct ASTNode * mknode(int num,int kind,int pos,...){
     return T;
 }
 
-
+void displayRoot(){
+    printf("Program Root根节点\n");
+}
 void display(struct ASTNode *T,int indent)
 {//对抽象语法树的先根遍历
   int i=1;

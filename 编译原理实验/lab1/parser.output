@@ -1,5 +1,6 @@
 Terminals which are not used
 
+   ERRORID
    STRUCT_VISIT
    STRUCT_NEW
    STRUCT_DEC
@@ -183,156 +184,157 @@ error (256) 7 58
 CHAR (258) 35 92
 INT (259) 13 14 34 91
 ID (260) 11 12 15 16 53 55 88 89 90 96 97
-STRING (261) 93
-RELOP (262) 73
-TYPE (263) 8
-FLOAT (264) 94
-STRUCT (265) 52 53
-RETURN (266) 25
-FOR (267) 31
-SWITCH (268) 32
-CASE (269) 34 35
-COLON (270) 33 34 35
-DEFAULT (271) 33
-STRUCT_VISIT (272)
-STRUCT_NEW (273)
-STRUCT_DEC (274)
-EXT_STRUCT_DEC (275)
-CASE_STMT (276)
-CASE_STMT_LIST (277)
-DEFAULT_STMT (278)
-FOR_DEC (279)
-FOR_EXP1 (280)
-FOR_EXP2 (281)
-FOR_EXP3 (282)
-DPLUS (283) 86 87
-LP (284) 15 16 26 27 28 31 32 83 88 89
-RP (285) 15 16 26 27 28 31 32 83 88 89
-LC (286) 20 32 52
-RC (287) 20 32 52
-LB (288) 13 14 95
-RB (289) 13 14 95
-SEMI (290) 4 6 7 23 25 29 30 39 40 41 42 43 44 45 46 58 59 60
-COMMA (291) 10 18 50 62 98
-DOT (292) 97
-PLUS (293) 74
-MINUS (294) 75 84
-STAR (295) 76
-DIV (296) 77
-MOD (297) 78
-ASSIGNOP (298) 64 65
-PLUSASSIGNOP (299) 66
-MINUSASSIGNOP (300) 67
-STARASSIGNOP (301) 68
-DIVASSIGNOP (302) 69
-MODASSIGNOP (303) 70
-AND (304) 71
-OR (305) 72
-NOT (306) 85
-AUTOPLUS (307) 79 81
-AUTOMINUS (308) 80 82
-IF (309) 26 27
-ELSE (310) 27
-WHILE (311) 28
-BREAK (312) 30
-CONTINUE (313) 29
-EXT_DEF_LIST (314)
-EXT_VAR_DEF (315)
-FUNC_DEF (316)
-FUNC_DEC (317)
-EXT_DEC_LIST (318)
-PARAM_LIST (319)
-PARAM_DEC (320)
-VAR_DEF (321)
-DEC_LIST (322)
-DEF_LIST (323)
-COMP_STM (324)
-STM_LIST (325)
-EXP_STMT (326)
-IF_THEN (327)
-IF_THEN_ELSE (328)
-FUNC_CALL (329)
-ARGS (330)
-FUNCTION (331)
-PARAM (332)
-ARG (333)
-CALL (334)
-LABEL (335)
-GOTO (336)
-JLT (337)
-JLE (338)
-JGT (339)
-JGE (340)
-EQ (341)
-NEQ (342)
-ARRAY_LIST (343)
-DMINUS (344)
-UMINUS (345)
-LOWER_THEN_ELSE (346)
+ERRORID (261)
+STRING (262) 93
+RELOP (263) 73
+TYPE (264) 8
+FLOAT (265) 94
+STRUCT (266) 52 53
+RETURN (267) 25
+FOR (268) 31
+SWITCH (269) 32
+CASE (270) 34 35
+COLON (271) 33 34 35
+DEFAULT (272) 33
+STRUCT_VISIT (273)
+STRUCT_NEW (274)
+STRUCT_DEC (275)
+EXT_STRUCT_DEC (276)
+CASE_STMT (277)
+CASE_STMT_LIST (278)
+DEFAULT_STMT (279)
+FOR_DEC (280)
+FOR_EXP1 (281)
+FOR_EXP2 (282)
+FOR_EXP3 (283)
+DPLUS (284) 86 87
+LP (285) 15 16 26 27 28 31 32 83 88 89
+RP (286) 15 16 26 27 28 31 32 83 88 89
+LC (287) 20 32 52
+RC (288) 20 32 52
+LB (289) 13 14 95
+RB (290) 13 14 95
+SEMI (291) 4 6 7 23 25 29 30 39 40 41 42 43 44 45 46 58 59 60
+COMMA (292) 10 18 50 62 98
+DOT (293) 97
+PLUS (294) 74
+MINUS (295) 75 84
+STAR (296) 76
+DIV (297) 77
+MOD (298) 78
+ASSIGNOP (299) 64 65
+PLUSASSIGNOP (300) 66
+MINUSASSIGNOP (301) 67
+STARASSIGNOP (302) 68
+DIVASSIGNOP (303) 69
+MODASSIGNOP (304) 70
+AND (305) 71
+OR (306) 72
+NOT (307) 85
+AUTOPLUS (308) 79 81
+AUTOMINUS (309) 80 82
+IF (310) 26 27
+ELSE (311) 27
+WHILE (312) 28
+BREAK (313) 30
+CONTINUE (314) 29
+EXT_DEF_LIST (315)
+EXT_VAR_DEF (316)
+FUNC_DEF (317)
+FUNC_DEC (318)
+EXT_DEC_LIST (319)
+PARAM_LIST (320)
+PARAM_DEC (321)
+VAR_DEF (322)
+DEC_LIST (323)
+DEF_LIST (324)
+COMP_STM (325)
+STM_LIST (326)
+EXP_STMT (327)
+IF_THEN (328)
+IF_THEN_ELSE (329)
+FUNC_CALL (330)
+ARGS (331)
+FUNCTION (332)
+PARAM (333)
+ARG (334)
+CALL (335)
+LABEL (336)
+GOTO (337)
+JLT (338)
+JLE (339)
+JGT (340)
+JGE (341)
+EQ (342)
+NEQ (343)
+ARRAY_LIST (344)
+DMINUS (345)
+UMINUS (346)
+LOWER_THEN_ELSE (347)
 
 
 Nonterminals, with rules where they appear
 
-$accept (92)
+$accept (93)
     on left: 0
-program (93)
+program (94)
     on left: 1, on right: 0
-ExtDefList (94)
+ExtDefList (95)
     on left: 2 3, on right: 1 3
-ExtDef (95)
+ExtDef (96)
     on left: 4 5 6 7, on right: 3
-Specifier (96)
+Specifier (97)
     on left: 8, on right: 4 5 19 48 59
-ExtDecList (97)
+ExtDecList (98)
     on left: 9 10, on right: 4 10
-VarDec (98)
+VarDec (99)
     on left: 11 12, on right: 9 10 19 63 64
-Arraylist (99)
+Arraylist (100)
     on left: 13 14, on right: 12 14 96
-FuncDec (100)
+FuncDec (101)
     on left: 15 16, on right: 5
-VarList (101)
+VarList (102)
     on left: 17 18, on right: 15 18
-ParamDec (102)
+ParamDec (103)
     on left: 19, on right: 17 18
-CompSt (103)
+CompSt (104)
     on left: 20, on right: 5 24
-StmList (104)
+StmList (105)
     on left: 21 22, on right: 20 22 33 34 35
-Stmt (105)
+Stmt (106)
     on left: 23 24 25 26 27 28 29 30 31 32, on right: 22 26 27 28 31
-DefaultStmt (106)
+DefaultStmt (107)
     on left: 33, on right: 38
-CaseStmt (107)
+CaseStmt (108)
     on left: 34 35, on right: 37
-CaseStmtList (108)
+CaseStmtList (109)
     on left: 36 37 38, on right: 32 37
-ForDec (109)
+ForDec (110)
     on left: 39 40 41 42 43 44 45 46, on right: 31
-ForExp1 (110)
+ForExp1 (111)
     on left: 47 48, on right: 39 40 41 42
-ForExp2 (111)
+ForExp2 (112)
     on left: 49, on right: 39 41 43 44
-ForExp3 (112)
+ForExp3 (113)
     on left: 50 51, on right: 39 40 43 45 50
-Struct_dec (113)
+Struct_dec (114)
     on left: 52 53, on right: 6 60
-StructName (114)
+StructName (115)
     on left: 54 55, on right: 52
-DefList (115)
+DefList (116)
     on left: 56 57 58, on right: 20 52 57
-Def (116)
+Def (117)
     on left: 59 60, on right: 57
-DecList (117)
+DecList (118)
     on left: 61 62, on right: 47 48 59 62
-Dec (118)
+Dec (119)
     on left: 63 64, on right: 61 62
-Exp (119)
+Exp (120)
     on left: 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82
     83 84 85 86 87 88 89 90 91 92 93 94 95 96 97, on right: 23 25 26
     27 28 32 49 50 51 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78
     79 80 81 82 83 84 85 86 87 97 98 99
-Args (120)
+Args (121)
     on left: 98 99, on right: 88 95 98
 
 

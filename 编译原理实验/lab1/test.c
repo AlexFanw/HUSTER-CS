@@ -1,4 +1,4 @@
-int a,b,c;//测试int类型
+int a,b1,c;//测试int类型
 float m,n;//测试float类型
 char d;//测试char类型
 int al[3];//测试数组

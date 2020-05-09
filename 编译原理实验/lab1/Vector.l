@@ -23,6 +23,7 @@ INT [1-9][0-9]*|[0]
 FLOAT [0-9]*[.][0-9]+([eE][-+]?([1-9][0-9*]|[0]))?
 CHAR ['][^\n][']
 STRING ["][^\n]*["]
+ERRORID [0-9][A-Za-z0-9]*
 
 %%
 {INT} {printf("(%s, INT)\n", yytext);yylval.type_int=atoi(yytext); return INT;}
@@ -45,7 +46,9 @@ STRING ["][^\n]*["]
 "case"	 {printf("(%s, CASE)\n", yytext);return CASE;}//case
 "struct" {printf("(%s, STRUCT)\n", yytext);return STRUCT;}//struct
 "default" {printf("(%s, DEFAULT)\n", yytext);return DEFAULT;}//DEFAULT
+
 {ID}     {printf("(%s, IDENTIFIER)\n", yytext);strcpy(yylval.type_id,  yytext); return ID;}
+{ERRORID}	 {printf("(%s, ERROR 禁止数字为开头的标识符)\n",yytext);strcpy(yylval.type_id,yytext);return ERRORID;}//错误标识符
 ":"		 {printf("(%s,COLON)\n",yytext);return COLON;}
 ";"		 {printf("(%s, SEMI)\n", yytext);return SEMI;}
 ","		 {printf("(%s, COMMA)\n", yytext);return COMMA;}

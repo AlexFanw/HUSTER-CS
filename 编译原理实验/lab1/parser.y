@@ -12,6 +12,7 @@
         int yylex();
         void yyerror(const char* fmt, ...);
         void display(struct ASTNode *,int);
+        void displayRoot();
 %} 
 
 
@@ -34,7 +35,7 @@
 //% token 定义终结符的语义值类型
 %token <type_char> CHAR
 %token <type_int> INT              /*指定INT的语义值是type_int，有词法分析得到的数值*/
-%token <type_id> ID STRING RELOP TYPE    /*指定ID,RELOP,TYPE,STRING 的语义值是type_id，有词法分析得到的标识符字符串*/
+%token <type_id> ID ERRORID STRING RELOP TYPE    /*指定ID,RELOP,TYPE,STRING 的语义值是type_id，有词法分析得到的标识符字符串*/
 %token <type_float> FLOAT          /*指定FLOAT的语义值是type_float，有词法分析得到的标识符字符串*/
 %token STRUCT RETURN FOR SWITCH CASE COLON DEFAULT
 %token STRUCT_VISIT STRUCT_NEW STRUCT_DEC EXT_STRUCT_DEC/*结构体*/
@@ -63,7 +64,7 @@
 
 //规则定义部分
 %%
-program: ExtDefList    { display($1,0);}     //显示语法树,语义分析
+program: ExtDefList    {displayRoot();display($1,0);}     //显示语法树,语义分析
          ; 
 ExtDefList: {$$=NULL;}
           | ExtDef ExtDefList {$$=mknode(2,EXT_DEF_LIST,yylineno,$1,$2);}   //每一个EXTDEFLIST的结点，其第1棵子树对应一个外部变量声明或函数
@@ -157,7 +158,7 @@ ForExp3:  Exp COMMA ForExp3 {$$=mknode(2, FOR_EXP3, yylineno, $1,$3);}
 //struct name {DefList}识别
 //struct name ID识别
 Struct_dec: STRUCT StructName LC DefList RC {$$=mknode(2, STRUCT_NEW, yylineno, $2, $4);}
-        | STRUCT  ID {$$=mknode(0,STRUCT_DEC,yylineno);strcpy($$->type_id,$3);}
+        | STRUCT ID ID {$$=mknode(0,STRUCT_DEC,yylineno);strcpy($$->type_id,$3);}
         ;
 StructName: {$$=NULL;}
         | ID {$$=mknode(0,ID,yylineno);strcpy($$->type_id,$1);}
