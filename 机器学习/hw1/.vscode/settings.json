@@ -4,5 +4,6 @@
         "0",
         "%PDF%"
     ],
-    "python.pythonPath": "/Users/alexfan/anaconda3/bin/python"
+    "python.pythonPath": "/Users/alexfan/anaconda3/bin/python",
+    "python.dataScience.textOutputLimit":0
 }
