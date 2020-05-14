@@ -26,7 +26,7 @@ public abstract class AbstractTermTupleScanner extends AbstractTermTupleStream {
 
     /**
      * 构造函数
-     * @param input：指定输入流对象，应该关联到一个文本文件
+     * @param input:指定输入流对象，应该关联到一个文本文件
      */
     public  AbstractTermTupleScanner(BufferedReader input){
         this.input = input;

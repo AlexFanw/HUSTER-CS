@@ -32,7 +32,7 @@ public class TestSearchIndex {
         /**
          * 命中结果写入文件
          */
-        File filename = new File(Config.DOC_DIR+"/用于检索的测试词.txt"); // 要读取以上路径的input。txt文件
+        File filename = new File(Config.DOC_DIR+"/用于检索的测试词.txt"); // 要读取以上路径的input.txt文件
         InputStreamReader reader = new InputStreamReader(new FileInputStream(filename)); // 建立一个输入流对象reader
         BufferedReader br = new BufferedReader(reader); // 建立一个对象，它把文件内容转成计算机能读懂的语言
         String line = "";
