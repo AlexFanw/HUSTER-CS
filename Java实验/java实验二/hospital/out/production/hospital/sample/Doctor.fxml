@@ -5,11 +5,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<SplitPane dividerPositions="0.1583" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DoctorViewController">
+<SplitPane dividerPositions="0.1583" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerDoctor">
     <items>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
             <children>
-                <Label fx:id="label_username" layoutX="223.0" layoutY="16.0" text="用户：XX医生" textAlignment="CENTER" textFill="#5c0a41">
+                <Label fx:id="label_username" layoutX="223.0" layoutY="16.0" text="用户：____医生" textAlignment="CENTER" textFill="#5c0a41">
                     <font>
                         <Font name="Arial" size="24.0" />
                     </font></Label>
@@ -38,8 +38,8 @@
                             <content>
                                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                     <children>
-                                        <Label fx:id="label_starttime" layoutX="14.0" layoutY="258.0" text="起始时间：2018-12-30 00:00:00" />
-                                        <Label fx:id="label_endtime" layoutX="361.0" layoutY="258.0" text="截止时间：2018-12-30 12:20:00" />
+                                        <Label fx:id="label_starttime" layoutX="14.0" layoutY="258.0" text="起始时间：2020-4-2 00:00:00" />
+                                        <Label fx:id="label_endtime" layoutX="361.0" layoutY="258.0" text="截止时间：2020-4-2 12:20:00" />
                                         <TableView fx:id="tview_incomelist" prefHeight="240.0" prefWidth="598.0">
                                             <columns>
                                                 <TableColumn fx:id="tc_depname" editable="false" prefWidth="100.0" text="科室名称" />
@@ -47,18 +47,18 @@
                                                 <TableColumn fx:id="tc_docname" editable="false" prefWidth="100.0" text="医生名称" />
                                                 <TableColumn fx:id="tc_dregcat" editable="false" prefWidth="100.0" text="号种类别" />
                                                 <TableColumn fx:id="tc_regnum" editable="false" prefWidth="100.0" text="挂号人次" />
-                                                <TableColumn fx:id="tc_income" prefWidth="100.0" text="收入合计" />
+                                                <TableColumn fx:id="tc_income" prefWidth="100.0" text="收入" />
                                             </columns>
                                         </TableView>
                                     </children>
                                 </AnchorPane>
                             </content>
                         </Tab>
-                        <Tab fx:id="tab_quit" text="退出系统">
+                        <Tab fx:id="tab_quit" text="EXIT">
                             <content>
                                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                     <children>
-                                        <Button fx:id="btn_quit" layoutX="199.0" layoutY="96.0" mnemonicParsing="false" onAction="#on_btn_quit_clicked" prefHeight="100.0" prefWidth="200.0" text="退出系统">
+                                        <Button fx:id="btn_quit" layoutX="-1.0" mnemonicParsing="false" onAction="#on_btn_quit_clicked" prefHeight="297.0" prefWidth="600.0" text="点击任意位置退出系统">
                                             <font>
                                                 <Font size="36.0" />
                                             </font>

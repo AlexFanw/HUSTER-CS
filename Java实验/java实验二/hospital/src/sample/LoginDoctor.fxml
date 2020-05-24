@@ -5,7 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<SplitPane dividerPositions="0.1583" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerLoginDoctor">
+<SplitPane dividerPositions="0.1583" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="323.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerLoginDoctor">
     <items>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
             <children>
@@ -15,24 +15,24 @@
                     </font>
                 </Label>
             </children></AnchorPane>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="156.0" prefWidth="569.0">
             <children>
-                <Label layoutX="164.0" layoutY="64.0" text="医生编号" textAlignment="CENTER">
+                <Label layoutX="120.0" layoutY="68.0" text="医生编号" textAlignment="CENTER">
                     <font>
                         <Font size="16.0" />
                     </font></Label>
-                <Label layoutX="164.0" layoutY="127.0" text="医生密码" textAlignment="CENTER">
+                <Label layoutX="120.0" layoutY="131.0" text="医生密码" textAlignment="CENTER">
                     <font>
                         <Font size="16.0" />
                     </font></Label>
                 <TextField fx:id="field_number" layoutX="240.0" layoutY="64.0" />
                 <TextField fx:id="field_password" layoutX="240.0" layoutY="127.0" onAction="#onEnter" />
-                <Button fx:id="btn_login" layoutX="164.0" layoutY="201.0" mnemonicParsing="false" onAction="#on_btn_login_clicked" prefHeight="50.0" prefWidth="100.0" text="登录" textAlignment="CENTER">
+                <Button fx:id="btn_login" layoutX="461.0" layoutY="58.0" mnemonicParsing="false" onAction="#on_btn_login_clicked" prefHeight="40.0" prefWidth="76.0" text="登录" textAlignment="CENTER">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>
                 </Button>
-                <Button fx:id="btn_back" layoutX="315.0" layoutY="201.0" mnemonicParsing="false" onAction="#on_btn_back_clicked" prefHeight="50.0" prefWidth="100.0" text="返回" textAlignment="CENTER">
+                <Button fx:id="btn_back" layoutX="461.0" layoutY="121.0" mnemonicParsing="false" onAction="#on_btn_back_clicked" prefHeight="40.0" prefWidth="76.0" text="返回" textAlignment="CENTER">
                     <font>
                         <Font name="System Bold" size="20.0" />
                     </font>

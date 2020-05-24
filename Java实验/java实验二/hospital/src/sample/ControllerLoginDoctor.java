@@ -79,7 +79,7 @@ public class ControllerLoginDoctor {
                     preparedStatement.executeUpdate();
                     Stage currentStage=(Stage)btn_login.getScene().getWindow();
                     currentStage.close(); //关闭当前窗口
-                    SplitPane root=FXMLLoader.load(getClass().getResource("DoctorView.fxml")); //转到医生界面
+                    SplitPane root=FXMLLoader.load(getClass().getResource("Doctor.fxml")); //转到医生界面
                     Stage newStage=new Stage();
                     newStage.setTitle("医生报表");
                     newStage.setScene(new Scene(root));

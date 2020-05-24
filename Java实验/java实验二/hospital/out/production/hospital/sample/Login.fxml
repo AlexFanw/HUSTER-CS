@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -16,12 +17,12 @@
             </children></AnchorPane>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
             <children>
-                <Button fx:id="btn_patient" layoutX="219.0" layoutY="59.0" mnemonicParsing="false" onAction="#on_btn_patient_clicked" text="病人登录" textAlignment="CENTER">
+                <Button fx:id="btn_patient" layoutX="116.0" layoutY="117.0" mnemonicParsing="false" onAction="#on_btn_patient_clicked" text="病人登录" textAlignment="CENTER">
                     <font>
                         <Font name="Microsoft YaHei" size="30.0" />
                     </font>
                 </Button>
-                <Button fx:id="btn_doctor" layoutX="219.0" layoutY="183.0" mnemonicParsing="false" onAction="#on_btn_doctor_clicked" text="医生登录">
+                <Button fx:id="btn_doctor" layoutX="327.0" layoutY="117.0" mnemonicParsing="false" onAction="#on_btn_doctor_clicked" text="医生登录">
                     <font>
                         <Font name="Microsoft YaHei" size="30.0" />
                     </font>
