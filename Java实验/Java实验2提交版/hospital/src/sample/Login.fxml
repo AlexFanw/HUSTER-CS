@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.1583" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerLogin">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <children>
+                <Label layoutX="237.0" layoutY="16.0" text="请选择登录" textAlignment="CENTER" textFill="#5c0a41">
+                    <font>
+                        <Font name="Arial" size="24.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <children>
+                <Button fx:id="btn_patient" layoutX="219.0" layoutY="59.0" mnemonicParsing="false" onAction="#on_btn_patient_clicked" text="病人登录" textAlignment="CENTER">
+                    <font>
+                        <Font name="Microsoft YaHei" size="30.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btn_doctor" layoutX="219.0" layoutY="183.0" mnemonicParsing="false" onAction="#on_btn_doctor_clicked" text="医生登录">
+                    <font>
+                        <Font name="Microsoft YaHei" size="30.0" />
+                    </font>
+                </Button>
+            </children></AnchorPane>
+    </items>
+</SplitPane>

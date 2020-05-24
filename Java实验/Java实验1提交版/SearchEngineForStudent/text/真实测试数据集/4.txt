@@ -1,0 +1,3 @@
+Recent reports from scientists pursuing a new kind of nuclear fusion technology are encouraging, but we are still some distance away from the "holy grail of clean energy".
+The technology developed by Heinrich Hora and his colleagues at the University of NSW uses powerful lasers to fuse together hydrogen and boron atoms, releasing high-energy particles that can be used to generate electricity.
+As with other kinds of nuclear fusion technology, however, the difficulty is in building a machine that can reliably initiate the reaction and harness the energy it produces.

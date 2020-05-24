@@ -1,0 +1,89 @@
+{
+  "docId" : 0,
+  "docPath" : "D:\\IdeaWorkspace\\SeachEngine/text/2.txt",
+  "tuples" : [ {
+  "term" : {
+    "content" : "activity"
+  },
+  "freq" : 1,
+  "curPos" : 0
+}, {
+  "term" : {
+    "content" : "destination"
+  },
+  "freq" : 1,
+  "curPos" : 1
+}, {
+  "term" : {
+    "content" : "emergency"
+  },
+  "freq" : 1,
+  "curPos" : 2
+}, {
+  "term" : {
+    "content" : "because"
+  },
+  "freq" : 1,
+  "curPos" : 5
+}, {
+  "term" : {
+    "content" : "hence"
+  },
+  "freq" : 1,
+  "curPos" : 6
+}, {
+  "term" : {
+    "content" : "capital"
+  },
+  "freq" : 1,
+  "curPos" : 7
+}, {
+  "term" : {
+    "content" : "i"
+  },
+  "freq" : 1,
+  "curPos" : 8
+}, {
+  "term" : {
+    "content" : "frozen"
+  },
+  "freq" : 1,
+  "curPos" : 9
+}, {
+  "term" : {
+    "content" : "benefits"
+  },
+  "freq" : 1,
+  "curPos" : 10
+}, {
+  "term" : {
+    "content" : "google"
+  },
+  "freq" : 1,
+  "curPos" : 11
+}, {
+  "term" : {
+    "content" : "hahahahahahahahahahahahah"
+  },
+  "freq" : 1,
+  "curPos" : 12
+}, {
+  "term" : {
+    "content" : "ha"
+  },
+  "freq" : 1,
+  "curPos" : 13
+}, {
+  "term" : {
+    "content" : "frozen"
+  },
+  "freq" : 1,
+  "curPos" : 14
+}, {
+  "term" : {
+    "content" : "google"
+  },
+  "freq" : 1,
+  "curPos" : 15
+} ]
+}

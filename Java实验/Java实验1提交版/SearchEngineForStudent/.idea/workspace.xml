@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="All Places" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4213cc7e-886d-4d43-8cf7-3b6d0767e64d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1YDYqyNZghUwgeTFTl7oiXVcjAT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/text" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="hust.cs.javacourse.search.index.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/text" />
+      <recent name="$PROJECT_DIR$/text/功能测试数据集" />
+      <recent name="$PROJECT_DIR$/index" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestBuildIndex">
+    <configuration name="TestBuildIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hust.cs.javacourse.search.run.TestBuildIndex" />
+      <module name="SearchEngineForStudent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hust.cs.javacourse.search.run.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSearchIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hust.cs.javacourse.search.run.TestSearchIndex" />
+      <module name="SearchEngineForStudent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hust.cs.javacourse.search.run.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestBuildIndex" />
+        <item itemvalue="Application.TestSearchIndex" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4213cc7e-886d-4d43-8cf7-3b6d0767e64d" name="Default Changelist" comment="" />
+      <created>1582478826204</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582478826204</updated>
+      <workItem from="1582478829635" duration="2317000" />
+      <workItem from="1582540609178" duration="21794000" />
+      <workItem from="1587871900554" duration="41131000" />
+      <workItem from="1588686599268" duration="15000" />
+      <workItem from="1588702215103" duration="6000" />
+      <workItem from="1589340006311" duration="3117000" />
+      <workItem from="1589598840769" duration="3000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="438" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587978889353">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="438" y="271" key="#com.intellij.fileTypes.FileTypeChooser/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587978889353" />
+    <state x="560" y="219" key="#com.intellij.ide.util.MemberChooser" timestamp="1587972490817">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="653" y="253" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1587917855259" />
+    <state x="560" y="219" key="#com.intellij.ide.util.MemberChooser/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587972490817" />
+    <state x="842" y="276" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1589341853018">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="842" y="276" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.1027@0.23.1680.1027" timestamp="1589341853018" />
+    <state width="1119" height="437" key="GridCell.Tab.0.bottom" timestamp="1589355942395">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1119" height="437" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1589355942395" />
+    <state width="1398" height="285" key="GridCell.Tab.0.bottom/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432197" />
+    <state width="1119" height="437" key="GridCell.Tab.0.center" timestamp="1589355942392">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1119" height="437" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1589355942392" />
+    <state width="1398" height="285" key="GridCell.Tab.0.center/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432196" />
+    <state width="1119" height="437" key="GridCell.Tab.0.left" timestamp="1589355942392">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1119" height="437" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1589355942392" />
+    <state width="1398" height="285" key="GridCell.Tab.0.left/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432195" />
+    <state width="1119" height="437" key="GridCell.Tab.0.right" timestamp="1589355942394">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1119" height="437" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1589355942394" />
+    <state width="1398" height="285" key="GridCell.Tab.0.right/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432196" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1587999432198">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432198" />
+    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1587999432197">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.center/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432197" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1587999432197">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.left/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432197" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1587999432198">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.right/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587999432198" />
+    <state x="656" y="118" key="SettingsEditor" timestamp="1587871921135">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="656" y="118" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1587871921135" />
+    <state x="458" y="232" key="extract.method.dialog" timestamp="1587972940815">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="458" y="232" key="extract.method.dialog/1440.155.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1587972940815" />
+  </component>
+</project>

@@ -1,0 +1,18 @@
+[ {
+  "docId" : 0,
+  "docPath" : "D:\\IdeaWorkspace\\SeachEngine\\text_search_sort\\1.txt",
+  "content" : "The novel coronavirus death rate According to Government health authority of England Government, most of the coronavirus cases are in England Government",
+  "termPostingMapping" : {
+    "{\"content\":\"death\"}" : {
+      "docId" : 0,
+      "freq" : 1,
+      "positions" : [ 3 ]
+    },
+    "{\"content\":\"rate\"}" : {
+      "docId" : 0,
+      "freq" : 1,
+      "positions" : [ 4 ]
+    }
+  },
+  "score" : -2.0
+} ]

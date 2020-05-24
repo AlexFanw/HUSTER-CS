@@ -1,6 +1,26 @@
 *********查询单词:wales
 --------------------------------------
 
+docId: 0
+
+docPath: /Users/alexfan/HUSTER-CS/Java实验/Java实验一/SearchEngineForStudent/text/真实测试数据集/1.txt
+
+content: The novel coronavirus death toll has reached 21 as of Saturday in Britain as the number of confirmed cases totalled 1,140, according to the latest figures released by the British Department of Health and Social Care.
+
+The new figures showed an increase of 342 confirmed COVID-19 cases in Britain, the largest rise on a single day since the start of the outbreak in the country. Ten more patients who contracted coronavirus died, bringing the death toll in Britain to 21.
+
+All the 10 patients who died were aged over 60 and had underlying health conditions, said Chris Whitty, chief medical officer for England.
+
+According to health authorities, most of the cases are in England. There have been 121 confirmed cases in Scotland, 60 in Wales and 34 in Northern Ireland.
+
+The British government said on Friday that it estimated the true number of infected cases in Britain to be around 5,000 to 10,000. People who are self-isolating with mild symptoms are no longer being tested for the virus.
+
+score: -1.0
+
+wales	---->	{"docId":0,"freq":1,"positions":[125] }
+
+--------------------------------------
+
 docId: 10
 
 docPath: /Users/alexfan/HUSTER-CS/Java实验/Java实验一/SearchEngineForStudent/text/真实测试数据集/10.txt
@@ -8,10 +28,25 @@ docPath: /Users/alexfan/HUSTER-CS/Java实验/Java实验一/SearchEngineForStuden
 content: The ongoing bushfires that have devastated Australia closed in on the country's capital, Canberra, last Friday as it declared its first state of emergency since 2003.
 The Rural Fire Service of New South Wales, the state surrounding the capital, warned of severe fire danger for the Australian Capital Territory, with flames and embers projected to spread well inside the region on Saturday. The territory is home to more than 400,000 residents, and nearly half of it is at risk of "ember attack" and flames.
 
-score: 1.0
+score: -1.0
 
 wales	---->	{"docId":10,"freq":1,"positions":[33] }
+*********查询单词:circumstances
+--------------------------------------
 
+docId: 3
+
+docPath: /Users/alexfan/HUSTER-CS/Java实验/Java实验一/SearchEngineForStudent/text/真实测试数据集/7.txt
+
+content: Climate experts stationed at an Argentine research base in a northern part of Antarctica have just logged the highest temperature on record for the typically frozen continent.
+According to preliminary data from the U.N.'s World Meteorological Organization, temperatures on the Antarctic Peninsula just hit 64.9 degrees Fahrenheit, or 18.3 degrees Celsius. That figure tops the previous record of 17.5 degrees Celsius set in March 2015.
+
+While such temperatures might be considered pleasant under different circumstances say on a picnic or hiking trip this is Antarctica we're talking about, home to the most inhospitable environments on the planet.
+
+score: -1.0
+
+circumstances	---->	{"docId":3,"freq":1,"positions":[79] }
+*********查询单词:government
 --------------------------------------
 
 docId: 0
@@ -28,38 +63,9 @@ According to health authorities, most of the cases are in England. There have be
 
 The British government said on Friday that it estimated the true number of infected cases in Britain to be around 5,000 to 10,000. People who are self-isolating with mild symptoms are no longer being tested for the virus.
 
-score: 1.0
+score: -1.0
 
-wales	---->	{"docId":0,"freq":1,"positions":[125] }
-*********查询单词:circumstances
---------------------------------------
-
-docId: 3
-
-docPath: /Users/alexfan/HUSTER-CS/Java实验/Java实验一/SearchEngineForStudent/text/真实测试数据集/7.txt
-
-content: Climate experts stationed at an Argentine research base in a northern part of Antarctica have just logged the highest temperature on record for the typically frozen continent.
-According to preliminary data from the U.N.'s World Meteorological Organization, temperatures on the Antarctic Peninsula just hit 64.9 degrees Fahrenheit, or 18.3 degrees Celsius. That figure tops the previous record of 17.5 degrees Celsius set in March 2015.
-
-While such temperatures might be considered pleasant under different circumstances say on a picnic or hiking trip this is Antarctica we're talking about, home to the most inhospitable environments on the planet.
-
-score: 1.0
-
-circumstances	---->	{"docId":3,"freq":1,"positions":[79] }
-*********查询单词:government
---------------------------------------
-
-docId: 7
-
-docPath: /Users/alexfan/HUSTER-CS/Java实验/Java实验一/SearchEngineForStudent/text/真实测试数据集/8.txt
-
-content: Mandarin could be taught in Welsh secondary schools in a bid to raise Wales' international profile.
-The Welsh Government wants to establish the country as a visitor destination for Chinese people as part of its new strategy to boost trade.
-It is also looking to have a "Wales in Germany" themed year in 2021, and have an increased presence in EU countries.
-
-score: 1.0
-
-government	---->	{"docId":7,"freq":1,"positions":[18] }
+government	---->	{"docId":0,"freq":1,"positions":[133] }
 
 --------------------------------------
 
@@ -73,29 +79,23 @@ But that could be about to change. As of March 1, 2020 all public transport -- t
 
 The government hopes the move will alleviate heavy congestion and bring environmental benefits, according to Dany Frank, a spokesperson for the Ministry of Mobility and Public Works.
 
-score: 1.0
+score: -1.0
 
 government	---->	{"docId":4,"freq":1,"positions":[49] }
 
 --------------------------------------
 
-docId: 0
+docId: 7
 
-docPath: /Users/alexfan/HUSTER-CS/Java实验/Java实验一/SearchEngineForStudent/text/真实测试数据集/1.txt
+docPath: /Users/alexfan/HUSTER-CS/Java实验/Java实验一/SearchEngineForStudent/text/真实测试数据集/8.txt
 
-content: The novel coronavirus death toll has reached 21 as of Saturday in Britain as the number of confirmed cases totalled 1,140, according to the latest figures released by the British Department of Health and Social Care.
+content: Mandarin could be taught in Welsh secondary schools in a bid to raise Wales' international profile.
+The Welsh Government wants to establish the country as a visitor destination for Chinese people as part of its new strategy to boost trade.
+It is also looking to have a "Wales in Germany" themed year in 2021, and have an increased presence in EU countries.
 
-The new figures showed an increase of 342 confirmed COVID-19 cases in Britain, the largest rise on a single day since the start of the outbreak in the country. Ten more patients who contracted coronavirus died, bringing the death toll in Britain to 21.
+score: -1.0
 
-All the 10 patients who died were aged over 60 and had underlying health conditions, said Chris Whitty, chief medical officer for England.
-
-According to health authorities, most of the cases are in England. There have been 121 confirmed cases in Scotland, 60 in Wales and 34 in Northern Ireland.
-
-The British government said on Friday that it estimated the true number of infected cases in Britain to be around 5,000 to 10,000. People who are self-isolating with mild symptoms are no longer being tested for the virus.
-
-score: 1.0
-
-government	---->	{"docId":0,"freq":1,"positions":[133] }
+government	---->	{"docId":7,"freq":1,"positions":[18] }
 *********查询单词:google
 --------------------------------------
 
@@ -107,7 +107,7 @@ content: Google has announced that its image recognition AI will no longer ident
 
 In the email, Google said it wasn't possible to detect a person's true gender based simply on the clothes they were wearing. But Google also said that they were dropping gender labels for another reason: they could create or reinforce biases.
 
-score: 3.0
+score: -3.0
 
 google	---->	{"docId":6,"freq":3,"positions":[0, 53, 73] }
 *********查询单词:health
@@ -127,7 +127,7 @@ According to health authorities, most of the cases are in England. There have be
 
 The British government said on Friday that it estimated the true number of infected cases in Britain to be around 5,000 to 10,000. People who are self-isolating with mild symptoms are no longer being tested for the virus.
 
-score: 3.0
+score: -3.0
 
 health	---->	{"docId":0,"freq":3,"positions":[33, 94, 106] }
 
@@ -144,7 +144,7 @@ Doing this means you don't pay attention to your food, forget how full you are, 
 Having drinks rather than water. Fizzy drinks and fruit juice are usually high in calories and sugar, which can cause weight problems.
 For the sake of our health, we should conquer all ofthese bad eating habits.
 
-score: 2.0
+score: -2.0
 
 health	---->	{"docId":11,"freq":2,"positions":[6, 86] }
 *********查询单词:luxembourg
@@ -160,24 +160,10 @@ But that could be about to change. As of March 1, 2020 all public transport -- t
 
 The government hopes the move will alleviate heavy congestion and bring environmental benefits, according to Dany Frank, a spokesperson for the Ministry of Mobility and Public Works.
 
-score: 1.0
+score: -1.0
 
 luxembourg	---->	{"docId":4,"freq":1,"positions":[6] }
 *********查询单词:recognition
---------------------------------------
-
-docId: 13
-
-docPath: /Users/alexfan/HUSTER-CS/Java实验/Java实验一/SearchEngineForStudent/text/真实测试数据集/14.txt
-
-content: A Chinese wildlife park has sparked outcry after making visitors submit to facial recognition scanning, with one law professor taking it to court.
-Professor Guo Bing is taking action against Hangzhou safari park, after it replaced its existing fingerprinting system with the new technology.
-I filed this case because I feel that not only my privacy rights are being infringed upon but those of many others, Guo, from Zhejiang University of Sci-Tech, said according to an audio recording of an interview posted by state-run Beijing News.
-
-score: 1.0
-
-recognition	---->	{"docId":13,"freq":1,"positions":[13] }
-
 --------------------------------------
 
 docId: 6
@@ -188,23 +174,24 @@ content: Google has announced that its image recognition AI will no longer ident
 
 In the email, Google said it wasn't possible to detect a person's true gender based simply on the clothes they were wearing. But Google also said that they were dropping gender labels for another reason: they could create or reinforce biases.
 
-score: 1.0
+score: -1.0
 
 recognition	---->	{"docId":6,"freq":1,"positions":[6] }
-*********查询单词:wales
+
 --------------------------------------
 
-docId: 10
+docId: 13
 
-docPath: /Users/alexfan/HUSTER-CS/Java实验/Java实验一/SearchEngineForStudent/text/真实测试数据集/10.txt
+docPath: /Users/alexfan/HUSTER-CS/Java实验/Java实验一/SearchEngineForStudent/text/真实测试数据集/14.txt
 
-content: The ongoing bushfires that have devastated Australia closed in on the country's capital, Canberra, last Friday as it declared its first state of emergency since 2003.
-The Rural Fire Service of New South Wales, the state surrounding the capital, warned of severe fire danger for the Australian Capital Territory, with flames and embers projected to spread well inside the region on Saturday. The territory is home to more than 400,000 residents, and nearly half of it is at risk of "ember attack" and flames.
+content: A Chinese wildlife park has sparked outcry after making visitors submit to facial recognition scanning, with one law professor taking it to court.
+Professor Guo Bing is taking action against Hangzhou safari park, after it replaced its existing fingerprinting system with the new technology.
+I filed this case because I feel that not only my privacy rights are being infringed upon but those of many others, Guo, from Zhejiang University of Sci-Tech, said according to an audio recording of an interview posted by state-run Beijing News.
 
-score: 1.0
+score: -1.0
 
-wales	---->	{"docId":10,"freq":1,"positions":[33] }
-
+recognition	---->	{"docId":13,"freq":1,"positions":[13] }
+*********查询单词:wales
 --------------------------------------
 
 docId: 0
@@ -221,9 +208,22 @@ According to health authorities, most of the cases are in England. There have be
 
 The British government said on Friday that it estimated the true number of infected cases in Britain to be around 5,000 to 10,000. People who are self-isolating with mild symptoms are no longer being tested for the virus.
 
-score: 1.0
+score: -1.0
 
 wales	---->	{"docId":0,"freq":1,"positions":[125] }
+
+--------------------------------------
+
+docId: 10
+
+docPath: /Users/alexfan/HUSTER-CS/Java实验/Java实验一/SearchEngineForStudent/text/真实测试数据集/10.txt
+
+content: The ongoing bushfires that have devastated Australia closed in on the country's capital, Canberra, last Friday as it declared its first state of emergency since 2003.
+The Rural Fire Service of New South Wales, the state surrounding the capital, warned of severe fire danger for the Australian Capital Territory, with flames and embers projected to spread well inside the region on Saturday. The territory is home to more than 400,000 residents, and nearly half of it is at risk of "ember attack" and flames.
+
+score: -1.0
+
+wales	---->	{"docId":10,"freq":1,"positions":[33] }
 *********查询单词:all-star*********查询单词:kobe
 --------------------------------------
 
@@ -237,6 +237,6 @@ The format changes and his memory combined to create a game Sunday night at the 
 Technically, the winners were Team LeBron over Team Giannis 157-155 and local charities, as $500,000 was donated.
 The last hero was Chicago native Anthony Davis, who made the winning free throw. But the real victor was the competitive spirit Bryant embodied.
 
-score: 1.0
+score: -1.0
 
 kobe	---->	{"docId":8,"freq":1,"positions":[14] }

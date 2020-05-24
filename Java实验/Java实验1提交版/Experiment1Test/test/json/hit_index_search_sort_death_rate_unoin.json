@@ -1,0 +1,42 @@
+[ {
+  "docId" : 0,
+  "docPath" : "D:\\IdeaWorkspace\\SeachEngine\\text_search_sort\\1.txt",
+  "content" : "The novel coronavirus death rate According to Government health authority of England Government, most of the coronavirus cases are in England Government",
+  "termPostingMapping" : {
+    "{\"content\":\"death\"}" : {
+      "docId" : 0,
+      "freq" : 1,
+      "positions" : [ 3 ]
+    },
+    "{\"content\":\"rate\"}" : {
+      "docId" : 0,
+      "freq" : 1,
+      "positions" : [ 4 ]
+    }
+  },
+  "score" : -2.0
+}, {
+  "docId" : 1,
+  "docPath" : "D:\\IdeaWorkspace\\SeachEngine\\text_search_sort\\2.txt",
+  "content" : "The release of the new James Bond film coronavirus death continue to spread England Government",
+  "termPostingMapping" : {
+    "{\"content\":\"death\"}" : {
+      "docId" : 1,
+      "freq" : 1,
+      "positions" : [ 9 ]
+    }
+  },
+  "score" : -1.0
+}, {
+  "docId" : 2,
+  "docPath" : "D:\\IdeaWorkspace\\SeachEngine\\text_search_sort\\3.txt",
+  "content" : "The England Government want to establish the country as a visitor destination for Chinese Government people as part of  new strategy to boost trade rate",
+  "termPostingMapping" : {
+    "{\"content\":\"rate\"}" : {
+      "docId" : 2,
+      "freq" : 1,
+      "positions" : [ 24 ]
+    }
+  },
+  "score" : -1.0
+} ]

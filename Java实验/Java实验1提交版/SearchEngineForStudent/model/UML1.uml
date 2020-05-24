@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>hust.cs.javacourse.search.index.AbstractDocument</OriginalElement>
+  <nodes />
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="559.5" y="335.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>Project Files</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

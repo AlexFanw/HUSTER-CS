@@ -18,7 +18,7 @@ public class TestBuildIndex {
     public static void main(String[] args) throws IOException {
         AbstractDocumentBuilder documentBuilder = new DocumentBuilder();//构建文件夹路径集合
         AbstractIndexBuilder indexBuilder = new IndexBuilder(documentBuilder);//构建index集合
-        String rootDir = Config.DOC_DIR+"/text/";
+        String rootDir = Config.DOC_DIR+"/真实测试数据集/";
         System.out.println("Start build index ...");
         AbstractIndex index = indexBuilder.buildIndex(rootDir);
         index.optimize();

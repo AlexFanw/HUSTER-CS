@@ -1,0 +1,230 @@
+{
+  "docIdToDocPathMapping" : {
+    "0" : "D:\\IdeaWorkspace\\SeachEngine\\text_search_sort\\1.txt",
+    "1" : "D:\\IdeaWorkspace\\SeachEngine\\text_search_sort\\2.txt",
+    "2" : "D:\\IdeaWorkspace\\SeachEngine\\text_search_sort\\3.txt"
+  },
+  "termToPostingListMapping" : {
+    "{\"content\":\"according\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 1,
+        "positions" : [ 5 ]
+      } ]
+    },
+    "{\"content\":\"authority\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 1,
+        "positions" : [ 9 ]
+      } ]
+    },
+    "{\"content\":\"bond\"}" : {
+      "list" : [ {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 6 ]
+      } ]
+    },
+    "{\"content\":\"boost\"}" : {
+      "list" : [ {
+        "docId" : 2,
+        "freq" : 1,
+        "positions" : [ 22 ]
+      } ]
+    },
+    "{\"content\":\"cases\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 1,
+        "positions" : [ 17 ]
+      } ]
+    },
+    "{\"content\":\"chinese\"}" : {
+      "list" : [ {
+        "docId" : 2,
+        "freq" : 1,
+        "positions" : [ 13 ]
+      } ]
+    },
+    "{\"content\":\"continue\"}" : {
+      "list" : [ {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 10 ]
+      } ]
+    },
+    "{\"content\":\"coronavirus\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 2,
+        "positions" : [ 2, 16 ]
+      }, {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 8 ]
+      } ]
+    },
+    "{\"content\":\"country\"}" : {
+      "list" : [ {
+        "docId" : 2,
+        "freq" : 1,
+        "positions" : [ 7 ]
+      } ]
+    },
+    "{\"content\":\"death\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 1,
+        "positions" : [ 3 ]
+      }, {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 9 ]
+      } ]
+    },
+    "{\"content\":\"destination\"}" : {
+      "list" : [ {
+        "docId" : 2,
+        "freq" : 1,
+        "positions" : [ 11 ]
+      } ]
+    },
+    "{\"content\":\"england\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 2,
+        "positions" : [ 11, 20 ]
+      }, {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 13 ]
+      }, {
+        "docId" : 2,
+        "freq" : 1,
+        "positions" : [ 1 ]
+      } ]
+    },
+    "{\"content\":\"establish\"}" : {
+      "list" : [ {
+        "docId" : 2,
+        "freq" : 1,
+        "positions" : [ 5 ]
+      } ]
+    },
+    "{\"content\":\"film\"}" : {
+      "list" : [ {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 7 ]
+      } ]
+    },
+    "{\"content\":\"government\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 3,
+        "positions" : [ 7, 12, 21 ]
+      }, {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 14 ]
+      }, {
+        "docId" : 2,
+        "freq" : 2,
+        "positions" : [ 2, 14 ]
+      } ]
+    },
+    "{\"content\":\"health\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 1,
+        "positions" : [ 8 ]
+      } ]
+    },
+    "{\"content\":\"james\"}" : {
+      "list" : [ {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 5 ]
+      } ]
+    },
+    "{\"content\":\"new\"}" : {
+      "list" : [ {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 4 ]
+      }, {
+        "docId" : 2,
+        "freq" : 1,
+        "positions" : [ 19 ]
+      } ]
+    },
+    "{\"content\":\"novel\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 1,
+        "positions" : [ 1 ]
+      } ]
+    },
+    "{\"content\":\"people\"}" : {
+      "list" : [ {
+        "docId" : 2,
+        "freq" : 1,
+        "positions" : [ 15 ]
+      } ]
+    },
+    "{\"content\":\"rate\"}" : {
+      "list" : [ {
+        "docId" : 0,
+        "freq" : 1,
+        "positions" : [ 4 ]
+      }, {
+        "docId" : 2,
+        "freq" : 1,
+        "positions" : [ 24 ]
+      } ]
+    },
+    "{\"content\":\"release\"}" : {
+      "list" : [ {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 1 ]
+      } ]
+    },
+    "{\"content\":\"spread\"}" : {
+      "list" : [ {
+        "docId" : 1,
+        "freq" : 1,
+        "positions" : [ 12 ]
+      } ]
+    },
+    "{\"content\":\"strategy\"}" : {
+      "list" : [ {
+        "docId" : 2,
+        "freq" : 1,
+        "positions" : [ 20 ]
+      } ]
+    },
+    "{\"content\":\"trade\"}" : {
+      "list" : [ {
+        "docId" : 2,
+        "freq" : 1,
+        "positions" : [ 23 ]
+      } ]
+    },
+    "{\"content\":\"visitor\"}" : {
+      "list" : [ {
+        "docId" : 2,
+        "freq" : 1,
+        "positions" : [ 10 ]
+      } ]
+    },
+    "{\"content\":\"want\"}" : {
+      "list" : [ {
+        "docId" : 2,
+        "freq" : 1,
+        "positions" : [ 3 ]
+      } ]
+    }
+  }
+}
