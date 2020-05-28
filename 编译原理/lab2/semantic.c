@@ -86,71 +86,6 @@ struct codenode* merge(int num, ...) {
 	return h1;
 }
 
-//输出中间代码
-void prnIR(struct codenode* head) {
-	char opnstr1[32], opnstr2[32], resultstr[32];
-	struct codenode* h = head;
-	do {
-		if (h->opn1.kind == INT)
-			sprintf(opnstr1, "#%d", h->opn1.const_int);
-		if (h->opn1.kind == FLOAT)
-			sprintf(opnstr1, "#%f", h->opn1.const_float);
-		if (h->opn1.kind == ID)
-			sprintf(opnstr1, "%s", h->opn1.id);
-		if (h->opn2.kind == INT)
-			sprintf(opnstr2, "#%d", h->opn2.const_int);
-		if (h->opn2.kind == FLOAT)
-			sprintf(opnstr2, "#%f", h->opn2.const_float);
-		if (h->opn2.kind == ID)
-			sprintf(opnstr2, "%s", h->opn2.id);
-		sprintf(resultstr, "%s", h->result.id);
-		switch (h->op) {
-		case ASSIGNOP:  printf("  %s := %s\n", resultstr, opnstr1);
-			break;
-		case PLUS:
-		case MINUS:
-		case STAR:
-		case DIV: printf("  %s := %s %c %s\n", resultstr, opnstr1, \
-			h->op == PLUS ? '+' : h->op == MINUS ? '-' : h->op == STAR ? '*' : '\\', opnstr2);
-			break;
-		case FUNCTION: printf("\nFUNCTION %s :\n", h->result.id);
-			break;
-		case PARAM:    printf("  PARAM %s\n", h->result.id);
-			break;
-		case LABEL:    printf("LABEL %s :\n", h->result.id);
-			break;
-		case GOTO:     printf("  GOTO %s\n", h->result.id);
-			break;
-		case JLE:      printf("  IF %s <= %s GOTO %s\n", opnstr1, opnstr2, resultstr);
-			break;
-		case JLT:      printf("  IF %s < %s GOTO %s\n", opnstr1, opnstr2, resultstr);
-			break;
-		case JGE:      printf("  IF %s >= %s GOTO %s\n", opnstr1, opnstr2, resultstr);
-			break;
-		case JGT:      printf("  IF %s > %s GOTO %s\n", opnstr1, opnstr2, resultstr);
-			break;
-		case EQ:       printf("  IF %s == %s GOTO %s\n", opnstr1, opnstr2, resultstr);
-			break;
-		case NEQ:      printf("  IF %s != %s GOTO %s\n", opnstr1, opnstr2, resultstr);
-			break;
-		case ARG:      printf("  ARG %s\n", h->result.id);
-			break;
-		case CALL:     if (!strcmp(opnstr1, "write"))
-			printf("  CALL  %s\n", opnstr1);
-				 else
-			printf("  %s := CALL %s\n", resultstr, opnstr1);
-			break;
-		case RETURN:   if (h->result.kind)
-			printf("  RETURN %s\n", resultstr);
-				   else
-			printf("  RETURN\n");
-			break;
-
-		}
-		h = h->next;
-	} while (h != head);
-}
-
 //这里可以只收集错误信息，最后一次显示
 void semantic_error(int line, char* msg1, char* msg2) {
 	printf("在%d行,%s %s\n", line, msg1, msg2);
@@ -165,11 +100,7 @@ void prn_symbol() {
 	printf("-------------------------------------------------------------------------------------------------\n");
 	printf("|\t%s\t|\t%s\t|\t%s\t|\t%s\t|\t%s\t|\t%s\t|\n", "变量名",  "别名", "层号", "类型","标记","偏移量");
 	printf("-------------------------------------------------------------------------------------------------\n");
-	/*for (i = 0; i < symbolTable.index; i++)
-		printf("%6s %6s %6d  %6s %4c %6d\n", symbolTable.symbols[i].name, \
-			symbolTable.symbols[i].alias, symbolTable.symbols[i].level, \
-			symbolTable.symbols[i].type == INT ? "int" : "float", \
-			symbolTable.symbols[i].flag, symbolTable.symbols[i].offset);*/
+
 
 	for (i = 0; i < symbolTable.index; ++i) {
 		if (!strcmp(symbolTable.symbols[i].name, " "))
@@ -209,7 +140,7 @@ void prn_symbol() {
 	printf("-------------------------------------------------------------------------------------------------\n");
 }
 
-//搜索符号表
+//搜索符号表,看看有没有重名的
 int searchSymbolTable(char* name) {
 	int i, flag = 0;
 	for (i = symbolTable.index - 1; i >= 0; i--) {
