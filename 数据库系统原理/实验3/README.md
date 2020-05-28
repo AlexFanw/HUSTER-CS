@@ -1,4 +1,4 @@
-# TOEFL背单词系统
+# GTKiller - TOEFL/GRE背单词软件
 
-（暂定...）
+
 
