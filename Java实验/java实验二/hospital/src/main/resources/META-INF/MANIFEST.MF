@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Main-Class: sample.Main
+Class-Path: src.zip javafx-swt.jar javafx.web.jar javafx.base.jar javafx
+ .fxml.jar javafx.media.jar javafx.swing.jar javafx.controls.jar javafx.
+ graphics.jar controlsfx-11.0.1.jar mysql-connector-java-8.0.19.jar prot
+ obuf-java-3.6.1.jar
+
