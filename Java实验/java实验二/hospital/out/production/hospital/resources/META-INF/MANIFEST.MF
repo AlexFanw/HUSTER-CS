@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Main-Class: sample.Main
+Class-Path: lib/src.zip lib/javafx-swt.jar lib/javafx.web.jar lib/javafx
+ .base.jar lib/javafx.fxml.jar lib/javafx.media.jar lib/javafx.swing.jar
+  lib/javafx.controls.jar lib/javafx.graphics.jar lib/controlsfx-11.0.1.
+ jar lib/mysql-connector-java-8.0.19.jar lib/protobuf-java-3.6.1.jar
+
