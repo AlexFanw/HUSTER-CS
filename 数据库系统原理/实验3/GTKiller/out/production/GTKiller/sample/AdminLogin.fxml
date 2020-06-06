@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.1583" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="398.0" prefWidth="266.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminLoginController">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="110.0" prefWidth="300.0">
+            <children>
+                <Label layoutX="71.0" layoutY="16.0" text="Admin Login" textAlignment="CENTER" textFill="#5c0a41">
+                    <font>
+                        <Font name="Arial" size="24.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="239.0" prefWidth="502.0">
+            <children>
+                <Label layoutX="22.0" layoutY="47.0" text="Account" textAlignment="CENTER">
+                    <font>
+                        <Font size="16.0" />
+                    </font></Label>
+                <Label layoutX="20.0" layoutY="98.0" prefHeight="24.0" prefWidth="63.0" text="Passport" textAlignment="CENTER">
+                    <font>
+                        <Font size="16.0" />
+                    </font></Label>
+                <TextField fx:id="field_number" layoutX="90.0" layoutY="44.0" />
+                <TextField fx:id="field_password" layoutX="91.0" layoutY="97.0" onAction="#onEnter" />
+                <Button fx:id="btn_login" layoutX="96.0" layoutY="162.0" mnemonicParsing="false" onAction="#on_btn_login_clicked" prefHeight="40.0" prefWidth="71.0" text="登录" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btn_back" layoutX="97.0" layoutY="227.0" mnemonicParsing="false" onAction="#on_btn_back_clicked" prefHeight="27.0" prefWidth="71.0" text="返回" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+            </children></AnchorPane>
+    </items>
+</SplitPane>

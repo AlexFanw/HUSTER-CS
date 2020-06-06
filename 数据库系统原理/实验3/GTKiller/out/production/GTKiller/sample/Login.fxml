@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.1583"
+           maxHeight="-Infinity"
+           maxWidth="-Infinity"
+           minHeight="-Infinity"
+           minWidth="-Infinity"
+           orientation="VERTICAL"
+           prefHeight="523.0"
+           prefWidth="294.0"
+           xmlns="http://javafx.com/javafx/8"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="sample.LoginController">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="82.0" prefWidth="359.0">
+            <children>
+                <Label layoutX="63.0" layoutY="13.0" prefHeight="50.0" prefWidth="208.0" text="欢迎使用" textAlignment="CENTER" textFill="#0e5480">
+                    <font>
+                        <Font name="Arial" size="45.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="428.0" prefWidth="455.0">
+            <children>
+                <Button fx:id="btn_user"
+                        layoutX="74.0"
+                        layoutY="198.0" mnemonicParsing="false"
+                        onAction="#on_btn_user_clicked"
+                        text="用户登录"
+                        textAlignment="CENTER">
+                    <font>
+                        <Font name="Microsoft YaHei" size="30.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btn_admin"
+                        layoutX="59.0"
+                        layoutY="279.0"
+                        mnemonicParsing="false"
+                        onAction="#on_btn_admin_clicked"
+                        text="管理员登录">
+                    <font>
+                        <Font name="Microsoft YaHei" size="30.0" />
+                    </font>
+                </Button>
+            <Arc fill="#eb6f6d" layoutX="128.0" layoutY="101.0" length="270.0" radiusX="79.0" radiusY="70.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <Label layoutX="165.0" layoutY="76.0" prefHeight="50.0" prefWidth="138.0" text="GTKiller" textFill="#b1b2a6">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            </children></AnchorPane>
+    </items>
+</SplitPane>
