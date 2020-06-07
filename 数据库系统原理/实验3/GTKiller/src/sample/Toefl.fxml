@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -8,44 +9,50 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<SplitPane dividerPositions="0.1407035175879397"
-           maxHeight="-Infinity" maxWidth="-Infinity"
-           minHeight="-Infinity" minWidth="-Infinity"
-           orientation="VERTICAL" prefHeight="400.0"
-           prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
-           xmlns:fx="http://javafx.com/fxml/1"
-           fx:controller="sample.ToeflController">
+<SplitPane dividerPositions="0.1407035175879397" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ToeflController">
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="67.0" prefWidth="600.0">
          <children>
-            <Label layoutX="202.0" layoutY="10.0" prefHeight="33.0" prefWidth="216.0" text="GTKiller - Toefl" textFill="#901f1f">
+            <Label layoutX="202.0" layoutY="10.0" prefHeight="33.0" prefWidth="216.0" text="GTKiller - Toefl">
                <font>
                   <Font size="27.0" />
                </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="#d01616" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
             </Label>
             <Button fx:id="btn_exit" layoutX="520.0" layoutY="13.0" mnemonicParsing="false" onAction="#on_btn_quit_clicked" prefHeight="27.0" prefWidth="65.0" text="EXIT" />
+            <Button fx:id="btn_start" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#on_btn_start_clicked" text="Start" />
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
          <children>
-            <Button layoutX="119.0" layoutY="188.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="140.0" text="熟悉" textFill="#3188c6">
+            <Button fx:id="familiar" layoutX="119.0" layoutY="188.0" mnemonicParsing="false" onAction="#on_btn_familiar_clicked" prefHeight="76.0" prefWidth="140.0" text="熟悉" textFill="#3188c6">
                <font>
                   <Font size="32.0" />
                </font>
             </Button>
-            <Button layoutX="337.0" layoutY="188.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="140.0" text="陌生" textFill="#bc3ae0">
+            <Button fx:id="unfamiliar" layoutX="337.0" layoutY="188.0" mnemonicParsing="false" onAction="#on_btn_unfamiliar_clicked" prefHeight="76.0" prefWidth="140.0" text="陌生" textFill="#bc3ae0">
                <font>
                   <Font size="34.0" />
                </font>
             </Button>
-            <TextField layoutX="38.0" layoutY="74.0" prefHeight="95.0" prefWidth="100.0" />
-            <TextField layoutX="193.0" layoutY="74.0" prefHeight="95.0" prefWidth="180.0">
+            <TextField fx:id="No" layoutX="38.0" layoutY="74.0" prefHeight="95.0" prefWidth="100.0" promptText="编号">
+               <font>
+                  <Font size="29.0" />
+               </font></TextField>
+            <TextField fx:id="Word" layoutX="193.0" layoutY="74.0" prefHeight="95.0" prefWidth="180.0" promptText="单词">
                <font>
                   <Font size="25.0" />
                </font>
             </TextField>
-            <TextField layoutX="398.0" layoutY="74.0" prefHeight="95.0" prefWidth="180.0">
+            <TextField fx:id="Paraphrase" layoutX="398.0" layoutY="74.0" prefHeight="95.0" prefWidth="180.0" promptText="释义">
                <font>
-                  <Font size="30.0" />
+                  <Font size="19.0" />
                </font>
             </TextField>
             <Label layoutX="66.0" layoutY="31.0" text="No">

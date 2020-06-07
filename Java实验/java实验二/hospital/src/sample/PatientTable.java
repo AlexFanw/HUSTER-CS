@@ -17,9 +17,7 @@ public class PatientTable {
     public String getRegid(){
         return regid.get();
     }
-    public String getPname(){
-        return pname.get();
-    }
+    public String getPname(){ return pname.get();}
     public String getRegdatetime(){
         return regdatetime.get();
     }

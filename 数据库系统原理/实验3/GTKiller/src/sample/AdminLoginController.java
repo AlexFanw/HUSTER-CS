@@ -68,7 +68,7 @@ public class AdminLoginController {
                 else{ //登录成功
                     Stage currentStage=(Stage)btn_login.getScene().getWindow();
                     currentStage.close(); //关闭当前窗口
-                    SplitPane root=FXMLLoader.load(getClass().getResource("Record.fxml"));
+                    SplitPane root=FXMLLoader.load(getClass().getResource("Admin.fxml"));
                     Stage newStage=new Stage();
                     newStage.setTitle("");
                     newStage.setScene(new Scene(root));

@@ -28,7 +28,10 @@ public class UserLoginController {
     private TextField field_number;
     @FXML
     private TextField field_password;
-
+    public static String LoginUser;
+    public String getUsername(){
+        return LoginUser;
+    }
     //回车键登录
     public void onEnter(){
         on_btn_login_clicked();
@@ -66,9 +69,10 @@ public class UserLoginController {
                     alert.setHeaderText("密码错误");
                     alert.showAndWait();}
                 else{ //登录成功
+                    LoginUser=field_number.getText();
                     Stage currentStage=(Stage)btn_login.getScene().getWindow();
                     currentStage.close(); //关闭当前窗口
-                    SplitPane root=FXMLLoader.load(getClass().getResource("Toefl.fxml")); //转到挂号界面
+                    SplitPane root=FXMLLoader.load(getClass().getResource("Book.fxml")); //转到挂号界面
                     Stage newStage=new Stage();
                     newStage.setTitle("");
                     newStage.setScene(new Scene(root));
