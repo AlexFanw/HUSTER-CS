@@ -1,0 +1,1 @@
+java -jar --module-path lib --add-modules javafx.controls,javafx.fxml --add-exports javafx.base/com.sun.javafx.event=ALL-UNNAMED hospital.jar

@@ -1,14 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<SplitPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="sample.AdminController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<SplitPane dividerPositions="0.11557788944723618" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Button fx:id="btn_quit" layoutX="537.0" layoutY="8.0" mnemonicParsing="false" onAction="#on_btn_quit_clicked" text="EXIT" />
+            <Label layoutX="227.0" layoutY="4.0" text="管理员界面">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="#da1717" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TabPane prefHeight="348.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="用户账秘">
+                     <content>
+                        <TableView fx:id="tview_tableuser" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="tu_ID" prefWidth="120.0" text="ID" />
+                            <TableColumn fx:id="tu_Username" prefWidth="120.0" text="Username" />
+                              <TableColumn fx:id="tu_Password" prefWidth="120.0" text="Password" />
+                              <TableColumn fx:id="tu_Age" prefWidth="120.0" text="Age" />
+                              <TableColumn fx:id="tu_Sex" prefWidth="120.0" text="Sex" />
+                          </columns>
+                        </TableView>
+                     </content></Tab>
+                <Tab text="生词本">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="167.0" prefWidth="546.0">
+                                 <children>
+                                    <TableView fx:id="tview_tablevoc" layoutY="-3.0" prefHeight="321.0" prefWidth="600.0">
+                                      <columns>
+                                        <TableColumn fx:id="tc_ID" prefWidth="75.0" text="ID" />
+                                        <TableColumn fx:id="tc_Word" prefWidth="175.0" text="Word" />
+                                          <TableColumn fx:id="tc_Paraphrase" prefWidth="175.0" text="Paraphrase" />
+                                          <TableColumn fx:id="tc_Username" prefWidth="175.0" text="Username" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children></AnchorPane>
+  </items>
 </SplitPane>

@@ -9,7 +9,7 @@ public class MySQLConnector {
     public Connection connection(){
         Connection myConnection=null;
         try{
-            myConnection=DriverManager.getConnection("jdbc:mysql://localhost:3306/GTKiller?characterEncoding=utf8","root","123456alex");
+            myConnection=DriverManager.getConnection("jdbc:mysql://39.106.112.156:3306/GTKiller?characterEncoding=utf8","root","123456alex");
             if(myConnection!=null)
                 System.out.println("Connection succeeded.");
             else

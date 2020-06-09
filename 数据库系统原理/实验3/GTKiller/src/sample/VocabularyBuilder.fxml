@@ -29,11 +29,12 @@
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
          <children>
-            <TableView layoutX="-1.0" layoutY="-4.0" prefHeight="342.0" prefWidth="600.0">
+            <TableView fx:id="tview_tablevoc" layoutX="-1.0" layoutY="-4.0" prefHeight="342.0" prefWidth="600.0">
               <columns>
-                <TableColumn fx:id="No" prefWidth="100.0" text="No" />
-                <TableColumn fx:id="Word" prefWidth="200.0" text="Word" />
-                  <TableColumn fx:id="Paraphrase" prefWidth="300.0" text="Paraphrase" />
+                <TableColumn fx:id="tc_ID" prefWidth="100.0" text="No" />
+                <TableColumn fx:id="tc_Word" prefWidth="150.0" text="Word" />
+                  <TableColumn fx:id="tc_Paraphrase" prefWidth="250.0" text="Paraphrase" />
+                  <TableColumn fx:id="tc_Username" prefWidth="100.0" text="Username" />
               </columns>
             </TableView>
          </children></AnchorPane>

@@ -126,6 +126,7 @@ public class GreController {
         preparedStatement.close();
         connection.close();
     }
+
     public void on_btn_unfamiliar_clicked() throws SQLException { //点击获取挂号号码
         Connection connection=new MySQLConnector().connection();
         if(connection==null){
@@ -140,9 +141,31 @@ public class GreController {
             alert.showAndWait();
             return;
         }
+
+        String sql="select * from gre where ID=?";
+        PreparedStatement preparedStatement=connection.prepareStatement(sql);
+        preparedStatement.setInt(1, lastno);
+        ResultSet rs=preparedStatement.executeQuery();
+        rs.next();
+
+        Integer ID = rs.getInt("ID");
+        String Word = rs.getString("Word");
+        String Paraphrase = rs.getString("Paraphrase");
+        String Username = new UserLoginController().getUsername();
+
+        String sql1="INSERT INTO VocabularyBuilder VALUES(?,?,?,?)";
+        PreparedStatement preparedStatement1=connection.prepareStatement(sql1);
+        preparedStatement1.setInt(1, ID);
+        preparedStatement1.setString(2, Word);
+        preparedStatement1.setString(3, Paraphrase);
+        preparedStatement1.setString(4, Username);
+
+        preparedStatement1.executeUpdate();
+
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText("该功能待完善");
+        alert.setHeaderText("已经将"+rs.getString("Word")+"加入生词本");
         alert.showAndWait();
         return;
     }
+
 }
