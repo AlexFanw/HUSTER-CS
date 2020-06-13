@@ -8,7 +8,7 @@
 编译过程：详情请见auto.sh, shell脚本代码如下
 
 ```shell
-screenfetch
+screenfetch ## 可以删除这一行
 rm lex.yy.c
 rm parser.tab.c
 rm parser.tab.h
