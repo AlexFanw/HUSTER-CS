@@ -93,7 +93,7 @@ public class ToeflController {
         newStage.show();
     }
 
-    public void on_btn_familiar_clicked() throws SQLException { //点击获取挂号号码
+    public void on_btn_familiar_clicked() throws SQLException {
         Connection connection=new MySQLConnector().connection();
         if(connection==null){
             Alert alert = new Alert(Alert.AlertType.INFORMATION);

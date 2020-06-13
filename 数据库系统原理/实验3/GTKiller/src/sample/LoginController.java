@@ -16,7 +16,7 @@ public class LoginController {
     @FXML
     private Button btn_admin;
 
-    //转换到病人登录界面
+    //转换到用户登录界面
     public void on_btn_user_clicked(ActionEvent e) throws IOException {
         Stage currentStage=(Stage)btn_user.getScene().getWindow();
         currentStage.close(); //关闭当前窗口
@@ -27,7 +27,7 @@ public class LoginController {
         newStage.show();
     }
 
-    //转换到医生登录界面
+    //转换到管理员登录界面
     public void on_btn_admin_clicked(ActionEvent e) throws IOException {
         Stage currentStage=(Stage)btn_admin.getScene().getWindow();
         currentStage.close(); //关闭当前窗口
