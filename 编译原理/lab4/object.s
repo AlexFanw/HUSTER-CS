@@ -37,22 +37,22 @@ main:
   addi $sp, $sp, -108
   li $t3, 1
   sw $t3, 16($sp)
-  lw $t1, -340918068($sp)
+  lw $t1, 1781202982($sp)
   move $t3, $t1
   sw $t3, 0($sp)
   li $t3, 2
   sw $t3, 24($sp)
-  lw $t1, -340918068($sp)
+  lw $t1, 1781202982($sp)
   move $t3, $t1
   sw $t3, 0($sp)
   li $t3, 3
   sw $t3, 32($sp)
-  lw $t1, -340918068($sp)
+  lw $t1, 1781202982($sp)
   move $t3, $t1
   sw $t3, 0($sp)
   li $t3, 4
   sw $t3, 40($sp)
-  lw $t1, -340918068($sp)
+  lw $t1, 1781202982($sp)
   move $t3, $t1
   sw $t3, 0($sp)
   addi $sp, $sp, -4
