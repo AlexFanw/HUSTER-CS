@@ -1,5 +1,4 @@
 # coding=utf-8
-import 
 def main():
     print("Welcome Back,Alex Fan")
 
