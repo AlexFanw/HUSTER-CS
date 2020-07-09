@@ -1,6 +1,6 @@
 # coding=utf-8
-import pandas as pd
 import jieba
+import pandas as pd
 from snownlp import SnowNLP
 from snownlp import sentiment
 
