@@ -5,14 +5,16 @@ import os
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import CountVectorizer
 
+
 def readfile(filename):
-    file=open(filename,'r',encoding='utf-8')
-    data=[]
+    file = open(filename, 'r', encoding='utf-8')
+    data = []
     for x in file.readlines():
-        if(x.strip()!=''):
+        if(x.strip() != ''):
             data.append(x.strip())
     file.close()
     return data
+
 
 def cut2wd(sentence):
     wordcut = jieba.cut(sentence)
@@ -20,7 +22,7 @@ def cut2wd(sentence):
     for w in wordcut:
         wordcheck.append(w)
     stopwords = readfile('train&test/stopwords.txt')
-    #print(stopwords)
+    # print(stopwords)
     newword = []
     for w in wordcheck:
         if w in stopwords:
@@ -29,10 +31,11 @@ def cut2wd(sentence):
             newword.append(w)
     return newword
 
+
 def count(words):
     corpus = words
     vectorizer = CountVectorizer(token_pattern="\\b\\w+\\b")
-    transformer = TfidfTransformer(norm=None,use_idf=False)
+    transformer = TfidfTransformer(norm=None, use_idf=False)
     tf = transformer.fit_transform(vectorizer.fit_transform(corpus))
     word = vectorizer.get_feature_names()
     weight = tf.toarray()
@@ -40,16 +43,18 @@ def count(words):
     mycp = {}
     for i in range(len(weight)):
         for j in range(len(word)):
-            mycp.update({str(word[j]):int(weight[i][j])})
-    return  mycp
+            mycp.update({str(word[j]): int(weight[i][j])})
+    return mycp
+
 
 def pos(wddict):
     senlist = readfile()
 
+
 if __name__ == '__main__':
     x = readfile('train&test/pos.txt')
-    #print(x)
+    # print(x)
     a = cut2wd("我爱北京天安门")
-    #print(a)
-    b = count(["我","爱","中国","噢","我"])
+    # print(a)
+    b = count(["我", "爱", "中国", "噢", "我"])
     print(b)

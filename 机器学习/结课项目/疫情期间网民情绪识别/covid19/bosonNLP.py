@@ -5,12 +5,12 @@ from snownlp import SnowNLP
 from snownlp import sentiment
 
 
-def readAndAnalysis(input,output,left=0.33,right=-0.33):
+def readAndAnalysis(input, output, left=0.33, right=-0.33):
     fileIn = open(input)
-    fileOut = open(output,'w')
+    fileOut = open(output, 'w')
     result = []
 
-    with open('train&test/test_label.csv','r') as realResult:
+    with open('train&test/test_label.csv', 'r') as realResult:
         reader = csv.reader(realResult)
         trueResult = [row[1] for row in reader]
         trueResult = trueResult[1:]
@@ -25,7 +25,7 @@ def readAndAnalysis(input,output,left=0.33,right=-0.33):
         if(len(lines)) != 1:
             continue
         s = SnowNLP(lines[0])
-        print(s.sentiments,lines[0])
+        print(s.sentiments, lines[0])
         seg_words = ""
         for x in s.words:
             seg_words += "_"
@@ -37,7 +37,7 @@ def readAndAnalysis(input,output,left=0.33,right=-0.33):
     fileIn.close()
     print(result)
     print(trueResult[0:len(result)])
-    return result,trueResult[0:len(result)]
+    return result, trueResult[0:len(result)]
 
 
 def normalize(normalizeResult, left, right):
@@ -54,18 +54,18 @@ def normalize(normalizeResult, left, right):
 def sentimentTrain(negtxt, postxt, marshal):
     print(sentiment.data_path)
     sentiment.train(negtxt, postxt)
-    sentiment.save(marshal,False)
+    sentiment.save(marshal, False)
 
 #BosonNlpScore = pd.read_csv("bosonnlp/BosonNLP_sentiment_score.txt", sep=" ", names=['key', 'score'])
 #key = BosonNlpScore['key'].values.tolist()
 #score = BosonNlpScore['score'].values.tolist()
 #
-#def GetScore(line, score, key):
+# def GetScore(line, score, key):
 #    segs = jieba.lcut(line)
 #    score_list = [score[key.index(x)] for x in segs if (x in key)]
 #    return sum(score_list)
 #
-#def test():
+# def test():
 #    '''
 #    获取test.csv中所有的舆论
 #    '''
@@ -87,6 +87,6 @@ def sentimentTrain(negtxt, postxt, marshal):
 #        result.append(comment.sentiments)
 #    return result
 #
-#if __name__ == '__main__':
+# if __name__ == '__main__':
 #    print(GetScore("我太爱这个玩具熊了",score,key))
 #    print(test())
