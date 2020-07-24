@@ -3,13 +3,14 @@ import csv
 import pandas as pd
 from snownlp import SnowNLP
 from snownlp import sentiment
+from skTrain import cut2wd
 
 
-def readAndAnalysis(input, output, left=0.33, right=-0.33):
+def readAndAnalysis(input, output, left=0.5, right=0.5):
     fileIn = open(input)
     fileOut = open(output, 'w')
     result = []
-
+    # trueResult保存正确的预测结果
     with open('train&test/test_label.csv', 'r') as realResult:
         reader = csv.reader(realResult)
         trueResult = [row[1] for row in reader]
@@ -24,41 +25,45 @@ def readAndAnalysis(input, output, left=0.33, right=-0.33):
         lines = line.strip().split("\t")
         if(len(lines)) != 1:
             continue
-        s = SnowNLP(lines[0])
-        print(s.sentiments, lines[0])
-        seg_words = ""
-        for x in s.words:
-            seg_words += "_"
-            seg_words += x
-        normalizeResult = s.sentiments
-        fileOut.write(str(normalizeResult) + "\n")
-        result.append(normalizeResult)
+        if(lines[0] == ''):
+            lines[0] = "NAN"
+            fileOut.write("0\n")
+            result.append(0)
+        else:
+            s = SnowNLP(lines[0])
+            # print(s.sentiments, lines[0])
+            # seg_words = ""
+            # for x in s.words:
+            #    seg_words += "_"
+            #    seg_words += x
+            normalizeResult = normalize(s.sentiments, left, right)
+            # normalizeResult = s.sentiments
+            fileOut.write(str(normalizeResult) + "\n")
+            result.append(normalizeResult)
     fileOut.close()
     fileIn.close()
-    print(result)
-    print(trueResult[0:len(result)])
     return result, trueResult[0:len(result)]
 
 
 def normalize(normalizeResult, left, right):
-    normalizeResult = (2 * normalizeResult) - 1
     if normalizeResult > left:
         normalizeResult = 1
     elif normalizeResult <= left and normalizeResult >= right:
-        normalizeResult = -1
-    else:
         normalizeResult = 0
+    else:
+        normalizeResult = -1
     return normalizeResult
 
 
 def sentimentTrain(negtxt, postxt, marshal):
-    print(sentiment.data_path)
+    print("训练集保存地址为：{}\n".format(sentiment.data_path))
     sentiment.train(negtxt, postxt)
     sentiment.save(marshal, False)
+    print("训练结束，请开始测试。")
 
-#BosonNlpScore = pd.read_csv("bosonnlp/BosonNLP_sentiment_score.txt", sep=" ", names=['key', 'score'])
-#key = BosonNlpScore['key'].values.tolist()
-#score = BosonNlpScore['score'].values.tolist()
+# BosonNlpScore = pd.read_csv("bosonnlp/BosonNLP_sentiment_score.txt", sep=" ", names=['key', 'score'])
+# key = BosonNlpScore['key'].values.tolist()
+# score = BosonNlpScore['score'].values.tolist()
 #
 # def GetScore(line, score, key):
 #    segs = jieba.lcut(line)
