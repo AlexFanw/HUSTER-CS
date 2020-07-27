@@ -22,7 +22,6 @@ def cut2wd(sentence):
     for w in wordcut:
         wordcheck.append(w)
     stopwords = readfile('train&test/stopwords.txt')
-    # print(stopwords)
     newword = []
     for w in wordcheck:
         if w in stopwords:

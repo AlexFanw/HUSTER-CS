@@ -68,6 +68,6 @@ if __name__ == '__main__':
     print(neg)
     left, right, sum = chooseLeftAndRight(pos, neu, neg, 50)
     for i in range(len(left)):
-        print(round(left[i], 2), round(right[i], 2), round(sum[i], 2))
-    print(max(sum))
+        print("左界:", round(left[i], 2), "右界:", round(right[i], 2), "正确结果数:", round(sum[i], 2))
+    print("最大正确率：",max(sum))
 

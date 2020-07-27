@@ -31,13 +31,7 @@ def readAndAnalysis(input, output, left=0.5, right=0.5):
             result.append(0)
         else:
             s = SnowNLP(lines[0])
-            # print(s.sentiments, lines[0])
-            # seg_words = ""
-            # for x in s.words:
-            #    seg_words += "_"
-            #    seg_words += x
             normalizeResult = normalize(s.sentiments, left, right)
-            # normalizeResult = s.sentiments
             fileOut.write(str(normalizeResult) + "\n")
             result.append(normalizeResult)
     fileOut.close()
