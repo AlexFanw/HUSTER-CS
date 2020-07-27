@@ -1,3 +1,4 @@
+# coding=utf-8
 import numpy as np  # 数组相关的库
 import matplotlib.pyplot as plt  # 绘图库
 

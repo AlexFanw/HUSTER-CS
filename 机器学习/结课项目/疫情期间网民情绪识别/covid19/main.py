@@ -3,8 +3,8 @@ from confusionMatrix import checkResult
 from confusionMatrix import checkResultNoNeu
 from confusionMatrix import checkResultCombNeuAndPos
 from splitNegPos import split
-from bosonNLP import readAndAnalysis
-from bosonNLP import sentimentTrain
+from alexNLP import readAndAnalysis
+from alexNLP import sentimentTrain
 
 fileIn = 'train&test/test.txt'  # 测试文件
 fileOut = 'train&test/test_predict.txt'  # 预测结果文件

@@ -3,6 +3,7 @@ import pandas as pd
 import re
 from skTrain import cut2wd
 
+
 class split():
     def __init__(self):
         self.all = pd.read_csv("train&test/train.csv")
