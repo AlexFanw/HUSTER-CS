@@ -25,7 +25,7 @@ if __name__ == '__main__':
     # 设置读取的训练集中pos、neg、mid样本的大小,以及训练集大小
     splitToTxt.startSplit(10000, 10000, 10000, 4500)
     # 训练自己的sentimentMarshal
-    sentimentTrain(fileNeg, filePos, fileNewMarshal)
+    # sentimentTrain(fileNeg, filePos, fileNewMarshal)
     # 读取测试文件，并开始进行打分
     result, trueResult = readAndAnalysis(fileIn, fileOut, 0.98, 0.54)
     # 预测结果

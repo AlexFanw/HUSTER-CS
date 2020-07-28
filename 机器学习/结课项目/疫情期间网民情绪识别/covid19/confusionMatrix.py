@@ -12,7 +12,6 @@ def checkResult(result, realResult):
     print("全部结果数量：{}".format(len(realResult)))
     return correct, len(result)
 
-
 def checkResultNoNeu(result, realResult):
     correct = 0
     sum = 0
