@@ -1,0 +1,6 @@
+ISA ?= native
+ifeq ($(NAVY_HOME), )
+  $(error Must set NAVY_HOME environment variable)
+endif
+
+$(shell mkdir -p $(NAVY_HOME)/fsimg/bin/ $(NAVY_HOME)/fsimg/dev/)

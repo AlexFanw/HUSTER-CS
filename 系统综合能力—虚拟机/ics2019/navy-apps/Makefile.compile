@@ -1,0 +1,92 @@
+# Compilation flags
+
+#VME = enable
+
+ifeq ($(ISA), mips32)
+CROSS_COMPILE = mips-linux-gnu-
+endif
+
+ifeq ($(ISA), riscv32)
+CROSS_COMPILE = riscv-none-embed-
+endif
+
+AS = $(CROSS_COMPILE)gcc
+CC = $(CROSS_COMPILE)gcc
+CXX = $(CROSS_COMPILE)g++
+LD = $(CROSS_COMPILE)ld
+AS = $(CC)
+
+INCLUDES  = $(addprefix -I, $(INC_DIR))
+ISA_DEF = __ISA_$(shell echo $(ISA) | tr a-z A-Z)__
+
+CFLAGS_COMMON += -O2 -MMD $(INCLUDES) -D$(ISA_DEF) -static \
+                 -fdata-sections -ffunction-sections -fno-builtin -fno-stack-protector
+CFLAGS   += -std=gnu99
+CXXFLAGS += -std=c++11 -ffreestanding -fno-rtti -fno-exceptions
+ASFLAGS  += -MMD $(INCLUDES) -D$(ISA_DEF)
+LDFLAGS  += -e _start
+
+ifeq ($(LINK), dynamic)
+  CFLAGS   += -fPIE
+  CXXFLAGS += -fPIE
+  LDFLAGS  += -fpie -shared
+else ifeq ($(VME), enable)
+  LDFLAGS += -Ttext-segment=0x40000000
+else ifeq ($(ISA), mips32)
+  LDFLAGS += -Ttext-segment=0x83000000
+else ifeq ($(ISA), riscv32)
+  LDFLAGS += -Ttext-segment=0x83000000
+else
+  LDFLAGS += -Ttext-segment=0x3000000
+endif
+
+ifeq ($(ISA), mips32)
+  CFLAGS_NEWLIB = -DNO_FLOATING_POINT -D_LDBL_EQ_DBL
+  CXX = $(CROSS_COMPILE)g++
+  CFLAGS_COMMON += -fno-pic -static -fno-strict-aliasing -fno-delayed-branch -mno-gpopt -mno-abicalls -march=mips32 -mno-check-zero-division -EL -mno-llsc -mno-imadd -mno-mad $(CFLAGS_NEWLIB)
+  ASFLAGS  += -march=mips32 -EL
+  LDFLAGS  += -EL
+endif
+
+ifeq ($(ISA), x86)
+  CFLAGS_NEWLIB = -DNO_FLOATING_POINT
+  CFLAGS_COMMON += -m32 -fno-pic -march=i386 -mstringop-strategy=loop -mno-inline-all-stringops $(CFLAGS_NEWLIB)
+  ASFLAGS  += -m32
+  LDFLAGS  += -melf_i386
+endif
+
+ifeq ($(ISA), riscv32)
+  CFLAGS_NEWLIB = -DNO_FLOATING_POINT
+  CFLAGS_COMMON += -fno-pic -march=rv32imfd -mabi=ilp32 $(CFLAGS_NEWLIB)
+  ASFLAGS  += -march=rv32imfd -mabi=ilp32 -fno-pic
+  LDFLAGS  += -melf32lriscv --no-relax
+endif
+
+ifeq ($(ISA), am_native)
+  CFLAGS_NEWLIB = -DNO_FLOATING_POINT
+  CFLAGS_COMMON += -fno-omit-frame-pointer $(CFLAGS_NEWLIB)
+endif
+
+CFLAGS   += $(CFLAGS_COMMON)
+CXXFLAGS += $(CFLAGS_COMMON)
+
+# Files to be compiled
+OBJS ?= $(addprefix $(DST_DIR)/, $(addsuffix .o, $(basename $(SRCS))))
+
+# Compilation patterns
+$(DST_DIR)/%.o: %.cpp
+	@echo + CXX $<
+	@mkdir -p $(dir $@)
+	@$(CXX) $(CXXFLAGS) -c -o $@ $<
+$(DST_DIR)/%.o: %.c
+	@echo + CC $<
+	@mkdir -p $(dir $@)
+	@$(CC) $(CFLAGS) -c -o $@ $<
+$(DST_DIR)/%.o: %.S
+	@echo + AR $<
+	@mkdir -p $(dir $@)
+	@$(AS) $(ASFLAGS) -c -o $@ $<
+
+# Dependencies
+DEPS = $(addprefix $(DST_DIR)/, $(addsuffix .d, $(basename $(SRCS))))
+-include $(DEPS)

@@ -1,0 +1,11 @@
+!*
+.*
+!.gitignore
+*.o
+*.a
+*.d
+*.img
+build/
+/fsimg/bin/
+/fsimg/dev/
+/fsimg/share/games/pal/

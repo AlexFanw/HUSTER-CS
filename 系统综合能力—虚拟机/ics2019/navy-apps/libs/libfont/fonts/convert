@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for size in 7 8 9 10 11 12 13
+do
+  otf2bdf courier_10_pitch.ttf -l "0_255" -p $(( ${size} + 1 )) > ${NAVY_HOME}/initrd/fonts/Courier-${size}.bdf
+done

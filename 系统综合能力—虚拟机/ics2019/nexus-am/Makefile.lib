@@ -1,0 +1,26 @@
+include $(AM_HOME)/Makefile.check
+$(info # Building lib-$(NAME) [$(ARCH)])
+
+LIB_DIR ?= $(shell pwd)
+INC_DIR += $(LIB_DIR)/include/
+DST_DIR ?= $(LIB_DIR)/build/$(ARCH)/
+ARCHIVE ?= $(LIB_DIR)/build/$(NAME)-$(ARCH).a
+
+## Default: Build a linkable archive (.a)
+default: $(ARCHIVE)
+
+INC_DIR += $(addsuffix /include/, $(addprefix $(AM_HOME)/libs/, $(LIBS)))
+CFLAGS  += -fdata-sections -ffunction-sections -fno-builtin
+
+## Paste in "Makefile.compile" here
+include $(AM_HOME)/Makefile.compile
+
+## Compliation rule for objects -> .a (using ar)
+$(ARCHIVE): $(OBJS)
+	@echo + AR "->" $(shell realpath $@ --relative-to .)
+	@ar rcs $(ARCHIVE) $(OBJS)
+
+clean: 
+	rm -rf $(LIB_DIR)/build/
+
+.PHONY: default clean
