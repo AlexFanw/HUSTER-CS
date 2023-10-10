@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/alexfan/Desktop/2019autumn/算法导论/build",
+  "command": "/usr/bin/clang++    -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -o CMakeFiles/poj.dir/main.cpp.o -c /Users/alexfan/Desktop/2019autumn/算法导论/main.cpp",
+  "file": "/Users/alexfan/Desktop/2019autumn/算法导论/main.cpp"
+}
+]

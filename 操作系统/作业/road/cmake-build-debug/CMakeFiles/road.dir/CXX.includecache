@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alexfan/Desktop/2019autumn/操作系统/作业/road/main.cpp
+iostream
+-
+stdlib.h
+-
+time.h
+-
+

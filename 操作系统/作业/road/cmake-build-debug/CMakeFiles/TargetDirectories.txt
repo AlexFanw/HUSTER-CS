@@ -1,0 +1,3 @@
+/Users/alexfan/Desktop/2019autumn/操作系统/作业/road/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/alexfan/Desktop/2019autumn/操作系统/作业/road/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/alexfan/Desktop/2019autumn/操作系统/作业/road/cmake-build-debug/CMakeFiles/road.dir

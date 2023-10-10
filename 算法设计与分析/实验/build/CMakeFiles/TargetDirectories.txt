@@ -1,0 +1,6 @@
+/Users/alexfan/Desktop/2019autumn/算法导论/build/CMakeFiles/edit_cache.dir
+/Users/alexfan/Desktop/2019autumn/算法导论/build/CMakeFiles/rebuild_cache.dir
+/Users/alexfan/Desktop/2019autumn/算法导论/build/CMakeFiles/package_source.dir
+/Users/alexfan/Desktop/2019autumn/算法导论/build/CMakeFiles/package.dir
+/Users/alexfan/Desktop/2019autumn/算法导论/build/CMakeFiles/test.dir
+/Users/alexfan/Desktop/2019autumn/算法导论/build/CMakeFiles/poj.dir

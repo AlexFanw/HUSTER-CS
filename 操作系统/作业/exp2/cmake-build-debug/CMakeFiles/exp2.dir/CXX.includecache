@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alexfan/Desktop/2019autumn/操作系统/作业/exp2/main.cpp
+iostream
+-
+sys/sem.h
+-
+pthread.h
+-
+unistd.h
+-
+sys/types.h
+-
+sys/wait.h
+-
+
