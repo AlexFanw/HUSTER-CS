@@ -1,6 +1,4 @@
-<div align = center>
-<img src="https://alexfanblog.oss-cn-beijing.aliyuncs.com/2020/04/21/hust.jpg" width="" height="180"/>
-</div>
+![hust](./image/hust.jpg)
 
 # BackGround
 
